@@ -1,3 +1,35 @@
+Post, Plan & travel
+
+ Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel plans from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities like cycling, hiking, and more. With Post Plan & travel, planning a trip has never been easier or more exciting.
+
+ "Capturing the World: Exploring New Places and Moments Through the Lens"
+
+<li><a href="#project-goal">Project goal</a></li>
+<li><a href="#user-audience">User audience</a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#design">Design</a></li>
+
+     
+
+
+# User audience
+
+
+Post, Plan & Travel is designed to cater to people of all ages as it believes that everyone has the potential to explore and enjoy the world. For younger people, the website can be an excellent resource to plan their first solo trips or adventurous holidays with friends. Meanwhile, the website can also provide inspiration for those in their middle ages who want to take a break from their busy lives and explore new destinations.
+
+The website's comprehensive travel guides and suggestions cater to all budgets, so whether you're a backpacker or a luxury traveller, you'll find something that suits your needs. In summary, Post, Plan & Travel's all-encompass
+
+
+---
+
+# Design
+
+### Navigation 
+To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
+
+Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,

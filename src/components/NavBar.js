@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/logo.png';
 
+/* NavBar component*/
 const NavBar = () => {
   return <Navbar bg="dark" variant="dark" expand="md" fixed="top">
   <Container>
