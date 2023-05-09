@@ -1,0 +1,38 @@
+/*FOR ADDING ALL CSS STYLES YOU WANT TO APLLY TO YOUR WHOLE SITE*/
+
+.App {
+    font-family: "Roboto&family", sans-serif;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #BF8C6F;
+    transition: color ease-in-out 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:hover i {
+    color: #7C96A6;
+    transition: color ease-in-out 0.3s;
+  }
+  
+  i {
+    color: #D9D8D2;
+    font-size: 1.8rem;
+    padding: 7px;
+    vertical-align: middle;
+  }
+  
+  i:hover {
+    cursor: pointer;
+    transition: color ease-in-out 0.3s;
+    color: #BF8C6F;
+  }
