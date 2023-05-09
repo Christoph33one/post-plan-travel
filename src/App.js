@@ -19,6 +19,5 @@ function App() {
     </div>
   );
 }
-/* Routing added for urls to be found*/
 
 export default App;  
