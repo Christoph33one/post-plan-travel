@@ -9,13 +9,12 @@ Post, Plan & travel
 <li><a href="#"></a></li>
 <li><a href="#"></a></li>
 <li><a href="#design">Design</a></li>
+<li><a href="#wire-frames">Wire frames</a></li>
 
      
 
 
 # User audience
-
-
 Post, Plan & Travel is designed to cater to people of all ages as it believes that everyone has the potential to explore and enjoy the world. For younger people, the website can be an excellent resource to plan their first solo trips or adventurous holidays with friends. Meanwhile, the website can also provide inspiration for those in their middle ages who want to take a break from their busy lives and explore new destinations.
 
 The website's comprehensive travel guides and suggestions cater to all budgets, so whether you're a backpacker or a luxury traveller, you'll find something that suits your needs. In summary, Post, Plan & Travel's all-encompass
@@ -30,6 +29,16 @@ To provide users with a seamless and modern browsing experience, I have incorpor
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
 ![](src/assets/nav%20bar%20design.png)
+![](src/assets/logo.png)
+
+
+---
+
+# Wire frames
+
+### Home page
+![](src/assets/HOME%20PAGE%20WIRE%20FRAME.png)
+===================================================================================
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
