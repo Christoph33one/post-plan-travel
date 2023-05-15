@@ -98,7 +98,7 @@ const SignUpForm = () => {
               />
         </Form.Group>
         {errors.password2?.map((message, idx) => 
-        <Alert variant="warning">{message}</Alert>
+        <Alert variant="warning"></Alert>
         )}
             
             <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright} `} type="submit">
