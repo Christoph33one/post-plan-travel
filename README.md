@@ -38,7 +38,9 @@ Moreover, to enhance the user's sense of personalization, I have implemented a u
 
 ### Home page
 ![](src/assets/HOME%20PAGE%20WIRE%20FRAME.png)
-===================================================================================
+
+### Registration & Sign in
+![](src/assets/reg%20%3A%20sign%20in%20wire%20frames.png)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
