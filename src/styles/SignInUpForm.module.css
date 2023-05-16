@@ -14,12 +14,13 @@
   .Header {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 30px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #2142b2;
+    color: #7C96A6;
+    font-family: Caveat;
   }
   
   .Link {
@@ -43,4 +44,9 @@
   
   .SignUpCol {
     height: 375px;
+  }
+
+  /*sign up / sign in image*/
+  .CircleImage {
+    border-radius: 20px; 
   }

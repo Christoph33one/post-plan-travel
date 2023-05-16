@@ -32,7 +32,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="far fa-plus-square"></i>ADD PLAN
+      <i className="far fa-plus-square"></i><span className={styles.textHeading}>ADD PLAN</span>
     </NavLink>
   );
   const loggedInIcons = (
@@ -42,11 +42,11 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed"
       >
-        <i className="fas fa-map"></i>TRAVEL PLANS
+        <i className="fas fa-map"></i><span className={styles.textHeading}>LOCATIONS</span>
       </NavLink>
       
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className="fas fa-sign-out-alt"></i>SIGN OUT
+        <i className="fas fa-sign-out-alt"></i><span className={styles.textHeading}>SIGN OUT</span>
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -63,14 +63,14 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/signin"
       >
-        <i className="fas fa-sign-in-alt"></i>SIGN IN
+        <i className="fas fa-sign-in-alt"></i><span className={styles.textHeading}>SIGN IN</span>
       </NavLink>
       <NavLink
         to="/signup"
         className={styles.NavLink}
         activeClassName={styles.Active}
       >
-        <i className="fas fa-user-plus"></i>SIGN UP
+        <i className="fas fa-user-plus"></i><span className={styles.textHeading}>SIGN UP</span>
       </NavLink>
     </>
   );
@@ -102,7 +102,7 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-home"></i>Home
+              <i className="fas fa-home"></i><span className={styles.textHeading}>HOME</span>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}

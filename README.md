@@ -10,6 +10,7 @@ Post, Plan & travel
 <li><a href="#"></a></li>
 <li><a href="#design">Design</a></li>
 <li><a href="#wire-frames">Wire frames</a></li>
+<li><a href="#bugs">Bugs</a></li>
 
      
 
@@ -33,7 +34,12 @@ Moreover, to enhance the user's sense of personalization, I have implemented a u
 
 
 ---
+### Registration 
+To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering it.
 
+Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information.
+
+---
 # Wire frames
 
 ### Home page
@@ -42,6 +48,29 @@ Moreover, to enhance the user's sense of personalization, I have implemented a u
 ### Registration & Sign in
 ![](src/assets/reg%20%3A%20sign%20in%20wire%20frames.png)
 
+
+---
+# Bugs
+### Navbar
+Drop down menu was not functioning after custom hook was added and imported. 
+
+ERROR
+In the NavBar component, when passing the expanded prop to the Navbar component, you are assigning the setExpanded function instead of the expanded state value. The correct code should be:
+
+PASS ERROR
+Passed expanded prop to the navabr component
+
+---
+---
+---
+---
+
+
+
+
+
+
+############################################################################################################################################################################################
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
@@ -65,6 +94,15 @@ To log into the Heroku toolbelt CLI:
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ---
+
+
+
+
+
+
+
+
+
 
 Happy coding!
 

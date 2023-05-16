@@ -71,7 +71,7 @@ const SignUpForm = () => {
         )}
 
         <Form.Group controlId="password1">
-            <Form.Label className="d-none">Password</Form.Label>
+            <Form.Label className="d-none">password</Form.Label>
             <Form.Control 
                 className={styles.Input}
                 type="password" 
@@ -87,7 +87,7 @@ const SignUpForm = () => {
         
 
         <Form.Group controlId="password2">
-            <Form.Label className="d-none">Confirm Password</Form.Label>
+            <Form.Label className="d-none">Confirm your password</Form.Label>
             <Form.Control 
                 className={styles.Input}
                 type="password" 
@@ -109,7 +109,7 @@ const SignUpForm = () => {
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signin">
-            Already have an account? <span>Sign in</span>
+            Already have an account? <span className={styles.Head}>Sign in</span>
           </Link>
         </Container>
       </Col>
@@ -118,11 +118,13 @@ const SignUpForm = () => {
         className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
       >
         <Image
-          className={`${appStyles.FillerImage}`}
+          className={`${appStyles.FillerImage} ${styles.CircleImage} img-fluid`}
           src={
-            "https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"
+            "signin-logo.jpg"
           }
         />
+        
+       
       </Col>
     </Row>
   );

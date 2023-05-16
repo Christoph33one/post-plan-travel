@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+/*NavBar drop down toogle effect*/ 
+
 const useClickOutsideToggle = () => {
   const [expanded, setExpanded] = useState(false);
   const ref = useRef(null);
