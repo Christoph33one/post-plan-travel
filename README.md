@@ -29,7 +29,7 @@ The website's comprehensive travel guides and suggestions cater to all budgets, 
 To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
-![](src/assets/nav%20bar%20design.png)
+![](src/assets/wireframes/nav%20bar%20design.png)
 ![](src/assets/logo.png)
 
 
@@ -43,10 +43,10 @@ Please note that all registration fields must be filled out before the registrat
 # Wire frames
 
 ### Home page
-![](src/assets/HOME%20PAGE%20WIRE%20FRAME.png)
+![](src/assets/wireframes/HOME%20PAGE%20WIRE%20FRAME.png)
 
 ### Registration & Sign in
-![](src/assets/reg%20%3A%20sign%20in%20wire%20frames.png)
+![](src/assets/wireframes/reg%20%3A%20sign%20in%20wire%20frames.png)
 
 
 ---
