@@ -1,7 +1,9 @@
 /*FOR ADDING ALL CSS STYLES YOU WANT TO APLLY TO YOUR WHOLE SITE*/
 
 .App {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Caveat", sans-serif;
+  font-size: 1.5rem;
+  color: #40282C;
   background-color: #f8f8f8;
   min-height: 100vh;
 }

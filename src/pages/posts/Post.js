@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../../styles/Post.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Card, Container, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 
@@ -38,30 +38,54 @@ const Post = (props) => {
                 <Avatar src={profile_image} height={55} />
                 {owner}
             </Link>
+
+            {title && <Card.Title className="text-centre">{title}</Card.Title>}
+            
             <div className="d-flex align-itmes-center">
                 <span>{created_at}</span>
                 {is_owner && travelPostPage && "..."}
             </div>
         </Media>
     </Card.Body>
-    <Link to={`/posts/${id}`}>
-        <Card.Img src={image1} alt={title} />
-        <Card.Img src={image2} alt={title} />
-        <Card.Img src={image3} alt={title} />
-        <Card.Img src={image4} alt={title} />
-        <Card.Img src={image5} alt={title} />
-        <Card.Img src={image6} alt={title} />
-    </Link>
-    <Card.Body>
-        {title && <Card.Title className="text-centre">{title}</Card.Title>}
-        {description && <Card.Text>{description}</Card.Text>}
-    </Card.Body>
-    <div className={styles.PostBar}>
-        <Link to={`/posts/${id}`}>
-            <i className="far fa-comments" />
-        </Link>
-        {comments_count}
+    <Container>
+  <div className={`${styles.CollageContainer} d-flex align-items-center justify-content-center `}>
+    <div className={`${styles.CollageImageContainer} `}>
+      <Card.Img src={image1} alt={title} className={styles.CollageImageContainer } />
     </div>
+    <div className={`${styles.CollageImageContainer} `}>
+      <Card.Img src={image2} alt={title} className={styles.CollageImageContainer }/>
+    </div>
+    <div className={`${styles.CollageImageContainer} `}>
+      <Card.Img src={image3} alt={title} className={styles.CollageImageContainer }  />
+    </div>
+    <div className={`${styles.CollageImageContainer} `}>
+      <Card.Img src={image4} alt={title} className={styles.CollageImageContainer } />
+    </div>
+    <div className={`${styles.CollageImageContainer} `}>
+      <Card.Img src={image5} alt={title} className={styles.CollageImageContainer } />
+    </div>
+    <div className={`${styles.CollageImageContainer}`}>
+      <Card.Img src={image6} alt={title} className={styles.CollageImageContainer } />
+    </div>
+  </div>
+
+  <Card.Body className={styles.Cards}>
+    {caption && <Card.Title className="text-center">{caption}</Card.Title>}
+    <span className="text-center">
+        location:
+    </span>
+    {location && <Card.Title className="text-center">{location}</Card.Title>}
+    {description && <Card.Text>{description}</Card.Text>}
+  </Card.Body>
+</Container>
+
+
+<div className={styles.PostBar}>
+  <Link to={`/posts/${id}`}>
+    <i className="far fa-comments" />
+  </Link>
+  {comments_count}
+</div>
   </card>
 };
 

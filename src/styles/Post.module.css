@@ -1,6 +1,6 @@
 .Post {
     background-color: #ffffff;
-    border: 1px solid #dadadf;
+    border: 1px solid #9797d5;
     border-radius: 2px;
     margin-bottom: 16px;
     text-align: center;
@@ -11,14 +11,26 @@
     margin: 0 0;
   }
   
-  .Heart {
-    color: #f85032;
+  .CollageContainer {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 5px; /* Add gap between images */
+    padding: 20px; /* Add padding to prevent overflow */
+    width: fit-content; /* Adjust the width to fit the content */
   }
   
-  .Heart:hover {
-    color: #2142b2;
+  .CollageImageContainer {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
   }
   
-  .HeartOutline:hover {
-    color: #f85032;
+  .Cards {
+    background-color: #f5f5f5;
   }
+  .subtitleColor {
+    color: #7C96A6;
+  }
+  
