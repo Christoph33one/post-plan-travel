@@ -50,3 +50,16 @@
   .CircleImage {
     border-radius: 20px; 
   }
+
+.CollageContainer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.CollageImageContainer {
+  width: 33.33%;
+  min-height: 120px;
+}

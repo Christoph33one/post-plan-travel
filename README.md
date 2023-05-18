@@ -60,6 +60,18 @@ In the NavBar component, when passing the expanded prop to the Navbar component,
 PASS ERROR
 Passed expanded prop to the navabr component
 
+### Post Page
+
+POST PAGE
+
+I had an issue with getting my travel post data to send to the data base. 
+
+ERROR:
+Data base not being updated. Error 400 in the console.
+
+PASS ERROR:
+After reviewing the Network in the console, I could read that the Error was that I did not add the locations field from the api model as an object and call it the in useState Hook.   Once adding this, all data was being saved in the database.
+
 ---
 ---
 ---
