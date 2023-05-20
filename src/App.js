@@ -11,6 +11,9 @@ import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
 
 
+import HomePage from "./pages/home/HomePage";
+
+
 
 
 function App() {
@@ -24,7 +27,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path="/" render={() => <h1>MAIN PAGE</h1>} />
+          <Route exact path="/" render={() => <HomePage />} />
 
           <Route
             exact

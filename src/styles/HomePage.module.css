@@ -1,0 +1,27 @@
+.HomePage .HeroImage {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Adjust the value as needed */
+   
+  }
+  
+  .HomePage .HeroImageImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .HomePage h1 {
+    font-family: "Caveat", sans-serif;
+    font-size: 1.5rem;
+    color: #40282C;
+  }
+  
+  .HomePage .Content {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #dadadf;
+  }
+  
