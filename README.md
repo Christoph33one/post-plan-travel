@@ -66,11 +66,21 @@ POST PAGE
 
 I had an issue with getting my travel post data to send to the data base. 
 
-ERROR:
+ISSUE:
 Data base not being updated. Error 400 in the console.
 
-PASS ERROR:
-After reviewing the Network in the console, I could read that the Error was that I did not add the locations field from the api model as an object and call it the in useState Hook.   Once adding this, all data was being saved in the database.
+SOLUTION:
+After reviewing the Network in the console, I could read that the Error was that I did not add the locations field from the api model as an object and call it the in useState Hook. Once adding this, all data was being saved in the database.
+
+
+ISSUE:
+When implementing the search feature to allow users to search for travel plans by location, I encountered an error in the PostsPage function. Despite using the filter method and a try-catch block with axiosReq (request) to fetch data from the travelplanposts/ URL, the posts data was not being displayed on the /locations page.
+
+SOLUTION:
+Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
+
+
+
 
 ---
 ---
