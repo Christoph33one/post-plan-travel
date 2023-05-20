@@ -20,10 +20,12 @@ function PostsPage({ message, filter = "" }) {
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
 
+  const [querry, setQuerry] = useState("");
+
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const { data } = await axiosReq.get(`/travelplanposts/?${filter}`);
+        const { data } = await axiosReq.get(`/travelplanposts/?${filter}search=${querry}`);
         setPosts(data);
         setHasLoaded(true);
       } catch (err) {
@@ -33,12 +35,25 @@ function PostsPage({ message, filter = "" }) {
 
     setHasLoaded(false);
     fetchPosts();
-  }, [filter, pathname]);
+  }, [filter, querry, pathname]);
 
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles mobile</p>
+        <p>Popular locations
+     />
+        <form className={styles.Searchbar}
+        onSubmit={(event) => event.preventDefault()}
+        >
+          <Form.Control
+            value={querry}
+            onChange={(event) => setQuerry(event.target.value)}
+            type="text"
+            className="mr-sm-2"
+            placeholder="Search Posts"
+          />
+        </form>
+
         {hasLoaded ? (
           <>
             {posts.results.length ? (

@@ -25,25 +25,29 @@ function App() {
       <Container className={styles.Main}>
         <Switch>
           <Route exact path="/" render={() => <h1>MAIN PAGE</h1>} />
+
           <Route
             exact
             path="/locations"
             render={() => (
-              <PostsPage
-
+              <PostsPage message="Sorry results found. Adjust the search keyword or search a new location."
+              filter={`owner__followed__owner__profile=${profile_id}&`}
               />
+
             )}
           />
+
           <Route
             exact
             path="/feed"
             render={() => (
               <PostsPage message="Sorry results found. Adjust the search keyword or search a new location."
-                  
+              filter={`owner__followed__owner__profile=${profile_id}&`}
               />
 
             )}
           />
+          
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />
