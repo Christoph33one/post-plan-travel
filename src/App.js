@@ -31,23 +31,12 @@ function App() {
             path="/locations"
             render={() => (
               <PostsPage message="Sorry results found. Adjust the search keyword or search a new location."
-              filter={`owner__followed__owner__profile=${profile_id}&`}
+              filter={`__owner__profile=${profile_id}&`}
               />
 
             )}
           />
 
-          <Route
-            exact
-            path="/feed"
-            render={() => (
-              <PostsPage message="Sorry results found. Adjust the search keyword or search a new location."
-              filter={`owner__followed__owner__profile=${profile_id}&`}
-              />
-
-            )}
-          />
-          
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/posts/create" render={() => <PostCreateForm />} />

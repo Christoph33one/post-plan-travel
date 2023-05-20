@@ -45,13 +45,6 @@ const NavBar = () => {
         <i className="fas fa-map"></i><span className={styles.textHeading}>LOCATIONS</span>
       </NavLink>
 
-      <NavLink
-        className={styles.NavLink}
-        activeClassName={styles.Active}
-        to="/feed"
-      >
-        <i class="fa fa-pen"></i><span className={styles.textHeading}>FEED</span>
-      </NavLink>
       
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fas fa-sign-out-alt"></i><span className={styles.textHeading}>SIGN OUT</span>

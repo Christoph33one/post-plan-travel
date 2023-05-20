@@ -34,14 +34,20 @@ function PostsPage({ message, filter = "" }) {
     };
 
     setHasLoaded(false);
-    fetchPosts();
+    const timer =setTimeout(() => {
+      fetchPosts();
+    }, 1000)
+    return () => {
+      clearTimeout(timer);
+    };
+  
   }, [filter, querry, pathname]);
 
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular locations
-     />
+        <p>Search for a location</p>
+        <i className={`fas fa-search ${styles.SearchIcon}`} />
         <form className={styles.Searchbar}
         onSubmit={(event) => event.preventDefault()}
         >
@@ -50,8 +56,8 @@ function PostsPage({ message, filter = "" }) {
             onChange={(event) => setQuerry(event.target.value)}
             type="text"
             className="mr-sm-2"
-            placeholder="Search Posts"
           />
+
         </form>
 
         {hasLoaded ? (
@@ -73,7 +79,7 @@ function PostsPage({ message, filter = "" }) {
         )}
       </Col>
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-        <p>Popular profiles for desktop</p>
+        <p>Popular locations</p>
       </Col>
     </Row>
   );
