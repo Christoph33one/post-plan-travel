@@ -48,8 +48,16 @@ Please note that all registration fields must be filled out before the registrat
 ### Registration & Sign in
 ![](src/assets/wireframes/reg%20%3A%20sign%20in%20wire%20frames.png)
 
+### Create a travel plan page
+![](src/assets/wireframes/post%20page%20wire%20frame.png)
+
+### Posted travel plan page
+![](src/assets/wireframes/posting%20travel%20plan%20wire%20frame.png)
+
 
 ---
+
+
 # Bugs
 ### Navbar
 Drop down menu was not functioning after custom hook was added and imported. 
