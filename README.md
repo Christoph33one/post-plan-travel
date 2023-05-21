@@ -79,6 +79,17 @@ When implementing the search feature to allow users to search for travel plans b
 SOLUTION:
 Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
 
+### MoreDropDown component
+
+MoreDropDown component
+
+ISSUE:
+While implementing the handleDelete prop into the onClick function within the return statement of the MoreDropdown component, I encountered difficulty in getting the delete function to successfully delete a post associated with the current user.
+
+SOLUTION:
+Upon careful examination, I identified a typing error within the handleDelete prop when it was used inside the onClick function. After correcting the value, I performed a test and confirmed that the delete function is now functioning properly.
+
+
 
 
 

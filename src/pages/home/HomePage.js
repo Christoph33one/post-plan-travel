@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImageComponent from '../../components/HeroImage';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import styles from '../../styles/HomePage.module.css'
 
 
@@ -14,8 +14,7 @@ const HomePage = () => {
     { title: 'Equipment', link: 'https://www.tradeinn.com/trekkinn/en' },
   ];
 
-
-
+  
   return (
     <div>
        <h1>POST, PLAN & TRAVEL</h1>

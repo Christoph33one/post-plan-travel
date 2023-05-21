@@ -4,6 +4,10 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Container, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
+import { MoreDropdown } from '../../components/MoreDropdown';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { axiosRes } from "../../api/axiosDefaults";
+
 
 const Post = (props) => {
     const {
@@ -28,6 +32,21 @@ const Post = (props) => {
 
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner
+    const history = useHistory()
+
+    const handleEdit = async () => {
+      history.push(`/posts/${id}/edit`)
+    }
+
+    const handleDelete = async () => {
+      try {
+        await axiosRes.delete(`/posts/${id}/`);
+        history.goBack();
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
 
 
   return <card className={styles.Post}>
@@ -43,7 +62,12 @@ const Post = (props) => {
             
             <div className="d-flex align-itmes-center">
                 <span>{created_at}</span>
-                {is_owner && travelPostPage && "..."}
+                {is_owner && travelPostPage && (
+              <MoreDropdown
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />
+            )}
             </div>
         </Media>
     </Card.Body>
@@ -82,6 +106,8 @@ const Post = (props) => {
 
 <div className={styles.PostBar}>
   <Link to={`/posts/${id}`}>
+    <h5>Click here to view plan & comments</h5>
+    <i class="fas fa-map-signs"></i>
     <i className="far fa-comments" />
   </Link>
   {comments_count}
