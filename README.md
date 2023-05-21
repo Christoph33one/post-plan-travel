@@ -70,8 +70,6 @@ Passed expanded prop to the navabr component
 
 ### Post Page
 
-POST PAGE
-
 I had an issue with getting my travel post data to send to the data base. 
 
 ISSUE:

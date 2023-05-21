@@ -130,6 +130,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="title"
+          placeholder="Please add a title"
           value={title}
           onChange={handleChange}
         />
@@ -147,6 +148,7 @@ function PostCreateForm() {
           as="textarea"
           rows={6}
           name="description"
+          placeholder="Please add you experiences here about your trip here. Try to explain about the images you added "
           value={description}
           onChange={handleChange}
         />
@@ -163,6 +165,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="location"
+          placeholder="Add the location"
           value={location}
           onChange={handleChange}
         />
@@ -179,6 +182,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="caption"
+          placeholder="Give it a fun caption"
           value={caption}
           onChange={handleChange}
         />
