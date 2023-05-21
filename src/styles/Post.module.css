@@ -11,20 +11,21 @@
     margin: 0 0;
   }
   
+  /* Donate card */
   .CollageContainer {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
-    gap: 5px; /* Add gap between images */
-    padding: 20px; /* Add padding to prevent overflow */
-    width: fit-content; /* Adjust the width to fit the content */
+    overflow-x: auto; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+    padding: 20px; 
+    width: fit-content; 
   }
   
   .CollageImageContainer {
-    flex: 0 0 auto; /* Prevent images from shrinking */
-    width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    flex: 0 0 auto; 
+    width: 200px; 
+    height: 200px;
   }
   
   .Cards {

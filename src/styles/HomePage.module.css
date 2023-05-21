@@ -48,3 +48,44 @@
   .box:last-child {
     margin-right: 0;
   }
+
+  .container {
+    background-color: #025373;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+  }
+  
+  .imageWrapper {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      padding-left: 0;
+      padding-top: 20px;
+    }
+  }
