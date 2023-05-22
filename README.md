@@ -3,17 +3,23 @@ Post, Plan & travel
  Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel plans from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities like cycling, hiking, and more. With Post Plan & travel, planning a trip has never been easier or more exciting.
 
  "Capturing the World: Exploring New Places and Moments Through the Lens"
-
+<ul>Structure
 <li><a href="#project-goal">Project goal</a></li>
 <li><a href="#user-audience">User audience</a></li>
-<li><a href="#"></a></li>
-<li><a href="#"></a></li>
+<li><a href="#structure">Structure</a></li>
+</ul>
+
+<ul>User experience (ux)
 <li><a href="#design">Design</a></li>
 <li><a href="#wire-frames">Wire frames</a></li>
+<li><a href="#color scheme">Colour scheme</a></li>
+</ul>
+
+<ul>Testing<ul/>
 <li><a href="#bugs">Bugs</a></li>
 
      
-
+---
 
 # User audience
 Post, Plan & Travel is designed to cater to people of all ages as it believes that everyone has the potential to explore and enjoy the world. For younger people, the website can be an excellent resource to plan their first solo trips or adventurous holidays with friends. Meanwhile, the website can also provide inspiration for those in their middle ages who want to take a break from their busy lives and explore new destinations.
@@ -94,6 +100,13 @@ While implementing the handleDelete prop into the onClick function within the re
 
 SOLUTION:
 Upon careful examination, I identified a typing error within the handleDelete prop when it was used inside the onClick function. After correcting the value, I performed a test and confirmed that the delete function is now functioning properly.
+
+### PostEditFrom page
+
+ISSUE: While implementing the edit function for users to update their travel plans, I encountered a problem where a single image would not update correctly. Instead, I was redirected to the page with the original image.
+
+SOLUTION:
+Upon testing, I found that I could only update all the images at once and not a single image. This issue was down to having the if statement that checks the condition was wraped around all the image files to be appended. To address this, I restructured the if statement to apply to each image individually. After conducting further tests, I am now able to successfully update a single image.
 
 
 

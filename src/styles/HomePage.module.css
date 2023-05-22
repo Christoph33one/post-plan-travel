@@ -49,10 +49,12 @@
     margin-right: 0;
   }
 
+  /* Donations card*/
   .container {
     background-color: #025373;
     padding: 20px;
     margin-top: 80px;
+    margin-bottom: 40px;
     border-radius: 10px;
   }
   
