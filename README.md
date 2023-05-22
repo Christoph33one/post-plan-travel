@@ -60,6 +60,9 @@ Please note that all registration fields must be filled out before the registrat
 ### Posted travel plan page
 ![](src/assets/wireframes/posting%20travel%20plan%20wire%20frame.png)
 
+### Edit travel plan page
+![](src/assets/wireframes/edit%20travel%20plan%20wire%20frame.png)
+
 
 ---
 
