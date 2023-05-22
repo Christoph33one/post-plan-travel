@@ -8,9 +8,7 @@ import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from "react-bootstrap/Image";
 
-import Asset from "../../components/Asset";
 
-import Upload from "../../assets/upload.png";
 
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
@@ -264,8 +262,8 @@ function PostEditForm() {
     </div>
   );
 
+
   return (
-    
     <Form onSubmit={handleSubmit}>
       <HeroImageComponent />
     <Row>
@@ -278,8 +276,7 @@ function PostEditForm() {
             {/* IMAGE 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image1 ? (
-                  <>
+                
                     <figure>
                       <Image className={appStyles.Image} src={image1} rounded />
                     </figure>
@@ -291,18 +288,6 @@ function PostEditForm() {
                         Change the 1st image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 1st image"
-                    />
-                  </Form.Label>
-                )}
                 <Form.File
                   id="image-upload"
                   accept="image/*"
@@ -321,8 +306,7 @@ function PostEditForm() {
             {/* IMAGE 2 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image2 ? (
-                  <>
+               
                     <figure>
                       <Image className={appStyles.Image} src={image2} rounded />
                     </figure>
@@ -334,18 +318,7 @@ function PostEditForm() {
                         Change the 2nd image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload-2"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 2nd image"
-                    />
-                  </Form.Label>
-                )}
+   
                 <Form.File
                   id="image-upload-2"
                   accept="image/*"
@@ -364,8 +337,7 @@ function PostEditForm() {
             {/* IMAGE 3 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image3 ? (
-                  <>
+            
                     <figure>
                       <Image className={appStyles.Image} src={image3} rounded />
                     </figure>
@@ -377,18 +349,7 @@ function PostEditForm() {
                         Change the 3rd image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload-3"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 3rd image"
-                    />
-                  </Form.Label>
-                )}
+           
                 <Form.File
                   id="image-upload-3"
                   accept="image/*"
@@ -407,8 +368,7 @@ function PostEditForm() {
             {/* IMAGE 4 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image4 ? (
-                  <>
+        
                     <figure>
                       <Image className={appStyles.Image} src={image4} rounded />
                     </figure>
@@ -420,18 +380,7 @@ function PostEditForm() {
                         Change the 4th image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload-4"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 4th image"
-                    />
-                  </Form.Label>
-                )}
+      
                 <Form.File
                   id="image-upload-4"
                   accept="image/*"
@@ -450,8 +399,7 @@ function PostEditForm() {
             {/* IMAGE 5 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image5 ? (
-                  <>
+              
                     <figure>
                       <Image className={appStyles.Image} src={image5} rounded />
                     </figure>
@@ -463,18 +411,7 @@ function PostEditForm() {
                         Change the 5th image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload-5"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 5th image"
-                    />
-                  </Form.Label>
-                )}
+       
                 <Form.File
                   id="image-upload-5"
                   accept="image/*"
@@ -493,8 +430,7 @@ function PostEditForm() {
             {/* IMAGE 6 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                {image6 ? (
-                  <>
+              
                     <figure>
                       <Image className={appStyles.Image} src={image6} rounded />
                     </figure>
@@ -506,18 +442,7 @@ function PostEditForm() {
                         Change the 6th image
                       </Form.Label>
                     </div>
-                  </>
-                ) : (
-                  <Form.Label
-                    className="d-flex justify-content-center"
-                    htmlFor="image-upload-6"
-                  >
-                    <Asset
-                      src={Upload}
-                      message="Click or tap to upload the 6th image"
-                    />
-                  </Form.Label>
-                )}
+       
                 <Form.File
                   id="image-upload-6"
                   accept="image/*"
