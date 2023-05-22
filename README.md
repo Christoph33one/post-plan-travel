@@ -108,10 +108,6 @@ ISSUE: While implementing the edit function for users to update their travel pla
 SOLUTION:
 Upon testing, I found that I could only update all the images at once and not a single image. This issue was down to having the if statement that checks the condition was wraped around all the image files to be appended. To address this, I restructured the if statement to apply to each image individually. After conducting further tests, I am now able to successfully update a single image.
 
-
-
-
-
 ---
 ---
 ---
