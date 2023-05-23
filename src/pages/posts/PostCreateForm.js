@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -7,25 +6,18 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from "react-bootstrap/Image";
-
 import Asset from "../../components/Asset";
-
 import Upload from "../../assets/upload.png";
-
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
-
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-
 import HeroImageComponent from "../../components/HeroImage";
-
 
 function PostCreateForm() {
   const [errors, setErrors] = useState({});
   
-
   const [postData, setPostData] = useState({
     title: "",
     description: "",
@@ -58,14 +50,12 @@ function PostCreateForm() {
   const imageInput5 = useRef(null);
   const imageInput6 = useRef(null);
   const history = useHistory();
-
   const handleChange = (event) => {
     setPostData({
       ...postData,
       [event.target.name]: event.target.value,
     });
   };
-
 
   const handleChangeImage = (event) => {
     if (event.target.files.length) {
@@ -95,7 +85,6 @@ function PostCreateForm() {
     }
   };
   
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -121,10 +110,8 @@ function PostCreateForm() {
     }
   };
 
-
   const textFields = (
     <div className="text-center">
-      
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control
@@ -140,8 +127,6 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
-
-
       <Form.Group>
         <Form.Label>Description</Form.Label>
         <Form.Control
@@ -158,8 +143,6 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
-
-
        <Form.Group>
         <Form.Label>Location</Form.Label>
         <Form.Control
@@ -175,8 +158,6 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
-
-
       <Form.Group>
         <Form.Label>Caption</Form.Label>
         <Form.Control
@@ -192,7 +173,6 @@ function PostCreateForm() {
           {message}
         </Alert>
       ))}
-
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
@@ -206,7 +186,6 @@ function PostCreateForm() {
   );
 
   return (
-    
     <Form onSubmit={handleSubmit}>
       <HeroImageComponent />
     <Row>
@@ -215,7 +194,6 @@ function PostCreateForm() {
           className={`${styles.CollageContainer} d-flex flex-wrap`}
         >
           <div className="d-flex flex-wrap justify-content-between">
-  
             {/* IMAGE 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -258,7 +236,6 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 2 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -301,7 +278,6 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 3 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -344,7 +320,6 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 4 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -387,7 +362,6 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 5 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -430,7 +404,6 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 6 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
@@ -474,7 +447,6 @@ function PostCreateForm() {
               ))}
             </div>
           </div>
-  
           <div className="d-md-none">{textFields}</div>
         </Container>
       </Col>
@@ -486,5 +458,4 @@ function PostCreateForm() {
   
   );
 }
-
 export default PostCreateForm;
