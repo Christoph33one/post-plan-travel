@@ -18,3 +18,9 @@
     background-color: aliceblue;
     color: #242a3d;
   }
+
+  .CommentImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }

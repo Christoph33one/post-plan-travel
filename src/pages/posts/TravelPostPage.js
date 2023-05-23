@@ -6,11 +6,9 @@ import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
-
-
+import Comment from "../comments/Comments";
 import CommentCreateForm from "../comments/CommentCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-
 
 function TravelPostPage() {
   const { id } = useParams();
@@ -37,7 +35,6 @@ function TravelPostPage() {
     handleMount();
   }, [id]);
 
-
   return (
     <div>
       <Row className="h-100">
@@ -45,28 +42,22 @@ function TravelPostPage() {
           <p>Popular Locations</p>
           <Post {...post.results[0]} setPost={setPost} travelPostPage />
           <Container className={appStyles.Content}>
-          {currentUser ? (
-            <CommentCreateForm
-            profile_id={currentUser.profile_id}
-            profileImage={profile_image}
-            post={id}
-            setPost={setPost}
-            setComments={setComments}
-          />
-          ) : comments.results.length ? (
-            "Comments"
-          ) : null}
-          {comments.results.length ? (
-            comments.results.map(comment => (
-              <p key={comment.id}>
-                {comment.owner}: {comment.content}
-              </p>
-            ))
-          ) : currentUser ? (
-            <span>No comments yet, be the first to comment!</span>
-          ) : (
-            <span>No comments... yet</span>
-          )}
+            {currentUser && (
+              <CommentCreateForm
+                profile_id={currentUser.profile_id}
+                profileImage={profile_image}
+                post={id}
+                setPost={setPost}
+                setComments={setComments}
+              />
+            )}
+            {comments.results.length > 0 ? (
+              comments.results.map((comment) => (
+                <Comment key={comment.id} {...comment} />
+              ))
+            ) : (
+              <span>No comments yet, be the first to comment!</span>
+            )}
           </Container>
         </Col>
         <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
