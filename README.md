@@ -69,24 +69,18 @@ Please note that all registration fields must be filled out before the registrat
 
 # Bugs
 ### Navbar
-Drop down menu was not functioning after custom hook was added and imported. 
-
 ERROR
 In the NavBar component, when passing the expanded prop to the Navbar component, you are assigning the setExpanded function instead of the expanded state value. The correct code should be:
 
 PASS ERROR
 Passed expanded prop to the navabr component
 
-### Post Page
-
-I had an issue with getting my travel post data to send to the data base. 
-
+### Post Page 
 ISSUE:
 Data base not being updated. Error 400 in the console.
 
 SOLUTION:
 After reviewing the Network in the console, I could read that the Error was that I did not add the locations field from the api model as an object and call it the in useState Hook. Once adding this, all data was being saved in the database.
-
 
 ISSUE:
 When implementing the search feature to allow users to search for travel plans by location, I encountered an error in the PostsPage function. Despite using the filter method and a try-catch block with axiosReq (request) to fetch data from the travelplanposts/ URL, the posts data was not being displayed on the /locations page.
@@ -95,9 +89,6 @@ SOLUTION:
 Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
 
 ### MoreDropDown component
-
-MoreDropDown component
-
 ISSUE:
 While implementing the handleDelete prop into the onClick function within the return statement of the MoreDropdown component, I encountered difficulty in getting the delete function to successfully delete a post associated with the current user.
 
@@ -105,11 +96,15 @@ SOLUTION:
 Upon careful examination, I identified a typing error within the handleDelete prop when it was used inside the onClick function. After correcting the value, I performed a test and confirmed that the delete function is now functioning properly.
 
 ### PostEditFrom page
-
 ISSUE: While implementing the edit function for users to update their travel plans, I encountered a problem where a single image would not update correctly. Instead, I was redirected to the page with the original image.
 
 SOLUTION:
 Upon testing, I found that I could only update all the images at once and not a single image. This issue was down to having the if statement that checks the condition was wraped around all the image files to be appended. To address this, I restructured the if statement to apply to each image individually. After conducting further tests, I am now able to successfully update a single image.
+
+### Travel post page
+ISSUE: When implementing comments, I used the map method to iterate over the comments results. However, when running the project in the browser, a blank page was displayed.
+
+SOLUTION: Upon reviewing the error in the console, I realized that I was mistakenly mapping over the incorrect value of results. After correcting the value, the page rendered correctly.
 
 ---
 ---

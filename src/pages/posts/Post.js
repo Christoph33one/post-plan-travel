@@ -49,7 +49,7 @@ const Post = (props) => {
 
 
 
-  return <card className={styles.Post}>
+  return <Card className={styles.Post}>
      <Card.Body>
         <Media className="align-items-center justify-content-between">
         
@@ -107,12 +107,12 @@ const Post = (props) => {
 <div className={styles.PostBar}>
   <Link to={`/posts/${id}`}>
     <h5>Click here to view plan & comments</h5>
-    <i class="fas fa-map-signs"></i>
+    <i className="fas fa-map-signs"></i>
     <i className="far fa-comments" />
   </Link>
   {comments_count}
 </div>
-  </card>
+  </Card>
 };
 
 export default Post
