@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import styles from "../../styles/Comment.module.css";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 import Avatar from '../../components/Avatar';
 import { Media } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
-const Comments = (props) => {
-  const { profile_id, profile_image, owner, updated_at, content } = props;
-  const [image, setImage] = useState(null);
-
-  const handleImageUpload = (event) => {
-    const file = event.target.files[0];
-    setImage(file);
-  };
+const Comment = (props) => {
+  const { profile_id, profile_image, owner, updated_at, content, image } = props;
 
   return (
     <div>
@@ -28,13 +22,12 @@ const Comments = (props) => {
         <p>{content}</p>
         {image && (
           <div className={styles.ImageContainer}>
-            <Image src={URL.createObjectURL(image)} alt="Comment Image" rounded />
+            <Image src={image} alt="Comment Image" rounded />
           </div>
         )}
-        <input type="file" onChange={handleImageUpload} />
       </Media>
     </div>
   );
 };
 
-export default Comments;
+export default Comment;

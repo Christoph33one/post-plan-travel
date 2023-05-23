@@ -17,6 +17,7 @@ function TravelPostPage() {
   const currentUser = useCurrentUser();
   const profile_image = currentUser?.profile_image;
   const [comments, setComments] = useState({ results: [] });
+  const [commentImage, setCommentImage] = useState(null); 
 
   useEffect(() => {
     const handleMount = async () => {
@@ -49,14 +50,19 @@ function TravelPostPage() {
                 post={id}
                 setPost={setPost}
                 setComments={setComments}
+                image={commentImage}
+                setCommentImage={setCommentImage}
               />
             )}
             {comments.results.length > 0 ? (
-              comments.results.map((comment) => (
-                <Comment key={comment.id} {...comment} />
-              ))
-            ) : (
+            comments.results.map((comment) => (
+              <Comment key={comment.id} {...comment} image={comment.comment_image} />
+
+            ))
+            ) : currentUser ? (
               <span>No comments yet, be the first to comment!</span>
+            ) : (
+              <span>No comments... yet</span>
             )}
           </Container>
         </Col>
