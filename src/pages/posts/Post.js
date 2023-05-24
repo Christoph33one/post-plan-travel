@@ -108,10 +108,10 @@ const Post = (props) => {
           {comments_count}
         </div>
         
-         {/* Render the comment image */}
+         {/* Render the comment image when adding an image to a comment */}
          {comment_image && (
-          <div className={styles.CommentImageContainer}>
-            <Card.Img src={comment_image} alt="Comment Image" className={styles.CommentImage} />
+          <div className={styles.CollageImageContainer  } >
+            <Card.Img src={comment_image} alt="Comment Image" className={styles.CommentImage}  />
           </div>
         )}
       </Card>

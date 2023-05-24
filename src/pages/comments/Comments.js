@@ -22,7 +22,7 @@ const Comment = (props) => {
         <p>{content}</p>
         {image && (
           <div className={styles.ImageContainer}>
-            <Image src={image} alt="Comment Image" rounded />
+            <Image className={styles.CommentImage} src={image} alt="Comment Image" rounded />
           </div>
         )}
       </Media>
