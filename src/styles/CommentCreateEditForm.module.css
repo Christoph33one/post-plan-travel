@@ -19,8 +19,9 @@
     color: #242a3d;
   }
 
+  /*IMAHE SIZING WHEN UPLOADING AN IMAGE TO A COMMENT*/
   .CommentImage {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
     margin-top: 10px;
   }

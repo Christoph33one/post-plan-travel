@@ -15,6 +15,7 @@ function CommentCreateForm(props) {
   const { post, setPost, setComments, profileImage, profile_id } = props;
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
+  
 
   const handleChange = (event) => {
     setContent(event.target.value);
@@ -36,7 +37,7 @@ function CommentCreateForm(props) {
       formData.append("comment_image", image);
   
 
-      const { data } = await axiosRes.post("/comments/", {
+      const { data } = await axiosRes.post("/comments/", formData, {
         content,
         post,
         image,
@@ -67,7 +68,7 @@ function CommentCreateForm(props) {
           <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profileImage} />
           </Link>
-          <div className={styles.CommentInput}>
+          <div className={styles.CommentImage}>
             {image && (
               <Image className={styles.CommentImage} src={URL.createObjectURL(image)} rounded />
             )}
@@ -82,7 +83,7 @@ function CommentCreateForm(props) {
           </div>
           <InputGroup.Append>
             <label htmlFor="comment-image-upload" className={styles.ImageUploadLabel}>
-              <i className="fas fa-map-signs"></i>
+              {/* <i className="fas fa-map-signs"></i> */}
               <img src={UploadIcon} alt="Upload Icon" />
             </label>
             <input
