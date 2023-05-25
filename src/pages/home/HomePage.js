@@ -22,7 +22,8 @@ const HomePage = () => {
       <div className={styles.boxContainer}>
         {categories.map((category, index) => (
           <div className={styles.box} key={index}>
-            <i className="fas fa-map"></i>
+            <i className="fas fa-map-pin"></i>
+            {/* <i className="fas fa-map"></i> */}
             <a href={category.link} target="_blank">{category.title}</a>
           </div>
         ))}

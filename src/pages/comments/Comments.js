@@ -36,12 +36,11 @@ const Comment = (props) => {
       }))
 
       setComments((prevComments) => ({
-      
-      }))
-    } catch(err){
-
-    }
-  }
+        ...prevComments,
+        results: prevComments.results.filter((comment) => comment.id !== id),
+      }));
+    } catch (err) {}
+  };
 
   return (
     <div>
@@ -50,8 +49,9 @@ const Comment = (props) => {
         <Link to={`/profiles/${profile_id}`}>
           <Avatar src={profile_image} />
         </Link>
-        {is_owner &&
-        <MoreDropdown handleEdit={() => {}} handleDelete={() => {}} />}
+        {is_owner && (
+        <MoreDropdown handleEdit={() => {}} handleDelete={handleDelete} />
+        )}
         <Media.Body className='align-self-center ml-2'>
           <span className={styles.Owner}>{owner}</span>
           <span className={styles.Date}>{updated_at}</span>
