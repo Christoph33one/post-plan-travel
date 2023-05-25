@@ -1,26 +1,48 @@
-import React, { useState } from "react";
-
-
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import { axiosRes } from "../../api/axiosDefaults";
-
 import styles from "../../styles/CommentCreateEditForm.module.css";
+import UploadIcon from "../../assets/upload.png";
 
 function CommentEditForm(props) {
-  const { id, content, setShowEditForm, setComments } = props;
+  const { id, content, image, setShowEditForm, setComments } = props;
 
   const [formContent, setFormContent] = useState(content);
+  const [formImage, setFormImage] = useState(null);
+  const [previewImage, setPreviewImage] = useState(image);
 
-  const handleChange = (event) => {
+  useEffect(() => {
+    if (image) {
+      setPreviewImage(image);
+    }
+  }, [image]);
+
+  const handleChangeContent = (event) => {
     setFormContent(event.target.value);
+  };
+
+  const handleChangeImage = (event) => {
+    if (event.target.files.length) {
+      URL.revokeObjectURL(previewImage);
+      setPreviewImage(URL.createObjectURL(event.target.files[0]));
+    }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axiosRes.put(`/comments/${id}/`, {
-        content: formContent.trim(),
+      const formData = new FormData();
+      formData.append("content", formContent.trim());
+      if (formImage) {
+        formData.append("image", formImage);
+      }
+
+      await axiosRes.put(`/comments/${id}/`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       });
+
       setComments((prevComments) => ({
         ...prevComments,
         results: prevComments.results.map((comment) => {
@@ -28,11 +50,13 @@ function CommentEditForm(props) {
             ? {
                 ...comment,
                 content: formContent.trim(),
+                image: previewImage,
                 updated_at: "now",
               }
             : comment;
         }),
       }));
+
       setShowEditForm(false);
     } catch (err) {
       console.log(err);
@@ -46,9 +70,35 @@ function CommentEditForm(props) {
           className={styles.Form}
           as="textarea"
           value={formContent}
-          onChange={handleChange}
+          onChange={handleChangeContent}
           rows={2}
         />
+      </Form.Group>
+      <Form.Group className="pr-1">
+        <div className={styles.ImageUploadContainer}>
+          <input
+            id={`edit-image-${id}`}
+            type="file"
+            accept="image/*"
+            className={styles.ImageUploadInput}
+            onChange={handleChangeImage}
+          />
+          <label
+            htmlFor={`edit-image-${id}`}
+            className={styles.ImageUploadLabel}
+          >
+            {!previewImage && <img src={UploadIcon} alt="Upload Icon" />}
+            {previewImage && (
+              <div className={styles.ImageContainer}>
+                <img
+                  src={previewImage}
+                  alt="Selected Image"
+                  className={styles.CommentImage}
+                />
+              </div>
+            )}
+          </label>
+        </div>
       </Form.Group>
       <div className="text-right">
         <button
@@ -60,7 +110,7 @@ function CommentEditForm(props) {
         </button>
         <button
           className={styles.Button}
-          disabled={!content.trim()}
+          disabled={!formContent.trim() && !formImage}
           type="submit"
         >
           save

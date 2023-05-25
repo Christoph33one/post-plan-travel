@@ -68,7 +68,7 @@ function CommentCreateForm(props) {
           <Link to={`/profiles/${profile_id}`}>
             <Avatar src={profileImage} />
           </Link>
-          <div className={styles.CommentImage}>
+          <div className={`${styles.ImageContainer} ${styles.CommentImageContainer}`}>
             {image && (
               <Image className={styles.CommentImage} src={URL.createObjectURL(image)} rounded />
             )}
@@ -83,7 +83,6 @@ function CommentCreateForm(props) {
           </div>
           <InputGroup.Append>
             <label htmlFor="comment-image-upload" className={styles.ImageUploadLabel}>
-              {/* <i className="fas fa-map-signs"></i> */}
               <img src={UploadIcon} alt="Upload Icon" />
             </label>
             <input

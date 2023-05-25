@@ -7,7 +7,7 @@ import CategoryIcon from '../../components/CategoryIcon';
 
 const HomePage = () => {
   const categories = [
-    { title: 'Car Rental', link:
+    { title: 'Rental', link:
      'https://www.rentalcars.com/?affiliateCode=google_brand&preflang=en&label=rentalcars.com-brand-QMBxf9tHoSbRGoWKQmhm3gS282611385565&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=&ppc_network=g&feeditemid=&ppc_targetid=kwd-29977620&loc_physical_ms=1010561&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=CjwKCAjw36GjBhAkEiwAKwIWyWcxVJ3HYNlOnshdMW4leffRVdyxHQauQib7e6KGuNgV3POmpbpQtxoCQEAQAvD_BwE' },
     { title: 'Flights', link: 'https://www.skyscanner.net/' },
     { title: 'Safety', link: 'https://www.betterhealth.vic.gov.au/health/healthyliving/travel-safety-tips' },

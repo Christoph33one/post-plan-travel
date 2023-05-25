@@ -19,7 +19,7 @@
     color: #242a3d;
   }
 
-  /*IMAHE SIZING WHEN UPLOADING AN IMAGE TO A COMMENT*/
+  /*IMAGE SIZING WHEN UPLOADING AN PREVIEW IMAGE */
   .CommentImage {
     max-width: 40%;
     height: auto;

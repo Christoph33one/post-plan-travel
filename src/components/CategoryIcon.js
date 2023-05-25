@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoryIcon = ({ title, link }) => {
     const iconMappings = {
-      'Car Rental': 'fas fa-car',
+      'Rental': 'fas fa-car',
       Flights: 'fas fa-plane',
       Safety: 'fas fa-hard-hat',
       Tech: 'fas fa-laptop',
