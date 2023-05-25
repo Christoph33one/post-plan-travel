@@ -6,12 +6,42 @@ import { Media } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import { MoreDropdown } from '../../components/MoreDropdown';
+import { axiosReq } from '../../api/axiosDefaults';
 
 const Comment = (props) => {
-  const { profile_id, profile_image, owner, updated_at, content, image } = props;
+  const { 
+    profile_id,
+    profile_image,
+    owner,
+    updated_at,
+    content,
+    image,
+    id,
+    setPost,
+    setComments,
+   }
+     = props;
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+ 
+  const handleDelete = async () => {
+    try {
+      await axiosReq.delete(`/comments/${id}/`)
+      setPost(prevPost => ({
+        results: [{
+          ...prevPost.results[0],
+          comments_count: prevPost.results[0].comments_count - 1
+        }]
+      }))
+
+      setComments((prevComments) => ({
+      
+      }))
+    } catch(err){
+
+    }
+  }
 
   return (
     <div>

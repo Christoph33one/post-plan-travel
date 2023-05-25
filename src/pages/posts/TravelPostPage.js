@@ -57,7 +57,13 @@ function TravelPostPage() {
             )}
             {comments.results.length > 0 ? (
             comments.results.map((comment) => (
-              <Comment key={comment.id} {...comment} image={comment.comment_image} />
+              <Comment key={comment.id}
+               {...comment}
+                image={comment.comment_image}
+                setPost={setPost}
+                setComments={setComments}
+              />
+
 
             ))
             ) : currentUser ? (
