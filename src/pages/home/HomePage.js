@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImageComponent from '../../components/HeroImage';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from '../../styles/HomePage.module.css'
+import CategoryIcon from '../../components/CategoryIcon';
 
 
 const HomePage = () => {
@@ -19,17 +20,14 @@ const HomePage = () => {
     <div>
        <h1>POST, PLAN & TRAVEL</h1>
        <Container>
-      <div className={styles.boxContainer}>
-        {categories.map((category, index) => (
-          <div className={styles.box} key={index}>
-            <i className="fas fa-map-pin"></i>
-            {/* <i className="fas fa-map"></i> */}
-            <a href={category.link} target="_blank">{category.title}</a>
-          </div>
-        ))}
-      </div>
-      
-    </Container>
+        <div className={styles.boxContainer}>
+          {categories.map((category, index) => (
+            <div className={styles.box} key={index}>
+              <CategoryIcon title={category.title} link={category.link} />
+            </div>
+          ))}
+        </div>
+      </Container>
       <HeroImageComponent />
       <Container fluid>
         <h4>
