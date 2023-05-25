@@ -10,6 +10,10 @@ import Comment from "../comments/Comments";
 import CommentCreateForm from "../comments/CommentCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
+import InfiniteScroll from "react-infinite-scroll-component";
+import Asset from "../../components/Asset";
+import { fetchMoreData } from "../../utils/utils";
+
 function TravelPostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
@@ -56,16 +60,22 @@ function TravelPostPage() {
               />
             )}
             {comments.results.length > 0 ? (
-            comments.results.map((comment) => (
-              <Comment key={comment.id}
-               {...comment}
-                image={comment.comment_image}
-                setPost={setPost}
-                setComments={setComments}
-              />
-
-
-            ))
+              <InfiniteScroll
+                dataLength={comments.results.length}
+                loader={<Asset spinner />}
+                hasMore={!!comments.next}
+                next={() => fetchMoreData(comments, setComments)}
+              >
+                {comments.results.map((comment) => (
+                  <Comment
+                    key={comment.id}
+                    {...comment}
+                    image={comment.comment_image}
+                    setPost={setPost}
+                    setComments={setComments}
+                  />
+                ))}
+              </InfiniteScroll>
             ) : currentUser ? (
               <span>No comments yet, be the first to comment!</span>
             ) : (
