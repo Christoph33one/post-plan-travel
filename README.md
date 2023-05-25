@@ -22,9 +22,14 @@ Post, Plan & travel
 ---
 
 # User audience
-Post, Plan & Travel is designed to cater to people of all ages as it believes that everyone has the potential to explore and enjoy the world. For younger people, the website can be an excellent resource to plan their first solo trips or adventurous holidays with friends. Meanwhile, the website can also provide inspiration for those in their middle ages who want to take a break from their busy lives and explore new destinations.
+Post, Plan & Travel is designed to cater to people of all ages, genders, and backgrounds, embracing diversity and inclusivity. We firmly believe that everyone, regardless of their gender, should have equal opportunities to explore and enjoy the world. Whether you identify as male, female, non-binary, or any other gender, our platform welcomes and supports you in your travel endeavors.
+For younger individuals, Post, Plan & Travel serves as an invaluable resource to plan their first solo trips or embark on adventurous holidays with friends. We understand the unique needs and interests of the younger generation and provide tailored content that appeals to their sense of exploration, adventure, and discovery.
 
-The website's comprehensive travel guides and suggestions cater to all budgets, so whether you're a backpacker or a luxury traveller, you'll find something that suits your needs. In summary, Post, Plan & Travel's all-encompass
+However, our platform is not limited to any specific age group. We recognize that people in their middle ages may seek a well-deserved break from their busy lives and yearn to explore new destinations. Post, Plan & Travel offers a wealth of travel guides, itineraries, and suggestions that cater to the interests and preferences of individuals in different stages of life. Whether you're seeking relaxation, cultural immersion, or thrilling experiences, our platform has something to inspire and guide you.
+
+One of the core principles of Post, Plan & Travel is accessibility. We believe that travel should be accessible to everyone, regardless of their budget. Our comprehensive travel guides and suggestions cover a wide range of budgets, ensuring that whether you're a budget-conscious backpacker or a luxury traveler, you'll find valuable information and recommendations that suit your needs.
+
+In summary, Post, Plan & Travel is an all-encompassing platform that embraces diversity, caters to people of all ages and genders, and provides a wide range of travel resources and inspiration. We are committed to empowering individuals from all walks of life to explore the world, create unforgettable memories, and embrace the joy of travel.
 
 
 ---
