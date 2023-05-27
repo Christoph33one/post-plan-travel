@@ -50,7 +50,7 @@ function PostsPage({ message, filter = "" }) {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Search for a location</p>
+        <PopularProfiles mobile/>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <form className={styles.Searchbar}
         onSubmit={(event) => event.preventDefault()}

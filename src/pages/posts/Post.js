@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from "../../styles/Post.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Container, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Card, Container, Media, OverlayTrigger, Tooltip,  } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from '../../components/MoreDropdown';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { axiosRes } from "../../api/axiosDefaults";
+
+import {Row, Col } from 'react-bootstrap';
 
 
 const Post = (props) => {
@@ -68,34 +70,35 @@ const Post = (props) => {
           </div>
         </Card.Body>
         <Container>
-          <div className={`${styles.CollageContainer} d-flex align-items-center justify-content-center`}>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image1} alt={title} className={styles.CollageImageContainer} />
-            </div>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image2} alt={title} className={styles.CollageImageContainer} />
-            </div>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image3} alt={title} className={styles.CollageImageContainer} />
-            </div>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image4} alt={title} className={styles.CollageImageContainer} />
-            </div>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image5} alt={title} className={styles.CollageImageContainer} />
-            </div>
-            <div className={`${styles.CollageImageContainer}`}>
-              <Card.Img src={image6} alt={title} className={styles.CollageImageContainer} />
-            </div>
-          </div>
-  
-          <Card.Body className={styles.Cards}>
-            {caption && <Card.Title className="text-center">{caption}</Card.Title>}
-            <span className="text-center">location:</span>
-            {location && <Card.Title className="text-center">{location}</Card.Title>}
-            {description && <Card.Text>{description}</Card.Text>}
-          </Card.Body>
-        </Container>
+  <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <Col className="mb-4">
+      <Card.Img src={image1} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+    <Col className="mb-4">
+      <Card.Img src={image2} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+    <Col className="mb-4">
+      <Card.Img src={image3} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+    <Col className="mb-4">
+      <Card.Img src={image4} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+    <Col className="mb-4">
+      <Card.Img src={image5} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+    <Col className="mb-4">
+      <Card.Img src={image6} alt={title} className={styles.CollageImageContainer} />
+    </Col>
+  </Row>
+
+  <Card.Body className={styles.Cards}>
+    {caption && <Card.Title className="text-center mt-3">{caption}</Card.Title>}
+    {location && <Card.Title className="text-center">{location}</Card.Title>}
+    {description && <Card.Text>{description}</Card.Text>}
+  </Card.Body>
+</Container>
+
+
   
        
   
