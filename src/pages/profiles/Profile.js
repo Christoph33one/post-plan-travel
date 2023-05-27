@@ -4,6 +4,7 @@ import btnStyles from '../../styles/Button.module.css';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import Avatar from "../../components/Avatar";
+import { Button } from 'react-bootstrap';
 
 const Profile = (props) => {
     const {profile, mobile, imageSize=55} = props
@@ -23,6 +24,21 @@ const Profile = (props) => {
         </div>
             <div className={`mx-2 ${styles.WordBreak}`}>
                 <strong>{owner}</strong>
+            </div>
+            <div className={`text-right ${!mobile && 'ml-auto'}`}>
+                {!mobile && currentUser && !is_owner && (
+                    following_id ? (
+                        <Button className={`${btnStyles.Button} ${btnStyles.BlackOutLine}`}
+                        onClick={() => {}}
+                        >
+                        unfollow</Button>
+                    ) : (
+                        <Button className={`${btnStyles.Button} ${btnStyles.BlackOutLine}`}
+                        onClick={() => {}}
+                        >
+                        follow</Button>
+                    )
+                )}
             </div>
 
      </div>
