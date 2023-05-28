@@ -111,6 +111,9 @@ function ProfilePage() {
             ))}
         </Col>
         {profile?.bio && <Col className="p-3">{profile.bio}</Col>}
+        {profile?.activies && <Col className="p-3">{profile.activies}</Col>}
+        
+        
 
       </Row>
     </>
@@ -120,11 +123,13 @@ function ProfilePage() {
     <>
       <hr />
       <p className="text-center">{profile?.owner}'s posts</p>
-    <hr />
-    <div className="text-center">
-      <p>Bio:</p>
-      <p>{profile?.bio}</p>
-    </div>
+      <hr />
+      <div className="text-center">
+        <p>Bio:</p>
+        <p>{profile?.bio}</p>
+        <p>Activity:</p>
+        <p>{profile?.activities}</p> {/* Display selected activity */}
+      </div>
       <hr />
       {profilePosts.results.length ? (
         <InfiniteScroll
@@ -139,11 +144,12 @@ function ProfilePage() {
       ) : (
         <Asset
           src={NoResults}
-          message={`No results found, ${profile?.owner} hasn't no plans yet.`}
+          message={`No results found, ${profile?.owner} hasn't made any plans yet.`}
         />
       )}
     </>
   );
+  
 
   return (
     <Row>

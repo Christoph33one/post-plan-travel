@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
-
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
@@ -8,13 +7,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
-
 import { axiosReq } from "../../api/axiosDefaults";
-import {
-  useCurrentUser,
-  useSetCurrentUser,
-} from "../../contexts/CurrentUserContext";
-
+import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
@@ -30,8 +24,20 @@ const ProfileEditForm = () => {
     bio: "",
     activities: "",
     image: "",
+    ACTIVITY_CHOICES: [
+      ['HIKING', 'Hiking'],
+      ['SNOWBOARDIND', 'Snowboarding'],
+      ['CYCLING', 'Cycling'],
+      ['MOUNTAIN BIKING', 'Mountain biking'],
+      ['SWIMMING', 'Swimming'],
+      ['CAMPING', 'Camping'],
+      ['ROAD TRIPS', 'Road trips'],
+      ['EXPLORING', 'Exploring'],
+      ['PHOTOGRAPHY', 'Photography'],
+    ],
   });
-  const { name, bio, activities, image, } = profileData;
+
+  const { name, bio, activities, image, ACTIVITY_CHOICES } = profileData;
 
   const [errors, setErrors] = useState({});
 
@@ -41,7 +47,13 @@ const ProfileEditForm = () => {
         try {
           const { data } = await axiosReq.get(`/profiles/${id}/`);
           const { name, image, activities, bio } = data;
-          setProfileData({ name, bio, activities, image, });
+          setProfileData((profileData) => ({
+            ...profileData,
+            name,
+            bio,
+            activities,
+            image,
+          }));
         } catch (err) {
           console.log(err);
           history.push("/");
@@ -66,7 +78,7 @@ const ProfileEditForm = () => {
     const formData = new FormData();
     formData.append("name", name);
     formData.append("bio", bio);
-    formData.append("activities",  activities);
+    formData.append("activities", activities);
 
     if (imageFile?.current?.files[0]) {
       formData.append("image", imageFile?.current?.files[0]);
@@ -98,19 +110,15 @@ const ProfileEditForm = () => {
         />
       </Form.Group>
 
-      {errors?.content?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
+      {/* Display errors */}
+      {errors?.content?.map((message, index) => (
+        <Alert key={index} variant="danger">
           {message}
         </Alert>
       ))}
-      <Button
-        className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => history.goBack()}
-      >
-        cancel
-      </Button>
-      <Button className={`${btnStyles.Button} ${btnStyles.Blue}`} type="submit">
-        save
+
+      <Button type="submit" className={btnStyles.PrimaryButton}>
+        Save Changes
       </Button>
     </>
   );
@@ -120,44 +128,61 @@ const ProfileEditForm = () => {
       <Row>
         <Col className="py-2 p-0 p-md-2 text-center" md={7} lg={6}>
           <Container className={appStyles.Content}>
+            {/* Name field */}
             <Form.Group>
-              {image && (
-                <figure>
-                  <Image src={image} fluid />
-                </figure>
-              )}
-              {errors?.image?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
-                  {message}
-                </Alert>
-              ))}
-              <div>
-                <Form.Label
-                  className={`${btnStyles.Button} ${btnStyles.Blue} btn my-auto`}
-                  htmlFor="image-upload"
-                >
-                  Change the image
-                </Form.Label>
-              </div>
-              <Form.File
-                id="image-upload"
-                ref={imageFile}
-                accept="image/*"
-                onChange={(e) => {
-                  if (e.target.files.length) {
-                    setProfileData({
-                      ...profileData,
-                      image: URL.createObjectURL(e.target.files[0]),
-                    });
-                  }
-                }}
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                value={name}
+                onChange={handleChange}
+                name="name"
               />
             </Form.Group>
-            <div className="d-md-none">{textFields}</div>
+
+            {/* Profile image upload */}
+            <Form.Group>
+              <Form.Label>Profile Image</Form.Label>
+              <Form.Control
+                type="file"
+                accept="image/*"
+                ref={imageFile}
+                name="image"
+                className="mb-2"
+              />
+              <Image
+                src={image}
+                alt="Profile Image"
+                className={appStyles.ProfileImage}
+                fluid
+              />
+            </Form.Group>
           </Container>
         </Col>
-        <Col md={5} lg={6} className="d-none d-md-block p-0 p-md-2 text-center">
-          <Container className={appStyles.Content}>{textFields}</Container>
+        <Col className="py-2 p-0 p-md-2 text-center">
+          <Container className={appStyles.Content}>
+            {/* Activity choices dropdown */}
+            <Form.Group>
+              <Form.Label>Select an activity:</Form.Label>
+              <div className="scrollable-container">
+                <Form.Control
+                  as="select"
+                  value={activities}
+                  onChange={handleChange}
+                  name="activities"
+                >
+                  <option value="">Select an activity</option>
+                  {ACTIVITY_CHOICES.map((activity) => (
+                    <option key={activity[0]} value={activity[0]}>
+                      {activity[1]}
+                    </option>
+                  ))}
+                </Form.Control>
+              </div>
+            </Form.Group>
+
+            {/* Render textFields */}
+            {textFields}
+          </Container>
         </Col>
       </Row>
     </Form>

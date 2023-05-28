@@ -90,3 +90,9 @@ figure {
 *::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Drop down activities list (ProfileEditForm) */
+.scrollable-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
