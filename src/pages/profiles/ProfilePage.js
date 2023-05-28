@@ -122,15 +122,15 @@ function ProfilePage() {
   const mainProfilePosts = (
     <>
       <hr />
-      <p className="text-center">{profile?.owner}'s posts</p>
-      <hr />
       <div className="text-center">
-        <p>Bio:</p>
+        <p><i className="fab fa-readme"></i></p>
         <p>{profile?.bio}</p>
-        <p>Activity:</p>
+        <p><i className="fab fa-creative-commons-by"></i></p>
         <p>{profile?.activities}</p> {/* Display selected activity */}
       </div>
       <hr />
+      <hr />
+      <p className="text-center">{profile?.owner}'s <i className="fas fa-images"></i></p>
       {profilePosts.results.length ? (
         <InfiniteScroll
           children={profilePosts.results.map((post) => (
@@ -141,6 +141,7 @@ function ProfilePage() {
           hasMore={!profilePosts.next}
           next={() => fetchMoreData(profilePosts, setProfilePosts)}
         />
+      
       ) : (
         <Asset
           src={NoResults}
