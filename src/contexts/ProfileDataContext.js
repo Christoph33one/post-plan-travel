@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { useCurrentUser } from "../contexts/CurrentUserContext";
 import { followerHelper } from "../utils/utils";
+import { followHelper, unfollowHelper } from "../utils/utils";
 
 const ProfileDataContext = createContext();
 const SetProfileDataContext = createContext();
@@ -9,7 +10,7 @@ const SetProfileDataContext = createContext();
 export const useProfileData = () => useContext(ProfileDataContext);
 export const useSetProfileData = () => useContext(SetProfileDataContext);
 
-import { followHelper, unfollowHelper } from "../utils/utils";
+
 
 export const ProfileDataProvider = ({ children }) => {
   const [profileData, setProfileData] = useState({
@@ -88,7 +89,7 @@ export const ProfileDataProvider = ({ children }) => {
 
   return (
     <ProfileDataContext.Provider value={profileData}>
-      <SetProfileDataContext.Provider value={{setProfileData, handleFollow}}>
+      <SetProfileDataContext.Provider value={{ setProfileData, handleFollow, handleUnfollow }}>
         {children}
       </SetProfileDataContext.Provider>
     </ProfileDataContext.Provider>
