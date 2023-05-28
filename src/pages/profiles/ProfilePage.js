@@ -109,6 +109,7 @@ function ProfilePage() {
             ))}
         </Col>
         {profile?.bio && <Col className="p-3">{profile.bio}</Col>}
+
       </Row>
     </>
   );
@@ -117,6 +118,11 @@ function ProfilePage() {
     <>
       <hr />
       <p className="text-center">{profile?.owner}'s posts</p>
+    <hr />
+    <div className="text-center">
+      <p>Bio:</p>
+      <p>{profile?.bio}</p>
+    </div>
       <hr />
       {profilePosts.results.length ? (
         <InfiniteScroll
