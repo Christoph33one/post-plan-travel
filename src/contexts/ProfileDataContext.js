@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { axiosReq } from "../api/axiosDefaults";
 import { useCurrentUser } from "../contexts/CurrentUserContext";
+import { followerHelper } from "../utils/utils";
 
 const ProfileDataContext = createContext();
 const SetProfileDataContext = createContext();
@@ -26,33 +27,15 @@ export const ProfileDataProvider = ({ children }) => {
       setProfileData((prevState) => ({
         ...prevState,
         pageProfile: {
-          results: prevState.pageProfile.results.map((profile) =>
-            profile.id === clickedProfile.id
-              ? {
-                  ...profile,
-                  followers_count: profile.followers_count + 1,
-                  following_id: data.id
-                }
-              : profile.is_owner
-              ? { ...profile, following_count: profile.following_count + 1 }
-              : profile
-          )
+          results: prevState.pageProfile.results.map((profile) => 
+          followerHelper(profile,clickedProfile, data.id)),
         },
 
 
         popularProfiles: {
           ...prevState.popularProfiles,
-          results: prevState.popularProfiles.results.map((profile) => {
-            return profile.id === clickedProfile.id
-              ? {
-                  ...profile,
-                  followers_count: profile.followers_count + 1,
-                  following_id: data.id
-                }
-              : profile.is_owner
-              ? { ...profile, following_count: profile.following_count + 1 }
-              : profile
-              }),
+          results: prevState.popularProfiles.results.map((profile) => 
+          followerHelper(profile,clickedProfile, data.id )),
         }
       }));
     } catch (err) {
