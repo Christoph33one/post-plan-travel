@@ -141,23 +141,41 @@ const ProfileEditForm = () => {
 
             {/* Profile image upload */}
             <Form.Group>
-              <Form.Label>Profile Image</Form.Label>
-              <Form.Control
-                type="file"
-                accept="image/*"
+              {image && (
+                <figure>
+                  <Image src={image} fluid />
+                </figure>
+              )}
+              {errors?.image?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                  {message}
+                </Alert>
+              ))}
+              <div>
+                <Form.Label
+                  className={`${btnStyles.Button} ${btnStyles.Blue} btn my-auto`}
+                  htmlFor="image-upload"
+                >
+                  Change the image
+                </Form.Label>
+              </div>
+              <Form.File
+                id="image-upload"
                 ref={imageFile}
-                name="image"
-                className="mb-2"
-              />
-              <Image
-                src={image}
-                alt="Profile Image"
-                className={appStyles.ProfileImage}
-                fluid
+                accept="image/*"
+                onChange={(e) => {
+                  if (e.target.files.length) {
+                    setProfileData({
+                      ...profileData,
+                      image: URL.createObjectURL(e.target.files[0]),
+                    });
+                  }
+                }}
               />
             </Form.Group>
           </Container>
         </Col>
+        
         <Col className="py-2 p-0 p-md-2 text-center">
           <Container className={appStyles.Content}>
             {/* Activity choices dropdown */}

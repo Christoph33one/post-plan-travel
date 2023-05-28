@@ -16,7 +16,7 @@ const NavBar = () => {
   const setCurrentUser = useSetCurrentUser();
 
   const { expanded, setExpanded, ref } = useClickOutsideToggle();
-  
+
   const handleSignOut = async () => {
     try {
       await axios.post("dj-rest-auth/logout/");
@@ -32,7 +32,8 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="far fa-plus-square"></i><span className={styles.textHeading}>ADD PLAN</span>
+      <i className="far fa-plus-square"></i>
+      <span className={styles.textHeading}>ADD PLAN</span>
     </NavLink>
   );
   const loggedInIcons = (
@@ -42,12 +43,13 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/locations"
       >
-        <i className="fas fa-map-marker-alt"></i><span className={styles.textHeading}>LOCATIONS</span>
+        <i className="fas fa-map-marker-alt"></i>
+        <span className={styles.textHeading}>LOCATIONS</span>
       </NavLink>
 
-      
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className="fas fa-sign-out-alt"></i><span className={styles.textHeading}>SIGN OUT</span>
+        <i className="fas fa-sign-out-alt"></i>
+        <span className={styles.textHeading}>SIGN OUT</span>
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -64,14 +66,16 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/signin"
       >
-        <i className="fas fa-sign-in-alt"></i><span className={styles.textHeading}>SIGN IN</span>
+        <i className="fas fa-sign-in-alt"></i>
+        <span className={styles.textHeading}>SIGN IN</span>
       </NavLink>
       <NavLink
         to="/signup"
         className={styles.NavLink}
         activeClassName={styles.Active}
       >
-        <i className="fas fa-user-plus"></i><span className={styles.textHeading}>SIGN UP</span>
+        <i className="fas fa-user-plus"></i>
+        <span className={styles.textHeading}>SIGN UP</span>
       </NavLink>
     </>
   );
@@ -83,7 +87,7 @@ const NavBar = () => {
       expand="md"
       fixed="top"
     >
-      <Container>
+      <Container className={styles.NavToggle}>
         <NavLink to="/">
           <Navbar.Brand>
             <img src={logo} alt="logo" height="45" />
@@ -96,14 +100,15 @@ const NavBar = () => {
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto text-left">
+          <Nav className={`ml-auto ${styles.NavItems}`}>
             <NavLink
               exact
               className={styles.NavLink}
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-campground"></i><span className={styles.textHeading}>HOME</span>
+              <i className="fas fa-campground"></i>
+              <span className={styles.textHeading}>HOME</span>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}

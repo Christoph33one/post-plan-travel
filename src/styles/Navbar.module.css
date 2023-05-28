@@ -3,12 +3,12 @@
   }
   .Active i {
     color: #024873;
-  }
 
-  .Active i {
-    color: #024873;
   }
 
 .textHeading{
-  font-family: Lato;
+  font-family: Cairo, sans-serif;
+}
+.NavToggle{
+  background-color: #C5D3D9;
 }
