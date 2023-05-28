@@ -42,7 +42,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/locations"
       >
-        <i className="fas fa-map"></i><span className={styles.textHeading}>LOCATIONS</span>
+        <i className="fas fa-map-marker-alt"></i><span className={styles.textHeading}>LOCATIONS</span>
       </NavLink>
 
       
@@ -103,7 +103,7 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-home"></i><span className={styles.textHeading}>HOME</span>
+              <i className="fas fa-campground"></i><span className={styles.textHeading}>HOME</span>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}
