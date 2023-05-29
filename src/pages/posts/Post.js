@@ -93,27 +93,23 @@ const Post = (props) => {
 
   <Card.Body className={styles.Cards}>
     {caption && <Card.Title className="text-center mt-3">{caption}</Card.Title>}
-    {location && <Card.Title className="text-center">{location}</Card.Title>}
+    {location && <Card.Title className="text-center"><i className="fas fa-map-pin"></i>{location}</Card.Title>}
     {description && <Card.Text>{description}</Card.Text>}
   </Card.Body>
 </Container>
 
-
-  
-       
-  
         <div className={styles.PostBar}>
           <Link to={`/posts/${id}`}>
-            <h5>Click here to view plan & comments</h5>
-            <i className="fas fa-map-signs"></i>
-            <i className="far fa-comments" />
+            <h3 className={styles.PostBar}>Click to visit</h3>
+            <span ><i className="fas fa-images"></i></span>
+            <span><i className="far fa-comments" /></span>
           </Link>
           {comments_count}
         </div>
         
          {/* Render the comment image when adding an image to a comment */}
          {comment_image && (
-          <div className={styles.CollageImageContainer  } >
+          <div className={styles.CollageImageContainer }>
             <Card.Img src={comment_image} alt="Comment Image" className={styles.CommentImage}  />
           </div>
         )}

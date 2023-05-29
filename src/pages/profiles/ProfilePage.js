@@ -110,7 +110,6 @@ function ProfilePage() {
               </Button>
             ))}
         </Col>
-        {profile?.bio && <Col className="p-3">{profile.bio}</Col>}
         {profile?.activies && <Col className="p-3">{profile.activies}</Col>}
         
         

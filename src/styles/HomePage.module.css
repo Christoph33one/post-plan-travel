@@ -12,10 +12,9 @@
     width: 100%;
   }
   
-  .HomePage h1 {
-    font-family: "Caveat", sans-serif;
-    font-size: 1.5rem;
-    color: #011526;
+  .HomeTitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;    
   }
   
   /* .HomePage .Content {
@@ -67,22 +66,19 @@
     height: auto;
   }
   
-  .content {
-    color: white;
+  .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-left: 20px;
   }
-  
-  .content h2 {
-    margin-bottom: 10px;
+  h3,h4 {
+    color: #ffff;
   }
-  
-  .content p {
+  /* .content p {
     margin-bottom: 20px;
-  }
+  } */
   
   @media (max-width: 768px) {
     .content {

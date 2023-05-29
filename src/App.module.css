@@ -1,7 +1,7 @@
 /*FOR ADDING ALL CSS STYLES YOU WANT TO APLLY TO YOUR WHOLE SITE*/
 
 .App {
-  font-family: "Caveat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: #011526;
   background-color: #f8f8f8;
@@ -10,6 +10,7 @@
 
 h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
+  color: #011526;
 }
 
 .Main {
