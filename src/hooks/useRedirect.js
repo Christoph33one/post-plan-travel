@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 
 export const useRedirect = (userAuthStatus) => {
     const history = useHistory();
-}
+
 
     useEffect (() => {
      const handleMount = async () => {
@@ -24,3 +24,4 @@ export const useRedirect = (userAuthStatus) => {
 
     handleMount();
     }, [history, userAuthStatus]);
+};

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useRedirect } from "../../hooks/useRedirect";
 
 import {
     Form,
@@ -16,9 +18,10 @@ import {
   } from "react-bootstrap";
   import axios from "axios";
 
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+
 
 const SignUpForm = () => { 
+    useRedirect('loggedIn')
     const [signUpData, setSignUpData] = useState ({
         username: "",
         password1: "",
@@ -32,7 +35,7 @@ const SignUpForm = () => {
 
     const handleChange = (event) => {
         setSignUpData({
-            ...signUpData,
+            ...signUpData,  
             [event.target.name]: event.target.value,
         });
     }
