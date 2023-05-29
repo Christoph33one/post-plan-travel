@@ -1,24 +1,43 @@
-Post, Plan & travel
 
- Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel plans from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities like cycling, hiking, and more. With Post Plan & travel, planning a trip has never been easier or more exciting.
+
+
+ ADD DEPLOYED FRONT-END ISTE
+ ADD DEPLOYED API 
+ ADD API REPO
+ ADD FRONT-END REPO
 
  "Capturing the World: Exploring New Places and Moments Through the Lens"
 <ul>Structure
-<li><a href="#project-goal">Project goal</a></li>
+<li><a href="#project-purpose">Project purpose</a></li>
 <li><a href="#user-audience">User audience</a></li>
 <li><a href="#structure">Structure</a></li>
+<li><a href="#project-planning">Project planning</a></li>
+<li><a href="#data-structure">Data structure</a></li>
 </ul>
 
 <ul>User experience (ux)
 <li><a href="#design">Design</a></li>
 <li><a href="#wire-frames">Wire frames</a></li>
-<li><a href="#color scheme">Colour scheme</a></li>
+<li><a href="#colours">Colour</a></li>
+<li><a href="#colour-scheme">Colour scheme</a></li>
 </ul>
 
 <ul>Testing<ul/>
 <li><a href="#bugs">Bugs</a></li>
 
-     
+---
+# Project purpose
+
+### Post, Plan & travel
+
+Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel experiences from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities. With Post Plan & travel, planning a trip has never been easier or more exciting.
+
+To fully immerse yourself in the website's offerings and access its complete range of features, signing up for a free account is required. Once registered, a world of possibilities opens up before you. You can delve into a wealth of captivating posts created by fellow users, engage in meaningful discussions by adding your own comments, and even showcase your personal travel experiences.
+
+This platform is a haven for those with a keen eye for photography. It provides an ideal space to upload your mesmerizing images and narrate the stories behind them. By sharing your photos, you can capture the essence of your travel adventures and captivate the community with your visual storytelling.
+
+Don't miss out on the chance to join this vibrant community of explorers, storytellers, and photography enthusiasts. Sign up today and unlock a world of travel inspiration, connection, and creativity.
+
 ---
 
 # User audience
@@ -31,6 +50,27 @@ One of the core principles of Post, Plan & Travel is accessibility. We believe t
 
 In summary, Post, Plan & Travel is an all-encompassing platform that embraces diversity, caters to people of all ages and genders, and provides a wide range of travel resources and inspiration. We are committed to empowering individuals from all walks of life to explore the world, create unforgettable memories, and embrace the joy of travel.
 
+---
+
+# Project planning
+
+For project requirements and project planning I followed the agile methodologies and best practices. I used a scrum board which is a built in feature in the projects repository with GitHub. 
+
+Please click the [link](https://github.com/users/Christoph33one/projects/30/views/1) to view the project Kanban board
+
+I created a list of project goals using agile user stories method. A user Story is a small, self-contained unit of development work designed to accomplish a specific goal within a product and articulate the value proposition for the work and drive the development work. 
+
+With agile it is advised to use a team velocity approach. Team velocity represents how many story points the development team can manage to finish in one iteration of a particular length.
+
+As I am the only one planning this project and not using a team, I will not be using the team velocity approach and point score system.
+
+Using agile's MOSCOW method, each user story has been highlighted with the importance of the projects acceptance criteria. I used labels to indicate the importance of each user story and it's involvment with the project.
+
+---
+
+# Data structure
+Data Structure (models)
+All of the data structuring was completed when creating my backend API. The repository and accompanying README can be found here: Click [here](https://github.com/Christoph33one/post-planner-api/blob/main/assets/data%20structure%20.png) to view.
 
 ---
 
@@ -40,9 +80,11 @@ In summary, Post, Plan & Travel is an all-encompassing platform that embraces di
 To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
+
+Icon provider - [logo generator](https://favicon.io/logo-generator/)
+
 ![](src/assets/wireframes/nav%20bar%20design.png)
 ![](src/assets/logo.png)
-
 
 ---
 ### Registration 
@@ -68,9 +110,34 @@ Please note that all registration fields must be filled out before the registrat
 ### Edit travel plan page
 ![](src/assets/wireframes/edit%20travel%20plan%20wire%20frame.png)
 
+---
+
+# Typography
+All font family styling was used with an open source - [google fonts](https://fonts.google.com/?preview.text=POST,%20PLAN%20%26%20TRAVEL&preview.text_type=custom)
+
+Font family used for H1 - Oswald "regular 400" 
+
+Default setting - "sans serif"
+
+Font family used for H3, H4 & P - Roboto"light 300"
+
+Defaul setting - "sans serif"
+
+All icons are taken from an open source - [Font awesome ](https://fontawesome.com/)
 
 ---
 
+# Colour scheme 
+
+All colours where picked with design industry colours which are trusted within communities of website design. I used an Wilderness colour plate in Adobe Color Wheel. using shades of blue  are used. For when using the shade of black I used #0D0D0D. This shade gives a deeper colour and more detail to text.
+
+The reason I have not used many colours, is for the images to produce the colour to the site. As the images are full of colour, I wanted them to stand out and make an impression to the user.
+
+All colours are taken from an open source - [Adobe Color Wheel ](https://color.adobe.com/trends/Wilderness?page=4)
+
+![](src/assets/wireframes/color%20scheme.png)
+
+---
 
 # Bugs
 ### Navbar
