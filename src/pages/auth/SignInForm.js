@@ -73,7 +73,7 @@ function SignInForm() {
                 {message}
               </Alert>
             ))}
-
+  
             <Form.Group controlId="password">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
@@ -109,19 +109,16 @@ function SignInForm() {
           </Link>
         </Container>
       </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage} ${styles.CircleImage} img-fluid`}
-          src={
-            "signup-logo.jpg"
-          }
-        />
+      <Col md={6} className={`my-auto p-2 ${styles.SignInCol}`}>
+        <div className={styles.ResponsiveContainer}>
+          <Image
+            className={`${appStyles.FillerImage} ${styles.CircleImage} img-fluid`}
+            src="signin-logo.jpg"
+            alt="Sign In Logo"
+          />
+        </div>
       </Col>
     </Row>
   );
-}
-
+};  
 export default SignInForm;

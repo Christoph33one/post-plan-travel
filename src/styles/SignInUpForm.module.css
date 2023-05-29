@@ -63,3 +63,8 @@
   width: 33.33%;
   min-height: 120px;
 }
+.ResponsiveContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

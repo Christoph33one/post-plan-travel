@@ -49,86 +49,89 @@ const SignUpForm = () => {
         }
     }
 
-  return (
-    <Row className={styles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={6}>
-        <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>sign up</h1>
-
-        <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="username">
-            <Form.Label className="d-none">Username</Form.Label>
-            <Form.Control 
-                className={styles.Input}
-                type="text" 
-                placeholder="username" 
-                name="username"
-                value={username}
-                onChange={handleChange}
-            />
-        </Form.Group>
-        {errors.username?.map((message, idx) => 
-            <Alert variant="warning" key={idx}>{message}</Alert>
-        )}
-
-        <Form.Group controlId="password1">
-            <Form.Label className="d-none">password</Form.Label>
-            <Form.Control 
-                className={styles.Input}
-                type="password" 
-                placeholder="Password" 
-                name="password1" 
-                value={password1}
-                onChange={handleChange}
-            />
-        </Form.Group>
-        {errors.password1?.map((message, idx) => 
-        <Alert variant="warning" key={idx}>{message}</Alert>
-        )}
-        
-
-        <Form.Group controlId="password2">
-            <Form.Label className="d-none">Confirm your password</Form.Label>
-            <Form.Control 
-                className={styles.Input}
-                type="password" 
-                placeholder="Please confirm password " 
-                name="password2" 
-                value={password2}
-                onChange={handleChange}
-              />
-        </Form.Group>
-        {errors.password2?.map((message, idx) => 
-        <Alert variant="warning"></Alert>
-        )}
-            
-            <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright} `} type="submit">
+    return (
+      <Row className={styles.Row}>
+        <Col className="my-auto py-2 p-md-2" md={6}>
+          <Container className={`${appStyles.Content} p-4 `}>
+            <h1 className={styles.Header}>sign up</h1>
+    
+            <Form onSubmit={handleSubmit}>
+              <Form.Group controlId="username">
+                <Form.Label className="d-none">Username</Form.Label>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  placeholder="username"
+                  name="username"
+                  value={username}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              {errors.username?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                  {message}
+                </Alert>
+              ))}
+    
+              <Form.Group controlId="password1">
+                <Form.Label className="d-none">password</Form.Label>
+                <Form.Control
+                  className={styles.Input}
+                  type="password"
+                  placeholder="Password"
+                  name="password1"
+                  value={password1}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              {errors.password1?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                  {message}
+                </Alert>
+              ))}
+    
+              <Form.Group controlId="password2">
+                <Form.Label className="d-none">Confirm your password</Form.Label>
+                <Form.Control
+                  className={styles.Input}
+                  type="password"
+                  placeholder="Please confirm password "
+                  name="password2"
+                  value={password2}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              {errors.password2?.map((message, idx) => (
+                <Alert variant="warning" key={idx}>
+                  {message}
+                </Alert>
+              ))}
+    
+              <Button
+                className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright} `}
+                type="submit"
+              >
                 Sign up
-            </Button>
-        </Form>
-
-        </Container>
-        <Container className={`mt-3 ${appStyles.Content}`}>
-          <Link className={styles.Link} to="/signin">
-            Already have an account? <span className={styles.Head}>Sign in</span>
-          </Link>
-        </Container>
-      </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage} ${styles.CircleImage} img-fluid`}
-          src={
-            "signin-logo.jpg"
-          }
-        />
-        
-       
-      </Col>
-    </Row>
-  );
+              </Button>
+            </Form>
+          </Container>
+          <Container className={`mt-3 ${appStyles.Content}`}>
+            <Link className={styles.Link} to="/signin">
+              Already have an account? <span className={styles.Head}>Sign in</span>
+            </Link>
+          </Container>
+        </Col>
+        <Col md={6} className={`my-auto p-2 ${styles.SignUpCol}`}>
+          <div className={styles.ResponsiveContainer}>
+            <Image
+              className={`${appStyles.FillerImage} ${styles.CircleImage} img-fluid`}
+              src="sign-up-logo.jpg"
+              alt="Sign In Logo"
+            />
+          </div>
+        </Col>
+      </Row>
+    );
 };
 
 export default SignUpForm;
