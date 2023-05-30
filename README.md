@@ -24,6 +24,7 @@
 
 <ul>Testing<ul/>
 <li><a href="#bugs">Bugs</a></li>
+<li><a href="#manual-testing">Manual tests</a></li>
 
 ---
 # Project purpose
@@ -188,6 +189,45 @@ Solution:
 Upon reviewing the console error, I identified a type error in the hasMore={!!profilePosts.next} code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
 
 ---
+# Manual testing
+
+### Authentication:
+
+SIGN UP
+-  As a user I can view a registration point and view a form to add my credentials
+- The form is well displayed and gives simple instructions on where to add my    credentials
+- The form gives good user security practice known as "password confirmation" or "password verification.
+- Once signed up, I am redirected to the sign in form.
+- I can view the form is nicely responsive in all screen sizes 
+---
+SIGN IN
+
+- As a user I can view a navigation point to sign in 
+- I can view a well displayed form to add my sing in credentials 
+- As a user I can view password security as my password is not displayed back to me when adding
+- When signing in, I am redirected to the home page as intended
+- I can view the form is nicely responsive in all screen sizes 
+---
+SIGN OUT
+
+- As a user can view the sign out navigation point 
+- When signing out I am redirected to the home page as expected 
+- When signed out I can sign back in when intended
+
+
+----
+
+### HOME PAGE:
+
+- As a user I can view the home page and its responsiveness on all screen sizes.
+-  As a user viewing the home page I can click on all links and be redirected to a new tab and view the information relating to the link
+- As a user I can read and understand all the content written and view the images easily 
+- As a user I can view a navigation point to navigate me to tother resources in the website 
+-  As a user I can view all the content on all screen sizes and to its responsive functions 
+
+
+
+
 ---
 ---
 ---
