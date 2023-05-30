@@ -24,6 +24,7 @@
 <li><a href="#travel-posts">Travel post</a></li>
 <li><a href="#popular-profiles">Popular profiles</a></li>
 <li><a href="#search-bar">Search bar</a></li>
+<li><a href="#following">Follow / unfollow</a></li>
 <li><a href="#comments">Comments</a></li>
 
 <li><a href="#wire-frames">Wire frames</a></li>
@@ -142,6 +143,10 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ![](src/assets/wireframes/posts%20page.png)
 ![](src/assets/wireframes/posts%20page%20mobile.png)
 
+
+### Travel posts edit form
+ ![](src/assets/wireframes/travel%20post%20edit%20form.png)
+
 --- 
 # Popular profiles
 ![](src/assets/wireframes/popular%20profiles.png)
@@ -152,6 +157,10 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ![](src/assets/wireframes/search%20bar%20.png)
 
 ---
+# Following
+![](src/assets/wireframes/following%20list.png)
+![](src/assets/wireframes/following%20count.png)
+___
 
 # Comments
 ![](src/assets/wireframes/comments.png)
@@ -326,12 +335,16 @@ TRAVEL PLAN PAGE
 - A caption is present to keep the post fun!
 - Icons are placed in the correct areas to view a better IX feel
 - A link to view the post as a single post, which redirects the user to a new page for just that post.
+- When logged out I can not view any posts.
+
+### Travel plan edit
 
 ---
 ### Popular profiles
 - As a user I can also see a clear and well designed most followed profiles list with the user name and avatar.
 - I can easily view and click on a user to view their profile.
 - On a smaller screen size the list is nicely positioned above the post images and search bar, also reduced to give better readability and UX.
+- when logged out, I can noit view the list of popular profiles
 
 ---
 
@@ -342,9 +355,19 @@ TRAVEL PLAN PAGE
 - As a user I clearly add my very own comment and image with a easy to follow form that is validted on request.
 - As a user I can view the comment and image I had added.
 - If I want to edit my very own comment, I can view a Navigation point for editing the comment text and image. 
-- Once my edited comment is submitted, I can view it in the list of comments. 
+- Once my edited comment is submitted, I can view it in the list of comments.
+- When logged out, I cannot  add, view, edit or delete a comment.
+- When viewing other users comments, I can not edit or delete a comment not owned be myself 
 
 ---
+
+### FOLLOW / FOLLOWING
+- As a user I can view a list of profile from the popular profiles list and view a follow button
+- When selecting to follow a profile, I can view the button text change from follow to unfollow.
+- When selecting to follow a user, I can view the following count on my profile increase when folling a profile or decrease if I choose to unfollow a user
+- When being followed by other profiles, I can view the number of followers in my profile.
+- If logged out, I can not view follow or unfollow a user. 
+
 
 
 
