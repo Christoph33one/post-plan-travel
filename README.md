@@ -18,6 +18,7 @@
 <ul>User experience (ux)
 <li><a href="#design">Design</a></li>
 <li><a href="#authentication">Authentication</a></li>
+<li><a href="#profile-page">Profile page</a></li>
 <li><a href="#landing-page">Landing page</a></li>
 <li><a href="#create-post">Create a post</a></li>
 <li><a href="#travel-posts">Travel post</a></li>
@@ -85,6 +86,7 @@ All of the data structuring was completed when creating my backend API. The repo
 
 # Design
 
+
 # Authentication
 To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering it.
 
@@ -100,8 +102,19 @@ Please note that all registration fields must be filled out before the registrat
 ![](src/assets/wireframes/sign%20in%20form.png)
 ![](src/assets/wireframes/sign%20ion%20form%20mobile%20size.png)
 
+
 ---
 
+# Profile page
+![](src/assets/wireframes/profile%20page.png)
+![](src/assets/wireframes/profile%20mobile.png)
+
+### Profile edit form
+
+![](src/assets/wireframes/profile%20edit%20form.png)
+![](src/assets/wireframes/profile%20form%20mobile.png)
+
+---
 ### Navigation 
 To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
 
@@ -272,6 +285,16 @@ SIGN OUT
 - When signing out I am redirected to the home page as expected 
 - When signed out I can sign back in when intended
 
+PROFILE PAGE
+PROFILE PAGE
+- As a user I can view a Navigation point to my profile page when logged in.
+- When viewing my profile and page I can see all the posts I have created starting with the most recent one first.
+- I can view how many posts I have created with a posts count.
+- I can view how many users are following my profile and how many I follow in return.
+- I can view my name, avatar, bio and an activity that I enjoy doing.
+- As a profile owner I can view a drop down menu to edit my profile.
+- Upon viewing the edit profile function, with a per-populated form, I can edit my details and avatar image.
+- After submitting the edited profile I am returned back to my profile page with the changes made.
 
 ----
 
