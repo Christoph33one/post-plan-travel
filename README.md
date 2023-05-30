@@ -178,6 +178,15 @@ ISSUE: When implementing comments, I used the map method to iterate over the com
 
 SOLUTION: Upon reviewing the error in the console, I realized that I was mistakenly mapping over the incorrect value of results. After correcting the value, the page rendered correctly.
 
+### ProfilePage
+
+Issue:
+
+While attempting to render all posts by a user from their profile page, I encountered a problem where the page would appear blank and an error would be logged in the console for fetchMoreData.
+
+Solution:
+Upon reviewing the console error, I identified a type error in the hasMore={!!profilePosts.next} code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
+
 ---
 ---
 ---
