@@ -16,7 +16,7 @@ export const fetchMoreData = async (resource, setResource) => {
   } catch (err) {}
 };
 
-export const followerHelper = (profile, clickedProfile, following_id) =>   {
+export const followHelper = (profile, clickedProfile, following_id) =>   {
   return profile.id === clickedProfile.id
     ? {
         ...profile,

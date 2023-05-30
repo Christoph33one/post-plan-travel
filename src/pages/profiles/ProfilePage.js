@@ -137,7 +137,7 @@ function ProfilePage() {
           ))}
           dataLength={profilePosts.results.length}
           loader={<Asset spinner />}
-          hasMore={!profilePosts.next}
+          hasMore={!!profilePosts.next}
           next={() => fetchMoreData(profilePosts, setProfilePosts)}
         />
       

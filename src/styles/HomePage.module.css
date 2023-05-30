@@ -2,8 +2,7 @@
     height: 400px;
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 10px; /* Adjust the value as needed */
-   
+    border-radius: 10px;
   }
   
   .HomePage .HeroImageImg {
@@ -17,15 +16,6 @@
     font-size: 2.5rem;    
   }
   
-  /* .HomePage .Content {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #dadadf;
-  } */
-  
-
-
   .boxContainer {
     display: flex;
     justify-content: space-between;
@@ -46,14 +36,17 @@
   .box:last-child {
     margin-right: 0;
   }
+  .Container, h2 {
+    font-size: 1.5rem;
+  }
 
   /* Donations card*/
-  .container {
+  .donationsContainer {
     background-color: #025373;
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 40px;
-    border-radius: 10px;
+
   }
   
   .imageWrapper {
@@ -76,13 +69,19 @@
   h3,h4 {
     color: #ffff;
   }
-  /* .content p {
-    margin-bottom: 20px;
-  } */
   
   @media (max-width: 768px) {
     .content {
       padding-left: 0;
       padding-top: 20px;
     }
+  }
+
+
+  .signUpContainer {
+    background-color: #C5D3D9;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
   }

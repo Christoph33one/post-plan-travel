@@ -74,8 +74,11 @@ function CommentEditForm(props) {
           rows={2}
         />
       </Form.Group>
+
       <Form.Group className="pr-1">
+     
         <div className={styles.ImageUploadContainer}>
+        <strong>Please click the image to upload</strong>
           <input
             id={`edit-image-${id}`}
             type="file"

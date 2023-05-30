@@ -67,7 +67,6 @@ const Comment = (props) => {
           ) : (
             <>
               <p>{content}</p>
-              <strong>Please click the image to upload</strong>
               {image && (
                 <div >
                   {/* <Image className={styles.ImageContainer} src={image} alt="Comment Image" rounded /> */}

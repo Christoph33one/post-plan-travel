@@ -29,17 +29,15 @@ const HomePage = () => {
         </div>
       </Container>
       <HeroImageComponent />
-      <Container fluid>
+      <Container className={styles.Container} fluid>
         <h2>
-          Welcome to Post, Plan & Travel! 
-          Get ready for an exhilarating adventure as we take you on a whirlwind tour of the world. 
-          Explore a treasure trove of travel plans crafted by passionate globetrotters. 
-          Join our vibrant community and let your wanderlust ignite. Embark on a journey of limitless
-          possibilities and create extraordinary memories. Unleash the explorer within you and indulge
-          in the joy of travel!
+        Welcome to Post, Plan & Travel! Embark on a thrilling adventure and explore the world with us.
+        Discover curated travel plans by passionate globetrotters. Join our vibrant community and ignite
+        your wanderlust. 
         </h2>
       </Container>
-      <Container className={styles.container}>
+
+      <Container className={styles.donationsContainer}>
       <Row>
         <Col md={6}>
           <div className={styles.imageWrapper}>
@@ -47,6 +45,7 @@ const HomePage = () => {
           </div>
         </Col>
         <Col md={6} className={styles.content}>
+        <h3><i className="fa-light fa-earth-americas"></i>Help us help the planet</h3>
           <h3>Help us help the planet</h3>
           <h4>Together, we’ve raised more than $10 million USD for World Central Kitchen’s
             emergency food relief efforts around the world. Donate to their Climate Disaster
@@ -54,6 +53,21 @@ const HomePage = () => {
           <Button variant="dark" 
           href="https://donate.wck.org/give/480256/#!/donation/checkout"
           target="_blank">DONATE</Button>
+        </Col>
+      </Row>
+    </Container>
+
+
+
+    <Container className={styles.signUpContainer}>
+      <Row>
+        
+        <Col md={6} className={styles.content}>
+          <h4><strong>Join us!</strong></h4>
+          <h5>At Post, Plan & Travel, we encourage you to sign up and become a part of our travel community.
+             By creating a profile, you can showcase your travel experiences and share your captivating stories
+              with fellow adventurers.
+          </h5>
         </Col>
       </Row>
     </Container>
