@@ -9,7 +9,6 @@ test("renders Navbar", () => {
             <NavBar />
         </Router>
     );
-
     // screen.debug();
     const signInLink = screen.getByRole('link', {name: 'SIGN IN'})
     expect(signInLink).toBeInTheDocument(); 
@@ -21,7 +20,6 @@ test("renders HomePAGE", () => {
             <NavBar />
         </Router>
     );
-
     // screen.debug();
     const signInLink = screen.getByRole('link', {name: 'HOME'})
     expect(signInLink).toBeInTheDocument(); 
@@ -36,7 +34,6 @@ test("renders link to the user profile for a logged in user", async () => {
         </CurrentUserProvider>
       </Router>
     );
-  
     const profileAvatar = await screen.findByText("Profile");
     expect(profileAvatar).toBeInTheDocument();
   });
@@ -49,7 +46,6 @@ test("renders link to the user profile for a logged in user", async () => {
         </CurrentUserProvider>
       </Router>
     );
-  
     const signOutLink = await screen.findByRole("link", { name: "SIGN OUT" });
     fireEvent.click(signOutLink);
   

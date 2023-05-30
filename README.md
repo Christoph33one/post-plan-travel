@@ -374,14 +374,35 @@ TRAVEL PLAN PAGE
 
 # Frontend testing
 
+### CSS validation tests
 No errors or warnings were found when the deployed Happening URL was passed through the W3C CSS Validation checker.
 
 ![](src/assets/wireframes/css%20validation%20test.png)
 
+---
+
+### HTML Validation tests
+![](src/assets/wireframes/html%20validation%20tests.png)
+
 The deployed URL was successfully validated using the W3C CSS validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
 
+### Automated tests
 
+I conducted four automated testing on the NavBar component by implementing test protocols that initially caused the tests to fail and then ensuring that they passed successfully. However, I must admit that testing is an area where I feel less confident, and given more time, I would have liked to delve deeper into it to gain a better understanding. Unfortunately, due to time constraints, I had to prioritize other tasks.
 
+Sign in
+![](src/assets/wireframes/automated%20test%20sign%20in.png)
+
+Sign in / sign up return render log out
+![](src/assets/wireframes/automated%20test%20sign%20in%20%3Aout%20buttons.png)
+
+Home page renders
+![](src/assets/wireframes/automated%20tests%20home%20page.png)
+
+Profile render if logged in
+![](src/assets/wireframes/automated%20test%20profile.png)
+
+---
 
 ############################################################################################################################################################################################
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
