@@ -35,6 +35,7 @@
 <ul>Testing</ul>
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#manual-testing">Manual tests</a></li>
+<li><a href="#frontend-testing">Front-end testing</a></li>
 
 ---
 # Project purpose
@@ -267,6 +268,7 @@ Solution:
 Upon reviewing the console error, I identified a type error in the hasMore={!!profilePosts.next} code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
 
 ---
+
 # Manual testing
 
 ### Authentication:
@@ -368,9 +370,15 @@ TRAVEL PLAN PAGE
 - When being followed by other profiles, I can view the number of followers in my profile.
 - If logged out, I can not view follow or unfollow a user. 
 
+---
 
+# Frontend testing
 
+No errors or warnings were found when the deployed Happening URL was passed through the W3C CSS Validation checker.
 
+![](src/assets/wireframes/css%20validation%20test.png)
+
+The deployed URL was successfully validated using the W3C CSS validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
 
 
 
