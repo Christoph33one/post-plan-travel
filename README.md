@@ -95,26 +95,26 @@ To fully utilize the features of this site, users are required to register. The 
 Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information.
 
 ### Sign up
-![](src/assets/wireframes/signnup%20formpage.png)
-![](src/assets/wireframes/sign%20up%20form%20apge%20mobile%20size.png)
+![](src/assets/readme-images/signnup%20formpage.png)
+![](src/assets/readme-images/sign%20up%20form%20apge%20mobile%20size.png)
 
 ---
 
 ### Sign in
-![](src/assets/wireframes/sign%20in%20form.png)
-![](src/assets/wireframes/sign%20ion%20form%20mobile%20size.png)
+![](src/assets/readme-images/sign%20in%20form.png)
+![](src/assets/readme-images/sign%20ion%20form%20mobile%20size.png)
 
 
 ---
 
 # Profile page
-![](src/assets/wireframes/profile%20page.png)
-![](src/assets/wireframes/profile%20mobile.png)
+![](src/assets/readme-images/profile%20page.png)
+![](src/assets/readme-images/profile%20mobile.png)
 
 ### Profile edit form
 
-![](src/assets/wireframes/profile%20edit%20form.png)
-![](src/assets/wireframes/profile%20form%20mobile.png)
+![](src/assets/readme-images/profile%20edit%20form.png)
+![](src/assets/readme-images/profile%20form%20mobile.png)
 
 ---
 ### Navigation 
@@ -122,8 +122,8 @@ To provide users with a seamless and modern browsing experience, I have incorpor
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
 
-![](src/assets/wireframes/nav%20nav%20broswer%20design.png)
-![](src/assets/wireframes/nav%20bar%20mobile%20design%2021.19.45.png)
+![](src/assets/readme-images/nav%20nav%20broswer%20design.png)
+![](src/assets/readme-images/nav%20bar%20mobile%20design%2021.19.45.png)
 
 Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ![](src/assets/logo.png)
@@ -131,64 +131,64 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ---
 
 # Landing page
-![](src/assets/wireframes/home%20page.png)
-![](src/assets/wireframes/home%20page%20donationns%20page.png)
+![](src/assets/readme-images/home%20page.png)
+![](src/assets/readme-images/home%20page%20donationns%20page.png)
 
 ---
 # Create post
-![](src/assets/wireframes/create%20a%20post%20page.png)
-![](src/assets/wireframes/create%20a%20post%20mobile.png)
+![](src/assets/readme-images/create%20a%20post%20page.png)
+![](src/assets/readme-images/create%20a%20post%20mobile.png)
 ---
 
 # Travel posts
-![](src/assets/wireframes/posts%20page.png)
-![](src/assets/wireframes/posts%20page%20mobile.png)
+![](src/assets/readme-images/posts%20page.png)
+![](src/assets/readme-images/posts%20page%20mobile.png)
 
 
 ### Travel posts edit form
- ![](src/assets/wireframes/travel%20post%20edit%20form.png)
+ ![](src/assets/readme-images/travel%20post%20edit%20form.png)
 
 --- 
 # Popular profiles
-![](src/assets/wireframes/popular%20profiles.png)
-![](src/assets/wireframes/popular%20profiles%20mobile%20size.png)
+![](src/assets/readme-images/popular%20profiles.png)
+![](src/assets/readme-images/popular%20profiles%20mobile%20size.png)
 
 ---
 # Search bar
-![](src/assets/wireframes/search%20bar%20.png)
+![](src/assets/readme-images/search%20bar%20.png)
 
 ---
 # Following
-![](src/assets/wireframes/following%20list.png)
-![](src/assets/wireframes/following%20count.png)
+![](src/assets/readme-images/following%20list.png)
+![](src/assets/readme-images/following%20count.png)
 ___
 
 # Comments
-![](src/assets/wireframes/comments.png)
+![](src/assets/readme-images/comments.png)
 
-![](src/assets/wireframes/comments%20form.png)
+![](src/assets/readme-images/comments%20form.png)
 
 ### Comments edit form
-![](src/assets/wireframes/comment%20edit%20form.png)
+![](src/assets/readme-images/comment%20edit%20form.png)
 --- 
 
 --------------------------------
 # Wire frames
 
 ### Home page
-![](src/assets/wireframes/HOME%20PAGE%20WIRE%20FRAME.png)
+![](src/assets/readme-images/HOME%20PAGE%20WIRE%20FRAME.png)
 
 ### Registration & Sign in
-![](src/assets/wireframes/reg%20%3A%20sign%20in%20wire%20frames.png)
+![](src/assets/readme-images/reg%20%3A%20sign%20in%20wire%20frames.png)
 
 ### Create a travel plan page
-![](src/assets/wireframes/post%20page%20wire%20frame.png)
+![](src/assets/readme-images/post%20page%20wire%20frame.png)
 
 ### Posted travel plan page
-![](src/assets/wireframes/posting%20travel%20plan%20wire%20frame.png)
+![](src/assets/readme-images/posting%20travel%20plan%20wire%20frame.png)
 
 ### Edit travel plan page
-![](src/assets/wireframes/edit%20travel%20plan%20wire%20frame.png)
+![](src/assets/readme-images/edit%20travel%20plan%20wire%20frame.png)
 
 ---
 
@@ -215,7 +215,7 @@ The reason I have not used many colours, is for the images to produce the colour
 
 All colours are taken from an open source - [Adobe Color Wheel ](https://color.adobe.com/trends/Wilderness?page=4)
 
-![](src/assets/wireframes/color%20scheme.png)
+![](src/assets/readme-images/color%20scheme.png)
 
 ---
 
@@ -281,8 +281,8 @@ SIGN UP
 - Once signed up, I am redirected to the sign in form.
 - I can view the form is nicely responsive in all screen sizes. 
 ---
-SIGN IN
 
+SIGN IN
 - As a user I can view a navigation point to sign in. 
 - I can view a well displayed form to add my sing in credentials. 
 - As a user I can view password security as my password is not displayed back to me when adding.
@@ -290,13 +290,13 @@ SIGN IN
 - When using the wrong credentials, I am not able to log in and returned a message to notify me.
 - I can view the form is nicely responsive in all screen sizes 
 ---
-SIGN OUT
 
+SIGN OUT
 - As a user can view the sign out navigation point 
 - When signing out I am redirected to the home page as expected 
 - When signed out I can sign back in when intended
+---
 
-PROFILE PAGE
 PROFILE PAGE
 - As a user I can view a Navigation point to my profile page when logged in.
 - When viewing my profile and page I can see all the posts I have created starting with the most recent one first.
@@ -377,12 +377,12 @@ TRAVEL PLAN PAGE
 ### CSS validation tests
 No errors or warnings were found when the deployed Happening URL was passed through the W3C CSS Validation checker.
 
-![](src/assets/wireframes/css%20validation%20test.png)
+![](src/assets/readme-images/css%20validation%20test.png)
 
 ---
 
 ### HTML Validation tests
-![](src/assets/wireframes/html%20validation%20tests.png)
+![](src/assets/readme-images/html%20validation%20tests.png)
 
 The deployed URL was successfully validated using the W3C CSS validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
 
@@ -391,16 +391,16 @@ The deployed URL was successfully validated using the W3C CSS validation checker
 I conducted four automated testing on the NavBar component by implementing test protocols that initially caused the tests to fail and then ensuring that they passed successfully. However, I must admit that testing is an area where I feel less confident, and given more time, I would have liked to delve deeper into it to gain a better understanding. Unfortunately, due to time constraints, I had to prioritize other tasks.
 
 Sign in
-![](src/assets/wireframes/automated%20test%20sign%20in.png)
+![](src/assets/readme-images/automated%20test%20sign%20in.png)
 
 Sign in / sign up return render log out
-![](src/assets/wireframes/automated%20test%20sign%20in%20%3Aout%20buttons.png)
+![](src/assets/readme-images/automated%20test%20sign%20in%20%3Aout%20buttons.png)
 
 Home page renders
-![](src/assets/wireframes/automated%20tests%20home%20page.png)
+![](src/assets/readme-images/automated%20tests%20home%20page.png)
 
 Profile render if logged in
-![](src/assets/wireframes/automated%20test%20profile.png)
+![](src/assets/readme-images/automated%20test%20profile.png)
 
 ---
 
