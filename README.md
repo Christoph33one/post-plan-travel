@@ -21,6 +21,8 @@
 <li><a href="#landing-page">Landing page</a></li>
 <li><a href="#travel-posts">Travel post</a></li>
 <li><a href="#popular-profiles">Popular profiles</a></li>
+<li><a href="#search-bar">Search bar</a></li>
+<li><a href="#comments">Comments</a></li>
 
 <li><a href="#wire-frames">Wire frames</a></li>
 <li><a href="#colours">Colour</a></li>
@@ -113,25 +115,36 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ---
 
 # Landing page
-
 ![](src/assets/wireframes/home%20page.png)
 ![](src/assets/wireframes/home%20page%20donationns%20page.png)
 
 ---
 
 # Travel posts
-
 ![](src/assets/wireframes/posts%20page.png)
 ![](src/assets/wireframes/posts%20page%20mobile.png)
 
 --- 
-
 # Popular profiles
 ![](src/assets/wireframes/popular%20profiles.png)
 ![](src/assets/wireframes/popular%20profiles%20mobile%20size.png)
 
+---
+# Search bar
+![](src/assets/wireframes/search%20bar%20.png)
 
-----------------------
+---
+
+# Comments
+![](src/assets/wireframes/comments.png)
+
+![](src/assets/wireframes/comments%20form.png)
+
+### Comments edit form
+![](src/assets/wireframes/comment%20edit%20form.png)
+--- 
+
+--------------------------------
 # Wire frames
 
 ### Home page
@@ -232,18 +245,20 @@ Upon reviewing the console error, I identified a type error in the hasMore={!!pr
 ### Authentication:
 
 SIGN UP
--  As a user I can view a registration point and view a form to add my credentials
-- The form is well displayed and gives simple instructions on where to add my    credentials
+-  As a user I can view a registration point and view a form to add my credentials.
+- The form is well displayed and gives simple instructions on where to add my credentials.
 - The form gives good user security practice known as "password confirmation" or "password verification.
+- If I select a password with less then 8 characters, I am displayed a notification to add a lager password.
 - Once signed up, I am redirected to the sign in form.
-- I can view the form is nicely responsive in all screen sizes 
+- I can view the form is nicely responsive in all screen sizes. 
 ---
 SIGN IN
 
-- As a user I can view a navigation point to sign in 
-- I can view a well displayed form to add my sing in credentials 
-- As a user I can view password security as my password is not displayed back to me when adding
-- When signing in, I am redirected to the home page as intended
+- As a user I can view a navigation point to sign in. 
+- I can view a well displayed form to add my sing in credentials. 
+- As a user I can view password security as my password is not displayed back to me when adding.
+- When signing in, I am redirected to the home page as intended.
+- When using the wrong credentials, I am not able to log in and returned a message to notify me.
 - I can view the form is nicely responsive in all screen sizes 
 ---
 SIGN OUT
@@ -281,6 +296,15 @@ TRAVEL PLAN PAGE
 - On a smaller screen size the list is nicely positioned above the post images and search bar, also reduced to give better readability and UX.
 
 ---
+
+### Comments
+- As a user I can view a comment count at the bottom of each comment.
+- As a user I can click on the view a single post and view all the comments and images related to the post.
+- As a user I can see the user who created the comment with their name and avatar visible, plus a created at date.
+- As a user I clearly add my very own comment and image with a easy to follow form that is validted on request.
+- As a user I can view the comment and image I had added.
+- If I want to edit my very own comment, I can view a Navigation point for editing the comment text and image. 
+- Once my edited comment is submitted, I can view it in the list of comments. 
 
 ---
 
