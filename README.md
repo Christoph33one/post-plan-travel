@@ -17,12 +17,14 @@
 
 <ul>User experience (ux)
 <li><a href="#design">Design</a></li>
+<li><a href="#authentication">Authentication</a></li>
+
 <li><a href="#wire-frames">Wire frames</a></li>
 <li><a href="#colours">Colour</a></li>
 <li><a href="#colour-scheme">Colour scheme</a></li>
 </ul>
 
-<ul>Testing<ul/>
+<ul>Testing</ul>
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#manual-testing">Manual tests</a></li>
 
@@ -77,23 +79,42 @@ All of the data structuring was completed when creating my backend API. The repo
 
 # Design
 
+# Authentication
+To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering it.
+
+Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information.
+
+### Sign up
+![](src/assets/wireframes/signnup%20formpage.png)
+![](src/assets/wireframes/sign%20up%20form%20apge%20mobile%20size.png)
+
+---
+
+### Sign in
+![](src/assets/wireframes/sign%20in%20form.png)
+![](src/assets/wireframes/sign%20ion%20form%20mobile%20size.png)
+
+---
+
 ### Navigation 
 To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
 
-Icon provider - [logo generator](https://favicon.io/logo-generator/)
 
-![](src/assets/wireframes/nav%20bar%20design.png)
+
+![](src/assets/wireframes/nav%20nav%20broswer%20design.png)
+![](src/assets/wireframes/nav%20bar%20mobile%20design%2021.19.45.png)
+
+Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ![](src/assets/logo.png)
 
 ---
-### Registration 
-To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering it.
 
-Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information.
 
----
+
+
+----------------------
 # Wire frames
 
 ### Home page
