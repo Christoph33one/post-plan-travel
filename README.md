@@ -19,6 +19,7 @@
 <li><a href="#design">Design</a></li>
 <li><a href="#authentication">Authentication</a></li>
 <li><a href="#landing-page">Landing page</a></li>
+<li><a href="#create-post">Create a post</a></li>
 <li><a href="#travel-posts">Travel post</a></li>
 <li><a href="#popular-profiles">Popular profiles</a></li>
 <li><a href="#search-bar">Search bar</a></li>
@@ -118,6 +119,10 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ![](src/assets/wireframes/home%20page.png)
 ![](src/assets/wireframes/home%20page%20donationns%20page.png)
 
+---
+# Create post
+![](src/assets/wireframes/create%20a%20post%20page.png)
+![](src/assets/wireframes/create%20a%20post%20mobile.png)
 ---
 
 # Travel posts
@@ -278,6 +283,16 @@ SIGN OUT
 -  As a user I can view all the content on all screen sizes and to its responsive functions 
 
 ---
+### Create a travel post
+- As a user I can easily view a Navigation point to the page for adding a travel post.
+- I can see an early to follow form with well written text to follow when writing a post.
+- I can write a title, description, location and a caption.
+- When doing more than the required amount of letters, I will be returned a message to notify me to make corrections with my text length.
+- I can upload is images by clicking on the upload icon which returns me my files.
+- I can view a submit button and a cancel button.
+- Once my post is submitted, I am redirected to the posts page to view my post.
+- If I decide to cancel my post, and click the cable button, I am returned to the landing page.
+---
 
 ### Travel plan page
 TRAVEL PLAN PAGE
@@ -307,6 +322,7 @@ TRAVEL PLAN PAGE
 - Once my edited comment is submitted, I can view it in the list of comments. 
 
 ---
+
 
 
 
