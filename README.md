@@ -18,6 +18,9 @@
 <ul>User experience (ux)
 <li><a href="#design">Design</a></li>
 <li><a href="#authentication">Authentication</a></li>
+<li><a href="#landing-page">Landing page</a></li>
+<li><a href="#travel-posts">Travel post</a></li>
+<li><a href="#popular-profiles">Popular profiles</a></li>
 
 <li><a href="#wire-frames">Wire frames</a></li>
 <li><a href="#colours">Colour</a></li>
@@ -101,8 +104,6 @@ To provide users with a seamless and modern browsing experience, I have incorpor
 
 Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
 
-
-
 ![](src/assets/wireframes/nav%20nav%20broswer%20design.png)
 ![](src/assets/wireframes/nav%20bar%20mobile%20design%2021.19.45.png)
 
@@ -111,7 +112,23 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 
 ---
 
+# Landing page
 
+![](src/assets/wireframes/home%20page.png)
+![](src/assets/wireframes/home%20page%20donationns%20page.png)
+
+---
+
+# Travel posts
+
+![](src/assets/wireframes/posts%20page.png)
+![](src/assets/wireframes/posts%20page%20mobile.png)
+
+--- 
+
+# Popular profiles
+![](src/assets/wireframes/popular%20profiles.png)
+![](src/assets/wireframes/popular%20profiles%20mobile%20size.png)
 
 
 ----------------------
@@ -239,18 +256,32 @@ SIGN OUT
 ----
 
 ### HOME PAGE:
-
 - As a user I can view the home page and its responsiveness on all screen sizes.
 -  As a user viewing the home page I can click on all links and be redirected to a new tab and view the information relating to the link
 - As a user I can read and understand all the content written and view the images easily 
 - As a user I can view a navigation point to navigate me to tother resources in the website 
 -  As a user I can view all the content on all screen sizes and to its responsive functions 
 
+---
 
-
+### Travel plan page
+TRAVEL PLAN PAGE
+- As a registered user I can navigate to the travel plan page to view all the post
+- When viewing the posts, I can see the newest created first
+- As a user I can clearly see the profile who created the post, the images are nice and clear and well organised on all screen sizes
+- As a user I can see a title, created at date, the users content about the post and images.
+- A caption is present to keep the post fun!
+- Icons are placed in the correct areas to view a better IX feel
+- A link to view the post as a single post, which redirects the user to a new page for just that post.
 
 ---
+### Popular profiles
+- As a user I can also see a clear and well designed most followed profiles list with the user name and avatar.
+- I can easily view and click on a user to view their profile.
+- On a smaller screen size the list is nicely positioned above the post images and search bar, also reduced to give better readability and UX.
+
 ---
+
 ---
 
 
