@@ -29,7 +29,7 @@ function CommentCreateForm(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      // form data for image upload (if an image is selected)
+      // form data for image upload
       const formData = new FormData();
       formData.append("content", content);
       formData.append("post", post);
@@ -63,46 +63,46 @@ function CommentCreateForm(props) {
 
   return (
     <Form className="mt-2" onSubmit={handleSubmit}>
-      <Form.Group>
-        <InputGroup>
-          <Link to={`/profiles/${profile_id}`}>
-            <Avatar src={profileImage} />
-          </Link>
-          <div className={`${styles.ImageContainer} ${styles.CommentImageContainer}`}>
-            {image && (
-              <Image className={styles.CommentImage} src={URL.createObjectURL(image)} rounded />
-            )}
-            <Form.Control
-              className={styles.Form}
-              placeholder="my comment..."
-              as="textarea"
-              value={content}
-              onChange={handleChange}
-              rows={2}
-            />
-          </div>
-          <InputGroup.Append>
-            <label htmlFor="comment-image-upload" className={styles.ImageUploadLabel}>
-              <img src={UploadIcon} alt="Upload Icon" />
-            </label>
-            <input
-              id="comment-image-upload"
-              type="file"
-              accept="image/*"
-              onChange={handleImageUpload}
-              className={styles.ImageUploadInput}
-            />
-          </InputGroup.Append>
-        </InputGroup>
-      </Form.Group>
-      <button
-        className={`${styles.Button} btn d-block ml-auto`}
-        disabled={!content.trim()}
-        type="submit"
-      >
-        post
-      </button>
-    </Form>
+  <Form.Group>
+    <InputGroup>
+      <Form.Control
+        className={styles.Form}
+        placeholder="my comment..."
+        as="textarea"
+        value={content}
+        onChange={handleChange}
+        rows={6}
+      />
+      <Link to={`/profiles/${profile_id}`}>
+        <Avatar src={profileImage} />
+      </Link>
+      <div className={`${styles.ImageContainer} ${styles.CommentImageContainer}`}>
+        {image && (
+          <Image className={styles.CommentImage} src={URL.createObjectURL(image)} rounded />
+        )}
+      </div>
+      <InputGroup.Append>
+        <label htmlFor="comment-image-upload" className={styles.ImageUploadLabel}>
+          <img src={UploadIcon} alt="Upload Icon" />
+        </label>
+        <input
+          id="comment-image-upload"
+          type="file"
+          accept="image/*"
+          onChange={handleImageUpload}
+          className={styles.ImageUploadInput}
+        />
+      </InputGroup.Append>
+    </InputGroup>
+  </Form.Group>
+  <button
+    className={`${styles.Button} btn d-block ml-auto`}
+    disabled={!content.trim()}
+    type="submit"
+  >
+    post
+  </button>
+</Form>
   );
 }
 

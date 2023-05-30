@@ -80,8 +80,14 @@
 
   .signUpContainer {
     background-color: #C5D3D9;
+    opacity: 0.5;
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 40px;
 
   }
+
+
+.JumbotronContainer{
+  color: #025373;
+}
