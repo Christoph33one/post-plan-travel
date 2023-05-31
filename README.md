@@ -39,6 +39,12 @@
 <li><a href="#frontend-testing">Front-end testing</a></li>
 </ul>
 
+Deplyment
+<li><a href="#deployment">Deplyment</a></li>
+
+Credits
+<li><a href="#credits">Credits</a></li>
+
 ---
 # Project purpose
 
@@ -72,6 +78,7 @@ For project requirements and project planning I followed the agile methodologies
 
 Please click the [link](https://github.com/users/Christoph33one/projects/30/views/1) to view the project Kanban board
 
+
 I created a list of project goals using agile user stories method. A user Story is a small, self-contained unit of development work designed to accomplish a specific goal within a product and articulate the value proposition for the work and drive the development work. 
 
 With agile it is advised to use a team velocity approach. Team velocity represents how many story points the development team can manage to finish in one iteration of a particular length.
@@ -79,6 +86,8 @@ With agile it is advised to use a team velocity approach. Team velocity represen
 As I am the only one planning this project and not using a team, I will not be using the team velocity approach and point score system.
 
 Using agile's MOSCOW method, each user story has been highlighted with the importance of the projects acceptance criteria. I used labels to indicate the importance of each user story and it's involvment with the project.
+
+Please visit the [build log](https://github.com/Christoph33one/post-plan-travel/issues) 
 
 ---
 
@@ -168,11 +177,21 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ---
 
 # Landing page
+
+Drawing inspiration from the homepage of [trip Advisor](https://www.tripadvisor.com/), I have incorporated essential features to enhance the user experience and facilitate access to relevant external links related to travel. Additionally, I have included a donations link to remind users about the importance of responsible travel and encourage them to contribute to the provided cause.
+
+To create a captivating visual impact, I have strategically incorporated a hero image in two key areas of the site, evoking a sense of wanderlust and adventure for the users.
+
+For visually pleasing design, I have utilized various shades of blue throughout the site. This color scheme ensures a soothing and harmonious aesthetic that complements the images without creating any clashing color combinations.
+
+To cater to mobile screen sizes, including a minimum width of 360px, the landing page has been meticulously designed to respond to different breakpoints. This approach ensures that the layout remains user-friendly and adapts seamlessly to varying screen sizes, providing an optimal viewing experience for mobile users.
+
 ![](src/assets/readme-images/home%20page.png)
 ![](src/assets/readme-images/home%20page%20donationns%20page.png)
 
 ---
 # Create post
+
 ![](src/assets/readme-images/create%20a%20post%20page.png)
 ![](src/assets/readme-images/create%20a%20post%20mobile.png)
 ---
@@ -450,6 +469,78 @@ Profile render if logged in
 ![](src/assets/readme-images/automated%20test%20profile.png)
 
 ---
+
+# Deployment 
+
+### forking the GitHub Repository
+
+- Go to the project [repository ](https://github.com/Christoph33one/post-plan-travel)
+- In the right most top menu, click the "Fork" button.
+- There will now be a copy of the repository in your own GitHub account.
+
+### Running the project locally
+- Go to the project [repository ](https://github.com/Christoph33one/post-plan-travel)
+- Click on the "Code" button.
+- Choose one of the three options (HTTPS, SSH or GitHub CLI) and then click copy.
+- Open the terminal in you IDE program.
+- Type git clone and paste the URL that was copied in step 3.
+- Press Enter and the local clone will be created.
+
+### Alternatively by using Gitpod:
+- Go to the project [repository ](https://github.com/Christoph33one/post-plan-travel)
+- Click the green button that says "Gitpod" and the project will now open up in Gitpod.
+
+### Deploying with [heroku ](https://dashboard.heroku.com/)
+- Go to Heroku.com and log in; if you do not already have an account then you will need to create one.
+- Click the New dropdown and select Create New App.
+- Enter a name for your new project, all Heroku apps need to have a unique name, you will be prompted if you need to change it.
+- Select the region you are working in.
+
+### Heroku Deployment
+- In the Deploy tab:
+
+1. Connect your Heroku account to your Github Repository following these steps:
+    - Click on the Deploy tab and choose Github-Connect to Github.
+    - Enter the GitHub repository name and click on Search.
+    -  Choose the correct repository for your application and click on Connect.
+
+2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the Deploy Branch button whenever you want a change made.
+
+3. Once you have chosen your deployment method and have clicked Deploy Branch your application will be built and you should now see the View button, click this to open your application.
+
+---
+
+# Credits
+A thank you
+
+# Websites
+
+[Trip Adivsor ](https://www.tripadvisor.com/) - Where all trips are planned and made, for design inspiration.
+
+[Logo generator ](https://favicon.io/logo-generator/) - Creating simple logos for free
+
+[Font awesome  ](https://fontawesome.com/) - Font awesome - Icon generator
+
+[Uizard.io ](https://app.uizard.io/) - Wire frame creator
+
+[Drawsql.app ](https://drawsql.app/)  - Design data model structure
+
+[ Pixels ](https://www.pexels.com/) - Supplying free downloadable images
+
+[ Google fonts](https://fonts.google.com/?preview.text=POST,%20PLAN%20%26%20TRAVEL&preview.text_type=custom) - Pre generated fonts for all text.
+
+[React Bootstrap Docs ](https://react-bootstrap-v4.netlify.app/) - The official docs for React Bootstrap components.
+
+[Stack Overflow](https://stackoverflow.com/) - Supported me in understanding: try/catch blocks, Routes in React, and adding custom fields to models in Django Rest.
+
+[ djangoproject.com](https://www.djangoproject.com/start/overview/) - Officially React documentation and functions
+
+
+[ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
+
+
+
+
 
 ############################################################################################################################################################################################
 !
