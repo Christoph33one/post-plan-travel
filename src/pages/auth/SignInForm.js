@@ -17,7 +17,7 @@ import { setTokenTimestamp } from "../../utils/utils";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
-  useRedirect('loggedin')
+  useRedirect('loggedIn')
   const [signInData, setSignInData] = useState({
     username: "",
     password: "",
@@ -28,11 +28,12 @@ function SignInForm() {
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     try {
       const {data} = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
       setTokenTimestamp(data);
-      history.goBack('/');
+      history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
     }
