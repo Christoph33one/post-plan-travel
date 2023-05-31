@@ -10,7 +10,6 @@
     text-align: center;
     padding: 10px;
   }
-  
   .Header {
     font-style: normal;
     font-weight: bold;
@@ -22,35 +21,28 @@
     color: #7C96A6;
     font-family: Caveat;
   }
-  
   .Link {
     text-decoration: none;
     text-align: center;
     display: block;
     margin: auto;
   }
-  
   .Link span {
     color: #ff9254;
   }
-  
   .Container {
     padding: 30px 10px;
   }
-  
   .SignInCol {
     height: 320px;
   }
-  
   .SignUpCol {
     height: 375px;
   }
-
-  /*sign up / sign in image*/
+  /* Sign up / sign in image */
   .CircleImage {
     border-radius: 20px; 
   }
-
 .CollageContainer {
   display: flex;
   gap: 8px;
@@ -58,7 +50,6 @@
   align-items: center;
   margin-bottom: 16px;
 }
-
 .CollageImageContainer {
   width: 33.33%;
   min-height: 120px;

@@ -9,11 +9,7 @@ const PopularProfiles = ({ mobile }) => {
   const { popularProfiles } = useProfileData();
 
   return (
-    <Container
-      className={`${appStyles.Content} ${
-        mobile && "d-lg-none text-center mb-3"
-      }`}
-    >
+    <Container className={`${appStyles.Content} ${mobile && "d-lg-none text-center mb-3"}`}>
       {popularProfiles.results.length ? (
         <>
           <p>Most followed profiles.</p>

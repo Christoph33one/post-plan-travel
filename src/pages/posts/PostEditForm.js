@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -7,25 +6,16 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Image from "react-bootstrap/Image";
-
-
-
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
-
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
-
 import HeroImageComponent from "../../components/HeroImage";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
  
-
-
 function PostEditForm() {
   const [errors, setErrors] = useState({});
-  
-
   const [postData, setPostData] = useState({
     title: "",
     description: "", 
@@ -60,7 +50,6 @@ function PostEditForm() {
   const history = useHistory();
   const { id } = useParams();
 
-
  useEffect(() =>{
     const handleMount = async () => {
         try{
@@ -78,7 +67,6 @@ function PostEditForm() {
                 image6,
                 is_owner
             } = data;
-            
             is_owner ? setPostData({
                 title, 
                 description, 
@@ -96,7 +84,6 @@ function PostEditForm() {
             console.log(err);
         }
     };
-
     handleMount();
  }, [history, id]);
   
@@ -106,7 +93,6 @@ function PostEditForm() {
       [event.target.name]: event.target.value,
     });
   };
-
 
   const handleChangeImage = (event) => {
     if (event.target.files.length) {
@@ -124,10 +110,8 @@ function PostEditForm() {
           : event.target.name === "image6"
           ? 6
           : null;
-  
       if (imageIndex) {
         const selectedImage = URL.createObjectURL(event.target.files[0]);
-  
         setPostData((prevState) => ({
           ...prevState,
           [`image${imageIndex}`]: selectedImage,
@@ -136,7 +120,6 @@ function PostEditForm() {
     }
   };
   
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -148,27 +131,21 @@ function PostEditForm() {
     if (imageInput.current.files[0]) {
         formData.append("image1", imageInput.current.files[0]);
       }
-      
       if (imageInput2.current.files[0]) {
         formData.append("image2", imageInput2.current.files[0]);
       }
-      
       if (imageInput3.current.files[0]) {
         formData.append("image3", imageInput3.current.files[0]);
       }
-      
       if (imageInput4.current.files[0]) {
         formData.append("image4", imageInput4.current.files[0]);
       }
-      
       if (imageInput5.current.files[0]) {
         formData.append("image5", imageInput5.current.files[0]);
       }
-      
       if (imageInput6.current.files[0]) {
         formData.append("image6", imageInput6.current.files[0]);
       }
-
     try {
       await axiosReq.put(`/posts/${id}/`, formData);
       history.push(`/posts/${id}/`);
@@ -180,10 +157,8 @@ function PostEditForm() {
     }
   };
 
-
   const textFields = (
     <div className="text-center">
-      
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control
@@ -199,15 +174,13 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
-
-
       <Form.Group>
         <Form.Label>Description</Form.Label>
         <Form.Control
           as="textarea"
           rows={6}
           name="description"
-          placeholder="Please add you experiences here about your trip here. Try to explain about the images you added "
+          placeholder="Please add you experiences here about your trip here. Try to explain about the images you added"
           value={description}
           onChange={handleChange}
         />
@@ -217,9 +190,7 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
-
-
-       <Form.Group>
+      <Form.Group>
         <Form.Label>Location</Form.Label>
         <Form.Control
           type="text"
@@ -234,8 +205,6 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
-
-
       <Form.Group>
         <Form.Label>Caption</Form.Label>
         <Form.Control
@@ -251,7 +220,6 @@ function PostEditForm() {
           {message}
         </Alert>
       ))}
-
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
         onClick={() => history.goBack()}
@@ -264,7 +232,6 @@ function PostEditForm() {
     </div>
   );
 
-
   return (
     <Form onSubmit={handleSubmit}>
       <HeroImageComponent />
@@ -274,11 +241,9 @@ function PostEditForm() {
           className={`${styles.CollageContainer} d-flex flex-wrap`}
         >
           <div className="d-flex flex-wrap justify-content-between">
-  
             {/* IMAGE 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-                
                     <figure>
                       <Image className={appStyles.Image} src={image1} rounded />
                     </figure>
@@ -304,11 +269,9 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 2 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-               
                     <figure>
                       <Image className={appStyles.Image} src={image2} rounded />
                     </figure>
@@ -320,7 +283,6 @@ function PostEditForm() {
                         Change the 2nd image
                       </Form.Label>
                     </div>
-   
                 <Form.File
                   id="image-upload-2"
                   accept="image/*"
@@ -335,11 +297,9 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 3 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-            
                     <figure>
                       <Image className={appStyles.Image} src={image3} rounded />
                     </figure>
@@ -351,7 +311,6 @@ function PostEditForm() {
                         Change the 3rd image
                       </Form.Label>
                     </div>
-           
                 <Form.File
                   id="image-upload-3"
                   accept="image/*"
@@ -366,11 +325,9 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 4 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-        
                     <figure>
                       <Image className={appStyles.Image} src={image4} rounded />
                     </figure>
@@ -382,7 +339,6 @@ function PostEditForm() {
                         Change the 4th image
                       </Form.Label>
                     </div>
-      
                 <Form.File
                   id="image-upload-4"
                   accept="image/*"
@@ -397,11 +353,9 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 5 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-              
                     <figure>
                       <Image className={appStyles.Image} src={image5} rounded />
                     </figure>
@@ -413,7 +367,6 @@ function PostEditForm() {
                         Change the 5th image
                       </Form.Label>
                     </div>
-       
                 <Form.File
                   id="image-upload-5"
                   accept="image/*"
@@ -428,11 +381,9 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-  
             {/* IMAGE 6 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
-              
                     <figure>
                       <Image className={appStyles.Image} src={image6} rounded />
                     </figure>
@@ -444,7 +395,6 @@ function PostEditForm() {
                         Change the 6th image
                       </Form.Label>
                     </div>
-       
                 <Form.File
                   id="image-upload-6"
                   accept="image/*"
@@ -460,7 +410,6 @@ function PostEditForm() {
               ))}
             </div>
           </div>
-  
           <div className="d-md-none">{textFields}</div>
         </Container>
       </Col>
@@ -469,7 +418,6 @@ function PostEditForm() {
       </Col>
     </Row>
   </Form>
-  
   );
 }
 

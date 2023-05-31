@@ -2,7 +2,6 @@
     border: none;
     border-bottom: 2px #00d1ff solid;
   }
-  
   .Button {
     border: none;
     background-color: #242a3d;
@@ -12,14 +11,12 @@
     min-width: 75px;
     margin: 5px;
   }
-  
   .Button:hover {
     cursor: pointer;
     background-color: aliceblue;
     color: #242a3d;
   }
-
-  /*Image sizing when uploading a preview image in edit form  */
+  /* Image sizing when uploading a preview image in edit form  */
   .CommentImage {
     max-width: 40%;
     height: auto;

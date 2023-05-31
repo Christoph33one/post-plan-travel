@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import { Link,  useHistory } from "react-router-dom";
-
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
-
 import {
     Form,
     Button,
@@ -14,8 +12,7 @@ import {
     Container,
     Alert,
   } from "react-bootstrap";
-  import axios from "axios";
-
+import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
 
 const SignUpForm = () => {
@@ -26,18 +23,14 @@ const SignUpForm = () => {
         password2: "",
     })
     const { username, password1, password2 } = signUpData;
-  
     const [errors, setErrors] = useState({})
-
     const history = useHistory();
-
     const handleChange = (event) => {
         setSignUpData({
             ...signUpData,
             [event.target.name]: event.target.value,
         });
     }
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -45,7 +38,6 @@ const SignUpForm = () => {
           history.push('/signin')
         } catch(err){
             setErrors(err.response?.data)
-
         }
     }
 
@@ -72,7 +64,6 @@ const SignUpForm = () => {
                   {message}
                 </Alert>
               ))}
-    
               <Form.Group controlId="password1">
                 <Form.Label className="d-none">password</Form.Label>
                 <Form.Control
@@ -89,7 +80,6 @@ const SignUpForm = () => {
                   {message}
                 </Alert>
               ))}
-    
               <Form.Group controlId="password2">
                 <Form.Label className="d-none">Confirm your password</Form.Label>
                 <Form.Control
@@ -106,7 +96,6 @@ const SignUpForm = () => {
                   {message}
                 </Alert>
               ))}
-    
               <Button
                 className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright} `}
                 type="submit"

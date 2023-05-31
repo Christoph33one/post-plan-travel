@@ -100,7 +100,6 @@ function PostCreateForm() {
     formData.append("image4", imageInput4.current.files[0]);
     formData.append("image5", imageInput5.current.files[0]);
     formData.append("image6", imageInput6.current.files[0]);
-
     try {
       const { data } = await axiosReq.post("/travelplanposts/", formData);
       // console.log(data.id)
@@ -460,7 +459,6 @@ function PostCreateForm() {
     </Row>
   </Form>
   </Container>
-  
   );
 }
 export default PostCreateForm;

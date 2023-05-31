@@ -3,7 +3,6 @@
   background-color: #D9D8D2;
   border-radius: 10px;
 }
-
 .CollageContainer {
   display: flex;
   gap: 8px;
@@ -11,7 +10,6 @@
   align-items: center;
   margin-bottom: 16px;
 }
-
 .CollageImageContainer {
   width: 33.33%;
   min-height: 120px;

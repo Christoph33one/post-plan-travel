@@ -8,16 +8,13 @@
     justify-content: center;
     padding: 20px;
   }
-  
   .image {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
-  
   .message {
     text-align: center;
     font-size: 16px;
     color: #555;
   }
-  

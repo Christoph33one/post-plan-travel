@@ -1,19 +1,10 @@
 import React, { useEffect, useState } from "react";
-
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-
-import Asset from "../../components/Asset";
-
-import styles from "../../styles/ProfilePage.module.css";
-import appStyles from "../../App.module.css";
-import btnStyles from "../../styles/Button.module.css";
-
-import PopularProfiles from "./PopularProfiles";
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import {
   useProfileData,
   useSetProfileData,
@@ -23,10 +14,13 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Post from "../posts/Post";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
-
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
+import Asset from "../../components/Asset";
+import PopularProfiles from "./PopularProfiles";
 
-
+import styles from "../../styles/ProfilePage.module.css";
+import appStyles from "../../App.module.css";
+import btnStyles from "../../styles/Button.module.css";
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -35,13 +29,13 @@ function ProfilePage() {
   const currentUser = useCurrentUser();
   const { id } = useParams();
 
-  const {setProfileData, handleFollow, handleUnfollow} = useSetProfileData();
+  const { setProfileData, handleFollow, handleUnfollow } =
+    useSetProfileData();
   const { pageProfile } = useProfileData();
 
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
 
-  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -65,7 +59,7 @@ function ProfilePage() {
 
   const mainProfile = (
     <>
-    {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
+      {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
       <Row noGutters className="px-3 text-center">
         <Col lg={3} className="text-lg-left">
           <Image
@@ -111,9 +105,6 @@ function ProfilePage() {
             ))}
         </Col>
         {profile?.activies && <Col className="p-3">{profile.activies}</Col>}
-        
-        
-
       </Row>
     </>
   );
@@ -122,14 +113,20 @@ function ProfilePage() {
     <>
       <hr />
       <div className="text-center">
-        <p><i className="fab fa-readme"></i></p>
+        <p>
+          <i className="fab fa-readme"></i>
+        </p>
         <p>{profile?.bio}</p>
-        <p><i className="fab fa-creative-commons-by"></i></p>
+        <p>
+          <i className="fab fa-creative-commons-by"></i>
+        </p>
         <p>{profile?.activities}</p> {/* Display selected activity */}
       </div>
       <hr />
       <hr />
-      <p className="text-center">{profile?.owner}'s <i className="fas fa-images"></i></p>
+      <p className="text-center">
+        {profile?.owner}'s <i className="fas fa-images"></i>
+      </p>
       {profilePosts.results.length ? (
         <InfiniteScroll
           children={profilePosts.results.map((post) => (
@@ -140,7 +137,6 @@ function ProfilePage() {
           hasMore={!!profilePosts.next}
           next={() => fetchMoreData(profilePosts, setProfilePosts)}
         />
-      
       ) : (
         <Asset
           src={NoResults}
@@ -149,7 +145,6 @@ function ProfilePage() {
       )}
     </>
   );
-  
 
   return (
     <Row>

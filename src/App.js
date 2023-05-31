@@ -9,31 +9,24 @@ import PostCreateForm from "./pages/posts/PostCreateForm";
 import TravelPostPage from "./pages/posts/TravelPostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
-
-
 import HomePage from "./pages/home/HomePage";
 import PostEditForm from "./pages/posts/PostEditForm";
 import ProfilePage from "./pages/profiles/ProfilePage";
-
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 
-
 function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || ""
 
-
   return (
- 
     <div className={styles.App}> 
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
           <Route exact path="/" render={() => <HomePage />} />
-
           <Route
             exact
             path="/locations"
@@ -41,7 +34,6 @@ function App() {
               <PostsPage message="Sorry results found. Adjust the search keyword or search a new location."
               filter={`__owner__profile=${profile_id}&`}
               />
-
             )}
           />
           <Route exact path="/signin" render={() => <SignInForm />} />

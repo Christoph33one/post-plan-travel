@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Alert from "react-bootstrap/Alert";
+import { Form, Button, Image, Row, Col, Container, Alert } from "react-bootstrap";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
@@ -80,8 +74,8 @@ const ProfileEditForm = () => {
     formData.append("bio", bio);
     formData.append("activities", activities);
 
-    if (imageFile?.current?.files[0]) {
-      formData.append("image", imageFile?.current?.files[0]);
+    if (imageFile.current?.files[0]) {
+      formData.append("image", imageFile.current.files[0]);
     }
 
     try {
@@ -175,7 +169,7 @@ const ProfileEditForm = () => {
             </Form.Group>
           </Container>
         </Col>
-        
+
         <Col className="py-2 p-0 p-md-2 text-center">
           <Container className={appStyles.Content}>
             {/* Activity choices dropdown */}

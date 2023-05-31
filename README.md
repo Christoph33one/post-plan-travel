@@ -26,16 +26,18 @@
 <li><a href="#search-bar">Search bar</a></li>
 <li><a href="#following">Follow / unfollow</a></li>
 <li><a href="#comments">Comments</a></li>
+</ul>
 
 <li><a href="#wire-frames">Wire frames</a></li>
 <li><a href="#colours">Colour</a></li>
 <li><a href="#colour-scheme">Colour scheme</a></li>
 </ul>
 
-<ul>Testing</ul>
+<ul>Testing
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#manual-testing">Manual tests</a></li>
 <li><a href="#frontend-testing">Front-end testing</a></li>
+</ul>
 
 ---
 # Project purpose
@@ -104,6 +106,9 @@ Please note that all registration fields must be filled out before the registrat
 ![](src/assets/readme-images/sign%20in%20form.png)
 ![](src/assets/readme-images/sign%20ion%20form%20mobile%20size.png)
 
+### Change user name & password
+![](src/assets/readme-images/new%20username%20form.png)
+![](src/assets/readme-images/new%20password%20form.png)
 
 ---
 
@@ -372,6 +377,16 @@ TRAVEL PLAN PAGE
 
 ---
 
+### CHANGE USER NAME / PASSWORD
+- As a user I can select to change me user name and view a pre-populated form with the current username
+- When adding a user that already exist, I am returned a notification message to use a different username
+- When using a new user name, I can Log in with that user name and the user old username dose not work
+- When changing my password, I can view a form with two inputs fields. The form gives good user security practice known as "password confirmation" or "password verification.
+- Once submitted I can login in with the new password.
+- I can not log in with the old password.
+
+--- 
+
 # Frontend testing
 
 ### CSS validation tests
@@ -405,13 +420,7 @@ Profile render if logged in
 ---
 
 ############################################################################################################################################################################################
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for React apps on the Codeanywhere IDE. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **19th April, 2023**
+!
 
 ## Codeanywhere Reminders
 

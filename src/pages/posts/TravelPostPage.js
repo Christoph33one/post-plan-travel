@@ -9,7 +9,6 @@ import Post from "./Post";
 import Comment from "../comments/Comments";
 import CommentCreateForm from "../comments/CommentCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-
 import InfiniteScroll from "react-infinite-scroll-component";
 import Asset from "../../components/Asset";
 import { fetchMoreData } from "../../utils/utils";
@@ -18,11 +17,10 @@ import PopularProfiles from "../profiles/PopularProfiles";
 function TravelPostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
-
   const currentUser = useCurrentUser();
   const profile_image = currentUser?.profile_image;
   const [comments, setComments] = useState({ results: [] });
-  const [commentImage, setCommentImage] = useState(null); 
+  const [commentImage, setCommentImage] = useState(null);
 
   useEffect(() => {
     const handleMount = async () => {
@@ -33,7 +31,6 @@ function TravelPostPage() {
         ]);
         setPost({ results: [post] });
         setComments(comments);
-
       } catch (err) {
         console.log(err);
       }
@@ -77,10 +74,12 @@ function TravelPostPage() {
                   />
                 ))}
               </InfiniteScroll>
-            ) : currentUser ? (
-              <span>No comments yet, be the first to comment!</span>
             ) : (
-              <span>No comments... yet</span>
+              <span>
+                {currentUser
+                  ? "No comments yet, be the first to comment!"
+                  : "No comments... yet"}
+              </span>
             )}
           </Container>
         </Col>
