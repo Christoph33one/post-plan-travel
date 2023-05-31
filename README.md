@@ -1,21 +1,25 @@
 
 ![](src/assets/readme-images/I%20am%20responsive%20image.png)
 
+ "Capturing the World: Exploring New Places and Moments Through the Lens"
+
+ ---
+
  ADD DEPLOYED FRONT-END ISTE
  ADD DEPLOYED API 
  ADD API REPO
  ADD FRONT-END REPO
 
- "Capturing the World: Exploring New Places and Moments Through the Lens"
-<ul>Structure
+
+### Structure
 <li><a href="#project-purpose">Project purpose</a></li>
 <li><a href="#user-audience">User audience</a></li>
 <li><a href="#structure">Structure</a></li>
 <li><a href="#project-planning">Project planning</a></li>
 <li><a href="#data-structure">Data structure</a></li>
-</ul>
 
-<ul>User experience (ux)
+--- 
+### UX & design
 <li><a href="#design">Design</a></li>
 <li><a href="#authentication">Authentication</a></li>
 <li><a href="#profile-page">Profile page</a></li>
@@ -26,30 +30,36 @@
 <li><a href="#search-bar">Search bar</a></li>
 <li><a href="#following">Follow / unfollow</a></li>
 <li><a href="#comments">Comments</a></li>
-</ul>
-
 <li><a href="#wire-frames">Wire frames</a></li>
 <li><a href="#colours">Colour</a></li>
 <li><a href="#colour-scheme">Colour scheme</a></li>
-</ul>
 
-<ul>Testing
+---
+
+### Testing
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#manual-testing">Manual tests</a></li>
 <li><a href="#frontend-testing">Front-end testing</a></li>
-</ul>
 
-Deplyment
+---
+
+# Deplyment
 <li><a href="#deployment">Deplyment</a></li>
 
-Credits
+--- 
+
+# Technology's
+<li><a href="#technologys">Technology's</a></li>
+
+--- 
+# Credits
 <li><a href="#credits">Credits</a></li>
 
 ---
+
 # Project purpose
 
 ### Post, Plan & travel
-
 Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel experiences from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities. With Post Plan & travel, planning a trip has never been easier or more exciting.
 
 To fully immerse yourself in the website's offerings and access its complete range of features, signing up for a free account is required. Once registered, a world of possibilities opens up before you. You can delve into a wealth of captivating posts created by fellow users, engage in meaningful discussions by adding your own comments, and even showcase your personal travel experiences.
@@ -73,7 +83,6 @@ In summary, Post, Plan & Travel is an all-encompassing platform that embraces di
 ---
 
 # Project planning
-
 For project requirements and project planning I followed the agile methodologies and best practices. I used a scrum board which is a built in feature in the projects repository with GitHub. 
 
 Please click the [link](https://github.com/users/Christoph33one/projects/30/views/1) to view the project Kanban board
@@ -98,11 +107,7 @@ All of the data structuring was completed when creating my backend API. The repo
 ---
 
 # Design
-
-
 # Authentication
-
-
 ### Sign up
 To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering the pasword for varifction.
 
@@ -148,7 +153,6 @@ By blending simplicity, creativity, and user-centric design, the profile page be
 ![](src/assets/readme-images/profile%20mobile.png)
 
 ### Profile edit form
-
 This form is designed to prioritize the security of the profile and is only visible to the owner. At the top of the profile page, there is a dropdown menu represented by a three-dot icon, adhering to modern design principles and functionality. When the user clicks on the dropdown menu, three options are presented: username change, password change, and edit profile.
 
 For the username and password change options, the user is redirected to separate forms where they can update their username and password securely.
@@ -177,7 +181,6 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ---
 
 # Landing page
-
 Drawing inspiration from the homepage of [trip Advisor](https://www.tripadvisor.com/), I have incorporated essential features to enhance the user experience and facilitate access to relevant external links related to travel. Additionally, I have included a donations link to remind users about the importance of responsible travel and encourage them to contribute to the provided cause.
 
 To create a captivating visual impact, I have strategically incorporated a hero image in two key areas of the site, evoking a sense of wanderlust and adventure for the users.
@@ -191,7 +194,6 @@ To cater to mobile screen sizes, including a minimum width of 360px, the landing
 
 ---
 # Create post
-
 ![](src/assets/readme-images/create%20a%20post%20page.png)
 ![](src/assets/readme-images/create%20a%20post%20mobile.png)
 ---
@@ -510,16 +512,7 @@ Profile render if logged in
 
 ---
 
-# Credits
-A thank you to:
-- The Code Institute walkthrough project 'Moments' for providing some structure and direction for my personal project.
-My mentor Lauren Nicole who has accomodated me along the way, supporting with queries 'on the fly' and providing invaluable guidance during project milestone meetings.
-- Code Institute tutors for helping to guide me through some difficult debugging (this process was often what caused the most retained learning for me).
-- I also want to thank  [Chris.F ](https://github.com/Chrisfaherty) & [Nick Coles ]( https://github.com/NickdevC/)
- (fellow Code Institute students). By joining together and engaging in remote study sessions your conversation and input kept me on track and motivated to push myself with regards to the project. Constructive venting and questioning, both contributed to much needed progress!
-- The slack community for going through any Q&A.
-
-# Websites
+# Technology's
 
 [Trip Adivsor ](https://www.tripadvisor.com/) - Where all trips are planned and made, for design inspiration.
 
@@ -544,111 +537,15 @@ My mentor Lauren Nicole who has accomodated me along the way, supporting with qu
 
 [ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
 
-
-
-
-
-############################################################################################################################################################################################
-!
-
-## Codeanywhere Reminders
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
 ---
 
+# Credits
+A thank you to:
+- The Code Institute walkthrough project 'Moments' for providing some structure and direction for my personal project.
+My mentor Lauren Nicole who has accomodated me along the way, supporting with queries 'on the fly' and providing invaluable guidance during project milestone meetings.
+- Code Institute tutors for helping to guide me through some difficult debugging (this process was often what caused the most retained learning for me).
+- I also want to thank  [Chris.F ](https://github.com/Chrisfaherty) & [Nick Coles ]( https://github.com/NickdevC/)
+ (fellow Code Institute students). By joining together and engaging in remote study sessions your conversation and input kept me on track and motivated to push myself with regards to the project. Constructive venting and questioning, both contributed to much needed progress!
+- The slack community for going through any Q&A.
 
 
-
-
-
-
-
-
-
-Happy coding!
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm install`
-
-Installs the required npm packages.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open port 3000 to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
