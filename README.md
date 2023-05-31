@@ -325,6 +325,36 @@ While attempting to render all posts by a user from their profile page, I encoun
 Solution:
 Upon reviewing the console error, I identified a type error in the hasMore={!!profilePosts.next} code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
 
+### PostCreateFrom
+Issue:
+
+When a logged out user attempts to access the "create a post" form, they can manually add the URL endpoint "/posts/create." This leads them to the form, even though it should only be accessible to authenticated users. This poses a security risk and needs to be addressed.
+
+Solution:
+
+Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the PostCreateForm function, the useRedirect prop's value were written as a string using double brackets "".
+This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully. Consequently, the create post page is now inaccessible to logged out users, effectively bolstering the overall security measures.
+
+### SignIn
+Issue:
+
+When a logged in user attempts to access the sign in form, they can manually add the URL endpoint "/signin." This leads them to the form, even tho it should not be accessible and the user should be redirected back to the home page "/"
+
+Solution:
+
+Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the SignInForm function, the useRedirect prop's value were written as a string using double brackets - useRedirect("loggedIn")
+This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully and the iser is redirected to the home page.
+
+### Signup
+Issue:
+
+When a logged in user attempts to access the sign up form, they can manually add the URL endpoint "/signup." This leads them to the form, even tho it should not be accessible and the user should be redirected back to the home page "/"
+
+Solution:
+
+Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the SignInForm function, the useRedirect prop's value were written as a string using double brackets - useRedirect("loggedIn")
+This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully and the iser is redirected to the home page.
+
 ---
 
 # Manual testing
