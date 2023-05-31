@@ -9,7 +9,7 @@ import Image from "react-bootstrap/Image";
 import Asset from "../../components/Asset";
 import Upload from "../../assets/upload.png";
 import styles from "../../styles/PostCreateEditForm.module.css";
-import appStyles from "../../App.module.css"; 
+import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
@@ -233,9 +233,9 @@ function PostCreateForm() {
                   ref={imageInput}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image1?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add six images!
                 </Alert>
               ))}
             </div>
@@ -275,9 +275,9 @@ function PostCreateForm() {
                   ref={imageInput2}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image2?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add six images!
                 </Alert>
               ))}
             </div>
@@ -317,9 +317,9 @@ function PostCreateForm() {
                   ref={imageInput3}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image3?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add six images!
                 </Alert>
               ))}
             </div>
@@ -359,9 +359,9 @@ function PostCreateForm() {
                   ref={imageInput4}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image4?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add an image!
                 </Alert>
               ))}
             </div>
@@ -401,9 +401,9 @@ function PostCreateForm() {
                   ref={imageInput5}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image5?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add six images!
                 </Alert>
               ))}
             </div>
@@ -443,9 +443,9 @@ function PostCreateForm() {
                   ref={imageInput6}
                 />
               </Form.Group>
-              {errors?.image?.map((message, idx) => (
+              {errors?.image6?.map((message, idx) => (
                 <Alert variant="warning" key={idx}>
-                  {message}
+                  Please add six images!
                 </Alert>
               ))}
             </div>

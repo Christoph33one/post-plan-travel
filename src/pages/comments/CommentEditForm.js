@@ -1,8 +1,11 @@
+
 import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
-import { axiosRes } from "../../api/axiosDefaults";
+// import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
 import UploadIcon from "../../assets/upload.png";
+import { axiosReq } from "../../api/axiosDefaults";
+import { useHistory } from "react-router";
 
 function CommentEditForm(props) {
   const { id, content, image, setShowEditForm, setComments } = props;
@@ -10,59 +13,52 @@ function CommentEditForm(props) {
   const [formContent, setFormContent] = useState(content);
   const [formImage, setFormImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(image);
+  const history = useHistory();
 
-  useEffect(() => {
-    if (image) {
-      setPreviewImage(image);
-    }
-  }, [image]);
-
-  const handleChangeContent = (event) => {
+  const handleContentChange = (event) => {
     setFormContent(event.target.value);
   };
 
-  const handleChangeImage = (event) => {
-    if (event.target.files.length) {
-      const selectedImage = URL.createObjectURL(event.target.files[0]);
-      setFormImage(event.target.files[0]);
-      setPreviewImage(selectedImage);
-    }
+  const handleImageChange = (event) => {
+    const selectedFile = event.target.files[0];
+    setFormImage(selectedFile);
+    setPreviewImage(URL.createObjectURL(event.target.files[0]));
   };
 
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const formData = new FormData();
+    formData.append("content", formContent);
+    formData.append("image", formImage);
+    
+    if (formImage) {
+      formData.append("image", formImage);
+    }
+
     try {
-      const formData = new FormData();
-      formData.append("content", formContent.trim());
-      if (formImage) {
-        formData.append("image", formImage);
-      }
-
-      await axiosRes.put(`/comments/${id}/`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+      await axiosReq.put(`/comments/${id}/`, {
+        content: formContent.trim(),
       });
-
       setComments((prevComments) => ({
         ...prevComments,
-        results: prevComments.results.map((comment) =>
-          comment.id === id
+        results: prevComments.results.map((comment) => {
+          return comment.id === id
             ? {
                 ...comment,
                 content: formContent.trim(),
-                image: previewImage,
                 updated_at: "now",
               }
-            : comment
-        ),
+            : comment;
+        }),
       }));
-
       setShowEditForm(false);
     } catch (err) {
       console.log(err);
     }
   };
+  
+
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -71,7 +67,7 @@ function CommentEditForm(props) {
           className={styles.Form}
           as="textarea"
           value={formContent}
-          onChange={handleChangeContent}
+          onChange={handleContentChange}
           rows={2}
         />
       </Form.Group>
@@ -84,7 +80,7 @@ function CommentEditForm(props) {
             type="file"
             accept="image/*"
             className={styles.ImageUploadInput}
-            onChange={handleChangeImage}
+            onChange={handleImageChange}
           />
           <label
             htmlFor={`edit-image-${id}`}
