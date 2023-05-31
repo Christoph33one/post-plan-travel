@@ -511,7 +511,13 @@ Profile render if logged in
 ---
 
 # Credits
-A thank you
+A thank you to:
+- The Code Institute walkthrough project 'Moments' for providing some structure and direction for my personal project.
+My mentor Lauren Nicole who has accomodated me along the way, supporting with queries 'on the fly' and providing invaluable guidance during project milestone meetings.
+- Code Institute tutors for helping to guide me through some difficult debugging (this process was often what caused the most retained learning for me).
+- I also want to thank  [Chris.F ](https://github.com/Chrisfaherty) & [Nick Coles ]( https://github.com/NickdevC/)
+ (fellow Code Institute students). By joining together and engaging in remote study sessions your conversation and input kept me on track and motivated to push myself with regards to the project. Constructive venting and questioning, both contributed to much needed progress!
+- The slack community for going through any Q&A.
 
 # Websites
 
