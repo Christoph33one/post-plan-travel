@@ -15,6 +15,7 @@ import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
 
+// SignInForm component for handling user sign in functionality. 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
   useRedirect("loggedIn")

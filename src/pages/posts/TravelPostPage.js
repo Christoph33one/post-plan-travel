@@ -35,7 +35,6 @@ function TravelPostPage() {
         console.log(err);
       }
     };
-
     handleMount();
   }, [id]);
 
@@ -44,6 +43,8 @@ function TravelPostPage() {
       <Row className="h-100">
         <Col className="py-2 p-0 p-lg-2" lg={8}>
           <PopularProfiles mobile />
+          
+          {/* Render CommentCreateForm if currentUser is present. */}
           <Post {...post.results[0]} setPost={setPost} travelPostPage />
           <Container className={appStyles.Content}>
             {currentUser && (
@@ -57,6 +58,8 @@ function TravelPostPage() {
                 setCommentImage={setCommentImage}
               />
             )}
+            
+            {/* Conditional rendering of comments or "No comments" message based on comments.results and currentUser. */}
             {comments.results.length > 0 ? (
               <InfiniteScroll
                 dataLength={comments.results.length}

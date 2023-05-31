@@ -27,6 +27,7 @@ const HomePage = () => {
             ))}
           </div>
         </Container>
+        
         <HeroImageComponent />
         <h4><strong className={styles.JumbotronContainer}>Join us!</strong></h4>
         <h5>
@@ -39,7 +40,6 @@ const HomePage = () => {
           <Link to="/signup"><strong>SIGN UP</strong></Link>
         </Button>
         </p>
-
         <Container className={styles.donationsContainer}>
           <Row>
             <Col md={6}>

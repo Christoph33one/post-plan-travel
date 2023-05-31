@@ -32,6 +32,7 @@ function ProfilePage() {
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
 
+  // Fetch profile & profile posts data based on the ID.
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -53,6 +54,8 @@ function ProfilePage() {
     fetchData();
   }, [id, setProfileData]);
 
+
+  // Display main profile information, profile activities optional.
   const mainProfile = (
     <>
       {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
@@ -105,6 +108,7 @@ function ProfilePage() {
     </>
   );
 
+  // Display main profile posts, posts list rendered using InfiniteScroll.
   const mainProfilePosts = (
     <>
       <hr />
@@ -142,6 +146,7 @@ function ProfilePage() {
     </>
   );
 
+  // Render PopularProfiles, mainProfile, and mainProfilePosts
   return (
     <Row>
       <Col className="py-2 p-0 p-lg-2" lg={8}>

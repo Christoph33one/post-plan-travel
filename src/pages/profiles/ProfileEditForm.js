@@ -34,7 +34,6 @@ const ProfileEditForm = () => {
   });
 
   const { name, bio, activities, image, ACTIVITY_CHOICES } = profileData;
-
   const [errors, setErrors] = useState({});
 
   useEffect(() => {

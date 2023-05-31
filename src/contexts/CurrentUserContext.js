@@ -14,6 +14,11 @@ export const CurrentUserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
+
+  {/*
+    Fetch user data from the "dj-rest-auth/user/" 
+    endpoint and update the current user state.
+  */}
   const handleMount = async () => {
     try {
       const { data } = await axiosRes.get("dj-rest-auth/user/");
@@ -51,6 +56,11 @@ export const CurrentUserProvider = ({ children }) => {
       }
     );
 
+    {/*
+    Axios to handle token refreshing.
+    If token needs refreshing, send request to
+    refresh the token & handles the response accordingly.
+  */}
     axiosRes.interceptors.response.use(
       (response) => response,
       async (err) => {

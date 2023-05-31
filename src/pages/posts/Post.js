@@ -111,7 +111,7 @@ const Post = (props) => {
         </Link>
         {comments_count}
       </div>
-
+      
       {comment_image && (
         <div className={styles.CollageImageContainer}>
           <Card.Img src={comment_image} alt="Comment Image" className={styles.CommentImage} />

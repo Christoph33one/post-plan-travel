@@ -17,6 +17,7 @@ export const ProfileDataProvider = ({ children }) => {
 
   const currentUser = useCurrentUser();
 
+  // Axios POST request to follow a profile, updating profileData state.
   const handleFollow = async (clickedProfile) => {
     try {
       const { data } = await axiosRes.post("/followers/", {
@@ -62,7 +63,8 @@ export const ProfileDataProvider = ({ children }) => {
       console.log(err);
     }
   };
-
+  
+// Axios GET request to fetch popular profiles, updating profileData state.
   useEffect(() => {
     const handleMount = async () => {
       try {

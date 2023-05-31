@@ -9,7 +9,6 @@ import { useHistory } from "react-router";
 
 function CommentEditForm(props) {
   const { id, content, image, setShowEditForm, setComments } = props;
-
   const [formContent, setFormContent] = useState(content);
   const [formImage, setFormImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(image);
@@ -18,14 +17,15 @@ function CommentEditForm(props) {
   const handleContentChange = (event) => {
     setFormContent(event.target.value);
   };
-
+ 
+  // Handle image change event, update state with selected file and preview.
   const handleImageChange = (event) => {
     const selectedFile = event.target.files[0];
     setFormImage(selectedFile);
     setPreviewImage(URL.createObjectURL(event.target.files[0]));
   };
 
-  
+  // Handle form submission, create FormData and append content and image.
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -58,8 +58,6 @@ function CommentEditForm(props) {
     }
   };
   
-
-
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="pr-1">
@@ -71,7 +69,6 @@ function CommentEditForm(props) {
           rows={2}
         />
       </Form.Group>
-
       <Form.Group className="pr-1">
         <h5>Please click the image to upload</h5>
         <div className={styles.ImageUploadContainer}>

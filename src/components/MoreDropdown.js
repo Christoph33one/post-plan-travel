@@ -15,7 +15,7 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     />
   ));
 
-
+// Editing and deleting, accepts handleEdit & handleDelete event handlers.
 export const MoreDropdown = ({ handleEdit, handleDelete }) => {
   return (
     <Dropdown className="ml-auto" drop="left">
@@ -44,6 +44,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
   );
 };
 
+// For changing the username & password on user profiles.
 export function ProfileEditDropdown({ id }) {
   const history = useHistory();
   return (

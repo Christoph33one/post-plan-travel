@@ -10,6 +10,7 @@ const PopularProfiles = ({ mobile }) => {
 
   return (
     <Container className={`${appStyles.Content} ${mobile && "d-lg-none text-center mb-3"}`}>
+      {/* Render popular profiles if available, otherwise shows a spinner. */}
       {popularProfiles.results.length ? (
         <>
           <p>Most followed profiles.</p>

@@ -87,6 +87,7 @@ function PostEditForm() {
     handleMount();
  }, [history, id]);
   
+  // Updates postData state with event target's value, name  / value
   const handleChange = (event) => {
     setPostData({
       ...postData,
@@ -94,6 +95,7 @@ function PostEditForm() {
     });
   };
 
+   // Updates postData state with selected images based on imageIndex.
   const handleChangeImage = (event) => {
     if (event.target.files.length) {
       const imageIndex =
@@ -157,6 +159,7 @@ function PostEditForm() {
     }
   };
 
+  // Renders form input fields, update / cancel buttons & error messages 
   const textFields = (
     <div className="text-center">
       <Form.Group>
@@ -241,7 +244,7 @@ function PostEditForm() {
           className={`${styles.CollageContainer} d-flex flex-wrap`}
         >
           <div className="d-flex flex-wrap justify-content-between">
-            {/* IMAGE 1 */}
+            {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -269,7 +272,8 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 2 */}
+
+            {/* Display image 2 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -297,7 +301,8 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 3 */}
+
+            {/* Display image 3 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -325,7 +330,8 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 4 */}
+
+            {/* Display image 4 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -353,7 +359,8 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 5 */}
+
+            {/* Display image 5 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -381,7 +388,8 @@ function PostEditForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 6 */}
+            
+            {/* Display image 6 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                     <figure>
@@ -411,6 +419,7 @@ function PostEditForm() {
             </div>
           </div>
           <div className="d-md-none">{textFields}</div>
+
         </Container>
       </Col>
       <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">

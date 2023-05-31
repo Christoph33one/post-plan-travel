@@ -26,6 +26,7 @@ const Comment = (props) => {
   const is_owner = currentUser?.username === owner;
   const [showEditForm, setShowEditForm] = useState(false);
 
+  // Handle comment deletion, update post & comments data.
   const handleDelete = async () => {
     try {
       await axiosReq.delete(`/comments/${id}/`)

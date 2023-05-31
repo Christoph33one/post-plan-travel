@@ -1,5 +1,6 @@
 import { rest } from 'msw';
 
+// Mock API handlers for user authentication and logout.
 const baseURL = "https://travel-planner-api.herokuapp.com/";
 export const handlers = [
     rest.get(`${baseURL}dj-rest-auth/user/`, (req, res, ctx) => {

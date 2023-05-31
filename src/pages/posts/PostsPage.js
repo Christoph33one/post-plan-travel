@@ -36,6 +36,7 @@ function PostsPage({ message, filter = "" }) {
       }
     };
 
+    // Timeout to fetch posts after delay & clears the timer on unmount.
     setHasLoaded(false);
     const timer = setTimeout(() => {
       fetchPosts();
@@ -62,6 +63,8 @@ function PostsPage({ message, filter = "" }) {
             placeholder="Search posts"
           />
         </Form>
+
+        {/* Conditional rendering of posts or "No Results" message based on hasLoaded state. */}
         {hasLoaded ? (
           <>
             {posts.results.length ? (

@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom/cjs/react-router-dom.m
 import NavBar from "../NavBar"
 import { CurrentUserProvider } from "../../contexts/CurrentUserContext";
 
+// Test NavBar rendering signin link with matching title SIGNIN
 test("renders Navbar", () => {
     render(
         <Router>
@@ -14,6 +15,7 @@ test("renders Navbar", () => {
     expect(signInLink).toBeInTheDocument(); 
 });
 
+// Test NavBar rendering homepage link with matching title HOME
 test("renders HomePAGE", () => {
     render(
         <Router>
@@ -25,7 +27,7 @@ test("renders HomePAGE", () => {
     expect(signInLink).toBeInTheDocument(); 
 });
 
-
+// Test renders link to the user profile for a logged in user
 test("renders link to the user profile for a logged in user", async () => {
     render(
       <Router>
@@ -38,6 +40,7 @@ test("renders link to the user profile for a logged in user", async () => {
     expect(profileAvatar).toBeInTheDocument();
   });
  
+  // Test renders Sign in and Sign up buttons again on log out
   test("renders Sign in and Sign up buttons again on log out", async () => {
     render(
       <Router>

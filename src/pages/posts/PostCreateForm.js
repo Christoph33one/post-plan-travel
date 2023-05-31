@@ -19,7 +19,6 @@ import { useRedirect } from "../../hooks/useRedirect";
 function PostCreateForm() {
   useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
-  
   const [postData, setPostData] = useState({
     title: "",
     description: "",
@@ -45,6 +44,7 @@ function PostCreateForm() {
     image6,
   } = postData;
 
+  // Updating post data
   const imageInput = useRef(null);
   const imageInput2 = useRef(null);
   const imageInput3 = useRef(null);
@@ -59,6 +59,7 @@ function PostCreateForm() {
     });
   };
 
+  // Updating the image URLs in the postData state based on the selected image input.
   const handleChangeImage = (event) => {
     if (event.target.files.length) {
       const imageIndex =
@@ -87,6 +88,7 @@ function PostCreateForm() {
     }
   };
   
+  // Submits form data to create a new travel plan post. Redirects on success.
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -102,7 +104,6 @@ function PostCreateForm() {
     formData.append("image6", imageInput6.current.files[0]);
     try {
       const { data } = await axiosReq.post("/travelplanposts/", formData);
-      // console.log(data.id)
       history.push(`/posts/${data.id}`);
     } catch (err) {
       console.log(err);
@@ -196,8 +197,8 @@ function PostCreateForm() {
         <Container
           className={`${styles.CollageContainer} d-flex flex-wrap`}
         >
-          <div className="d-flex flex-wrap justify-content-between">
-            {/* IMAGE 1 */}
+          <div className="d-flex flex-wrap justify-content-between">\
+           {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image1 ? (
@@ -239,7 +240,8 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 2 */}
+            
+            {/* Display image 2 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image2 ? (
@@ -281,7 +283,8 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 3 */}
+
+           {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image3 ? (
@@ -323,7 +326,8 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 4 */}
+
+           {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image4 ? (
@@ -365,7 +369,8 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 5 */}
+
+            {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image5 ? (
@@ -407,7 +412,8 @@ function PostCreateForm() {
                 </Alert>
               ))}
             </div>
-            {/* IMAGE 6 */}
+
+            {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
                 {image6 ? (
@@ -451,6 +457,7 @@ function PostCreateForm() {
             </div>
           </div>
           <div className="d-md-none">{textFields}</div>
+          
         </Container>
       </Col>
       <Col md={5} lg={4} className="d-none d-md-block p-0 p-md-2">

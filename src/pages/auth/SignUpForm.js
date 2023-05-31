@@ -15,6 +15,7 @@ import {
 import axios from "axios";
 import { useRedirect } from "../../hooks/useRedirect";
 
+// SignUpForm component for handling user sign up functionality. 
 const SignUpForm = () => {
     useRedirect("loggedIn") 
     const [signUpData, setSignUpData] = useState ({
@@ -46,7 +47,6 @@ const SignUpForm = () => {
         <Col className="my-auto py-2 p-md-2" md={6}>
           <Container className={`${appStyles.Content} p-4 `}>
             <h1 className={styles.Header}>sign up</h1>
-    
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="username">
                 <Form.Label className="d-none">Username</Form.Label>
