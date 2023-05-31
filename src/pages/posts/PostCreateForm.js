@@ -17,7 +17,7 @@ import HeroImageComponent from "../../components/HeroImage";
 import { useRedirect } from "../../hooks/useRedirect";
 
 function PostCreateForm() {
-  useRedirect('loggedOut');
+  useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
   
   const [postData, setPostData] = useState({
