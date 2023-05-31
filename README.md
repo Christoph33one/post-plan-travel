@@ -335,6 +335,14 @@ Solution:
 Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the PostCreateForm function, the useRedirect prop's value were written as a string using double brackets "".
 This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully. Consequently, the create post page is now inaccessible to logged out users, effectively bolstering the overall security measures.
 
+### PostsPage 
+
+Issue:
+When a usewr is not logged in, manually added the url endpoint /locations/ the user can access the locations page and view all posts.
+
+Solution:
+After reviewing the useRedirect Hook and implementing it into the PostsPage function, the loggout user could not acceess the posts page and view no posts.
+
 ### SignIn
 Issue:
 
