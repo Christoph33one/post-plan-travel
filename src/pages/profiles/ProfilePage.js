@@ -20,20 +20,15 @@ import PopularProfiles from "./PopularProfiles";
 import styles from "../../styles/ProfilePage.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
-import { useRedirect } from "../../hooks/useRedirect";
 
 function ProfilePage() {
-  useRedirect("loggedOut")
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
-
   const currentUser = useCurrentUser();
   const { id } = useParams();
-
   const { setProfileData, handleFollow, handleUnfollow } =
     useSetProfileData();
   const { pageProfile } = useProfileData();
-
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
 

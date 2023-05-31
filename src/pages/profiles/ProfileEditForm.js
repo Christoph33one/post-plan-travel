@@ -5,8 +5,10 @@ import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser, useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import { useRedirect } from "../../hooks/useRedirect";
 
 const ProfileEditForm = () => {
+  useRedirect("loggedOut");
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
   const { id } = useParams();

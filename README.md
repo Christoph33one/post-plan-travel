@@ -330,6 +330,13 @@ When a user is not logged in, they can manually added the url endpoint /profiles
 Solution:
 After reviewing the useRedirect Hook and implementing it into the ProfilePage function, the loggout user could not acceess any of the profiles.
 
+### ProfileEditForm
+Issue:
+When a user is not logged in, they can manually added the url endpoint /profiles{id}/edit, then the user can access the profile edit page of another user.
+
+Solution:
+After reviewing the useRedirect Hook and implementing it into the ProfileEditForm function, the loggout user could not acceess to edit a profile they do not own.
+
 ### PostCreateFrom
 Issue:
 

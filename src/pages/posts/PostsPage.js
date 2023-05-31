@@ -16,8 +16,9 @@ import PopularProfiles from "../profiles/PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 
+
 function PostsPage({ message, filter = "" }) {
-  useRedirect("loggedOut") 
+    useRedirect("loggedOut") 
   const [posts, setPosts] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
