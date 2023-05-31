@@ -24,7 +24,6 @@ const Comment = (props) => {
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
-
   const [showEditForm, setShowEditForm] = useState(false);
 
   const handleDelete = async () => {
@@ -69,8 +68,7 @@ const Comment = (props) => {
               <p>{content}</p>
               {image && (
                 <div >
-                  {/* <Image className={styles.ImageContainer} src={image} alt="Comment Image" rounded /> */}
-                  <Image className={styles.CommentImage} src={image} alt="Comment Image" rounded />
+                  <Image className={styles.CommentImage} src={image} alt="Comment Image" />
                 </div>
               )}
             </>

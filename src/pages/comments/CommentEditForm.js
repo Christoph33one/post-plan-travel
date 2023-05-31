@@ -23,8 +23,9 @@ function CommentEditForm(props) {
 
   const handleChangeImage = (event) => {
     if (event.target.files.length) {
-      URL.revokeObjectURL(previewImage);
-      setPreviewImage(URL.createObjectURL(event.target.files[0]));
+      const selectedImage = URL.createObjectURL(event.target.files[0]);
+      setFormImage(event.target.files[0]);
+      setPreviewImage(selectedImage);
     }
   };
 
@@ -45,16 +46,16 @@ function CommentEditForm(props) {
 
       setComments((prevComments) => ({
         ...prevComments,
-        results: prevComments.results.map((comment) => {
-          return comment.id === id
+        results: prevComments.results.map((comment) =>
+          comment.id === id
             ? {
                 ...comment,
                 content: formContent.trim(),
                 image: previewImage,
                 updated_at: "now",
               }
-            : comment;
-        }),
+            : comment
+        ),
       }));
 
       setShowEditForm(false);
@@ -76,9 +77,8 @@ function CommentEditForm(props) {
       </Form.Group>
 
       <Form.Group className="pr-1">
-     
+        <h5>Please click the image to upload</h5>
         <div className={styles.ImageUploadContainer}>
-           <strong>Please click the image to upload</strong>
           <input
             id={`edit-image-${id}`}
             type="file"

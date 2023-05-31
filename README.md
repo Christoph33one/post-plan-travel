@@ -92,31 +92,63 @@ All of the data structuring was completed when creating my backend API. The repo
 
 
 # Authentication
-To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering it.
 
-Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information.
 
 ### Sign up
+To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering the pasword for varifction.
+
+Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information and a pasword with a minimum of 8 characters.
+
 ![](src/assets/readme-images/signnup%20formpage.png)
 ![](src/assets/readme-images/sign%20up%20form%20apge%20mobile%20size.png)
 
 ---
 
 ### Sign in
+Upon signing in, users are presented with a user-friendly form that allows them to enter their credentials, including their username and a secure password. The password input field provides hidden feedback as the user types, ensuring a secure and seamless experience.
+
+To enhance clarity, a prominent submit button is positioned below the input fields, clearly indicating where users should submit their sign-in information. By prioritizing user-friendliness and security in the sign-in form, we aim to establish trust and respect for our site's users.
+
+In addition, I have incorporated an image to enhance the visual appeal of the form. The image is positioned to the right of the form in larger browser views, and for smaller screen sizes, it gracefully transitions below the form. This welcoming image aligns with the travel theme, aligning with the overall goals of the site.
+
+To provide a convenient reminder for registered users and facilitate easier navigation for non-signed-in users, I have incorporated a message and a link below the form. This serves as a helpful prompt, directing users to the sign-in page and enabling them to access their accounts effortlessly.
+
 ![](src/assets/readme-images/sign%20in%20form.png)
 ![](src/assets/readme-images/sign%20ion%20form%20mobile%20size.png)
 
 ### Change user name & password
+The purpose of this function is to enable users to change their passwords and usernames without the need to request assistance from a site administrator. By offering this functionality directly to the users, we aim to enhance the sign-in experience by providing a more efficient and streamlined process for resolving password-related issues.
+
+Empowering users with the ability to change their passwords not only simplifies the response to sign-in problems but also instills a greater sense of security. By allowing users to take control of their own accounts and update their valuable information, we prioritize their privacy and provide them with a more secure environment.
+
 ![](src/assets/readme-images/new%20username%20form.png)
 ![](src/assets/readme-images/new%20password%20form.png)
 
 ---
 
 # Profile page
+When exploring the profile page, I aimed to create a delightful and engaging experience for users. The profile serves as a hub for users to curate their favorite activities from a diverse selection of popular travel options. To add a touch of personalization and align with contemporary design trends, I included the option for users to upload a vibrant avatar, giving their profile a unique flair that reflects their personality.
+
+Additionally, I incorporated a bio section where users can freely express themselves and share compelling information about their interests and experiences. Recognizing the importance of individual identity, a preset title or name is provided to ensure a meaningful profile representation.
+
+On the profile page, users can conveniently access and manage all their posts on the site. By providing a comprehensive view of their latest posts and all other contributions, users can stay updated with their own content as well as the wider community. To enhance the user experience, we have made a subtle improvement by displaying the post count just below the user's name. This feature allows users to effortlessly track the number of posts they have created, offering a simple and intuitive way to gauge their contribution.
+
+By blending simplicity, creativity, and user-centric design, the profile page becomes a captivating canvas where users can showcase their favorite activities and tell their travel story with enthusiasm.
+
 ![](src/assets/readme-images/profile%20page.png)
 ![](src/assets/readme-images/profile%20mobile.png)
 
 ### Profile edit form
+
+This form is designed to prioritize the security of the profile and is only visible to the owner. At the top of the profile page, there is a dropdown menu represented by a three-dot icon, adhering to modern design principles and functionality. When the user clicks on the dropdown menu, three options are presented: username change, password change, and edit profile.
+
+For the username and password change options, the user is redirected to separate forms where they can update their username and password securely.
+
+The edit profile function provides the user with a pre-populated form that allows them to update their avatar, title, bio, and activities. Once the user has made the desired changes and submits the form, they are redirected to their newly updated profile.
+
+By implementing these measures, we ensure that the owner has full control over their profile while maintaining a user-friendly and secure experience.
+
+The profile page is designed to have a responsive layout, adapting seamlessly to various browser screen sizes, including a minimum width of 360px. This ensures that users can access and navigate the profile page comfortably regardless of the device or screen size they are using. By optimizing the layout for responsiveness, we prioritize a consistent and user-friendly experience across different platforms and screen resolutions.
 
 ![](src/assets/readme-images/profile%20edit%20form.png)
 ![](src/assets/readme-images/profile%20form%20mobile.png)

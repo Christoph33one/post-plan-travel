@@ -28,7 +28,7 @@ const HomePage = () => {
           </div>
         </Container>
         <HeroImageComponent />
-        <h4><strong>Join us!</strong></h4>
+        <h4><strong className={styles.JumbotronContainer}>Join us!</strong></h4>
         <h5>
           At Post, Plan & Travel, we encourage you to sign up and become a part of our travel community.
           By creating a profile, you can showcase your travel experiences and share your captivating stories

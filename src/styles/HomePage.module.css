@@ -39,7 +39,7 @@
     font-size: 1.5rem;
   }
   strong {
-    color: #025373;
+    color: #024873;
   }
   strong, h6 {
     color: #C5D3D9;
@@ -51,7 +51,6 @@
     margin-top: 80px;
     margin-bottom: 40px;
   }
-
   /* Donations card*/
   .donationsContainer {
     background-color: #025373;
@@ -63,7 +62,6 @@
     max-width: 100%;
     height: auto;
   }
-  
   .image {
     width: 100%;
     height: auto;
@@ -78,7 +76,6 @@
   h3,h4 {
     color: #ffff;
   }
-  
   /* Media query max width 768 */
   @media (max-width: 768px) {
     .content {
