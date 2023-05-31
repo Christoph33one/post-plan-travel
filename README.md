@@ -472,7 +472,7 @@ Profile render if logged in
 
 # Deployment 
 
-### forking the GitHub Repository
+### Forking the GitHub Repository
 
 - Go to the project [repository ](https://github.com/Christoph33one/post-plan-travel)
 - In the right most top menu, click the "Fork" button.
