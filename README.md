@@ -564,6 +564,15 @@ Profile render if logged in
 
 # Technology's
 
+[React ](https://react.dev/) - Development framework
+
+[JSX](https://legacy.reactjs.org/docs/introducing-jsx.html) - Component Markup Language
+
+[CSS](https://www.w3schools.com/css/css_website_layout.asp) - Cascading Style Sheets / StyleScript / 
+dynamically manipulate and control the presentation of content.
+
+[HTML](https://www.w3schools.com/howto/howto_make_a_website.asp) - Hypertext Markup Language / Content Markup Language
+
 [Trip Adivsor ](https://www.tripadvisor.com/) - Where all trips are planned and made, for design inspiration.
 
 [Logo generator ](https://favicon.io/logo-generator/) - Creating simple logos for free
