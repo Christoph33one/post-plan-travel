@@ -8,78 +8,104 @@
     margin-bottom: 20px;
     border-radius: 10px;
   }
-  .HomePage .HeroImageImg {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+.HomePage .HeroImageImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.HomeTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;    
+}
+.boxContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.box {
+  flex: 0 0 calc(20% - 20px);
+  border: 3px solid  #C5D3D9;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+.box:last-child {
+  margin-right: 0;
+}
+.Container, h2 {
+  font-size: 1.5rem;
+}
+strong {
+  color: #024873;
+}
+strong, h6 {
+  color: #C5D3D9;
+}
+.signUpContainer {
+  background-color: #C5D3D9;
+  opacity: 0.5;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+/* Donations card*/
+.donationsContainer {
+  background-color: #025373;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.imageWrapper {
+  max-width: 100%;
+  height: auto;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+h3,h4 {
+  color: #ffff;
+}
+/* Media query max width 768 */
+@media (max-width: 768px) {
+  .content {
+    padding-left: 0;
+    padding-top: 20px;
   }
-  .HomeTitle {
-    font-family: "Oswald", sans-serif;
-    font-size: 2.5rem;    
-  }
+}
+
+/* Media query max-width 768px for icons */
+@media (max-width: 768px) {
   .boxContainer {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    text-align: center;
+  }
+
+  .description {
     margin-top: 20px;
   }
-  .box {
-    flex: 0 0 calc(20% - 20px);
-    border: 3px solid  #C5D3D9;
-    border-radius: 10px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
-    margin-bottom: 20px;
-  }
-  .box:last-child {
-    margin-right: 0;
-  }
-  .Container, h2 {
-    font-size: 1.5rem;
-  }
-  strong {
-    color: #024873;
-  }
-  strong, h6 {
-    color: #C5D3D9;
-  }
-  .signUpContainer {
-    background-color: #C5D3D9;
-    opacity: 0.5;
-    padding: 20px;
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-  /* Donations card*/
-  .donationsContainer {
-    background-color: #025373;
-    padding: 20px;
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-  .imageWrapper {
-    max-width: 100%;
-    height: auto;
-  }
-  .image {
-    width: 100%;
-    height: auto;
-  }
-  .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 20px;
-  }
-  h3,h4 {
-    color: #ffff;
-  }
-  /* Media query max width 768 */
-  @media (max-width: 768px) {
-    .content {
-      padding-left: 0;
-      padding-top: 20px;
-    }
-  }
+}
+  
+  

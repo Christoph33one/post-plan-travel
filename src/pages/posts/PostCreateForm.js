@@ -197,7 +197,7 @@ function PostCreateForm() {
         <Container
           className={`${styles.CollageContainer} d-flex flex-wrap`}
         >
-          <div className="d-flex flex-wrap justify-content-between">\
+          <div className="d-flex flex-wrap justify-content-between">
            {/* Display image 1 */}
             <div className={`${styles.CollageImageContainer} p-2`}>
               <Form.Group className="text-center">
