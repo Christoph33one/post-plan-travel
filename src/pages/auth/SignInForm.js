@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
@@ -15,10 +15,10 @@ import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import { setTokenTimestamp } from "../../utils/utils";
 
-// SignInForm component for handling user sign in functionality. 
+// SignInForm component for handling user sign in functionality.
 function SignInForm() {
-  const setCurrentUser = useSetCurrentUser();
   useRedirect("loggedIn")
+  const setCurrentUser = useSetCurrentUser();
   const [signInData, setSignInData] = useState({
     username: "",
     password: "",
@@ -31,7 +31,7 @@ function SignInForm() {
     event.preventDefault();
 
     try {
-      const {data} = await axios.post("/dj-rest-auth/login/", signInData);
+      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
       setTokenTimestamp(data);
       history.goBack();
@@ -114,5 +114,6 @@ function SignInForm() {
       </Col>
     </Row>
   );
-};  
+}
+
 export default SignInForm;

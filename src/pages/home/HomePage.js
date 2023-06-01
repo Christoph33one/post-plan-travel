@@ -41,7 +41,7 @@ const HomePage = () => {
           </h5>
           <p>
             <Button variant="dark">
-              <Link to="/signup"><storng className={styles.ButtonText}>SIGN UP</storng></Link>
+              <Link to="/signup"><strong className={styles.ButtonText}>SIGN UP</strong></Link>
             </Button>
           </p>
         </div>

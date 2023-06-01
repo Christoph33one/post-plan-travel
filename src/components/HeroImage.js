@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import HeroImageSrc from '../assets/hero-image.jpg'
 import styles from '../styles/HomePage.module.css'
 

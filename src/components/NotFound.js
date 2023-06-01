@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import NoResults from "../assets/NoResults.jpg";
 import styles from "../styles/NotFound.module.css";
 
