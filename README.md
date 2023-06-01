@@ -130,6 +130,7 @@ To provide a convenient reminder for registered users and facilitate easier navi
 ![](src/assets/readme-images/sign%20in%20form.png)
 ![](src/assets/readme-images/sign%20ion%20form%20mobile%20size.png)
 
+
 ### Change user name & password
 The purpose of this function is to enable users to change their passwords and usernames without the need to request assistance from a site administrator. By offering this functionality directly to the users, we aim to enhance the sign-in experience by providing a more efficient and streamlined process for resolving password-related issues.
 
@@ -138,9 +139,9 @@ Empowering users with the ability to change their passwords not only simplifies 
 ![](src/assets/readme-images/new%20username%20form.png)
 ![](src/assets/readme-images/new%20password%20form.png)
 
-### Sign out
 
-All signed out users are to be ridrected to the home page. If a user tries to manually add the url endpoint /signout/ the will be redirected to a No data found page. This page does not exist and has no function.
+### Sign out
+To ensure a streamlined user experience, all signed-out users are automatically redirected to the home page upon accessing any other page of the website. In order to maintain data integrity and avoid potential errors, if a user manually attempts to access the URL endpoint "/signout/", they will be redirected to a custom-designed "No Data Found" page. This page serves as a placeholder, indicating that the requested page does not exist and does not have any specific functionality. This approach not only prevents unauthorized access but also provides a clear and consistent browsing experience for users, eliminating any confusion or disruptions caused by invalid URLs.
 
 ![](src/assets/readme-images/page%20not%20found.png)
 
