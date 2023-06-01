@@ -1,18 +1,14 @@
-
 import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
-// import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
 import UploadIcon from "../../assets/upload.png";
 import { axiosReq } from "../../api/axiosDefaults";
-import { useHistory } from "react-router";
 
 function CommentEditForm(props) {
   const { id, content, image, setShowEditForm, setComments } = props;
   const [formContent, setFormContent] = useState(content);
   const [formImage, setFormImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(image);
-  const history = useHistory();
 
   const handleContentChange = (event) => {
     setFormContent(event.target.value);
