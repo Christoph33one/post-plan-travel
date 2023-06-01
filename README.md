@@ -138,6 +138,12 @@ Empowering users with the ability to change their passwords not only simplifies 
 ![](src/assets/readme-images/new%20username%20form.png)
 ![](src/assets/readme-images/new%20password%20form.png)
 
+### Sign out
+
+All signed out users are to be ridrected to the home page. If a user tries to manually add the url endpoint /signout/ the will be redirected to a No data found page. This page does not exist and has no function.
+
+![](src/assets/readme-images/page%20not%20found.png)
+
 ---
 
 # Profile page
@@ -162,6 +168,8 @@ The edit profile function provides the user with a pre-populated form that allow
 By implementing these measures, we ensure that the owner has full control over their profile while maintaining a user-friendly and secure experience.
 
 The profile page is designed to have a responsive layout, adapting seamlessly to various browser screen sizes, including a minimum width of 360px. This ensures that users can access and navigate the profile page comfortably regardless of the device or screen size they are using. By optimizing the layout for responsiveness, we prioritize a consistent and user-friendly experience across different platforms and screen resolutions.
+
+To maintain content safety and uphold security standards, it is important to restrict users from editing or deleting profiles that they do not own. This measure ensures that followers and the wider community can trust the authenticity and integrity of the content shared on the platform. By implementing strict criteria and access controls, the site mitigates security risks associated with unauthorized user modifications. Users can rest assured that their profiles are safeguarded and that only the original owners have the ability to edit or delete their own content. This policy contributes to a secure and reliable environment for all users, promoting trust and maintaining the integrity of the platform.
 
 ![](src/assets/readme-images/profile%20edit%20form.png)
 ![](src/assets/readme-images/profile%20form%20mobile.png)
@@ -193,8 +201,8 @@ To cater to mobile screen sizes, including a minimum width of 360px, the landing
 ![](src/assets/readme-images/home%20page%20donationns%20page.png)
 
 ---
-# Create post
 
+# Create post
 Users can navigate to the "Add a Post" page to create their own unique posts. This project focuses on showcasing travel experiences through images, allowing users to upload and post up to six images with optimal sizing on all screen sizes. Only authenticated users have the privilege to add a post, which will be visible to other users on the locations page.
 
 The "Add a Post" page provides a user-friendly interface with pre-populated form fields and clear instructions. Users can add a title, description, location, and caption to their posts, ideally sharing their thoughts and experiences related to the images.
@@ -205,42 +213,79 @@ To enhance user experience, the submit and cancel buttons are equipped with a re
 
 ![](src/assets/readme-images/create%20a%20post%20page.png)
 ![](src/assets/readme-images/create%20a%20post%20mobile.png)
+
 ---
 
 # Travel posts
-This page is the main attraction to the webite and gives all users the chance to view travel plans and experiences from other users on thier travels. I wanted this page to give a modern and clean look to how the imagaes and content is added. 
+This page serves as the centerpiece of the website, offering all users an opportunity to explore travel plans and experiences shared by fellow travelers. My aim was to create a modern and sleek design for displaying both images and content. Users can discover more than just the posts themselves; they can also access profiles of the individuals who created the posts, along with the date of their addition.
+
+Users can further engage with posts by clicking on the icons below the post content, granting them access to a dedicated page where they can view the post in detail and explore the associated comment list.
+
+This page is designed to be fully responsive, ensuring optimal viewing across all screen sizes by adhering to responsive guidelines and breakpoints.
+
 ![](src/assets/readme-images/posts%20page.png)
 ![](src/assets/readme-images/posts%20page%20mobile.png)
+![](src/assets/readme-images/posts%20apge%20mobile.png)
 
+---
 
 ### Travel posts edit form
+To enhance the user-friendliness of the site, I have implemented a convenient post editing feature. Users can easily access this functionality from the main post menu. By clicking on the dropdown button, they have the option to edit or delete a post. To delete a post, users can simply click on the delete post icon. Once deleted, users are seamlessly redirected to the posts page, where the deleted post is no longer visible.
+
+For editing a post, users are redirected to the familiar "Create a Post" form, which automatically populates with the original images and pre-filled content. This enables users to review and adjust their post easily. This functionality proves invaluable for users who may have posted the wrong image or made a spelling mistake, providing a convenient way to make corrections.
+
+By incorporating this user-friendly post editing feature, the site empowers users to have greater control over their content, ensuring a more seamless and enjoyable user experience.
+
+To maintain content safety and uphold security standards, it is important to restrict users from editing or deleting posts that they do not own. This measure ensures that followers and the wider community can trust the authenticity and integrity of the content shared on the platform. By implementing strict criteria and access controls, the site mitigates security risks associated with unauthorized post modifications. Users can rest assured that their posts are safeguarded and that only the original owners have the ability to edit or delete their own content. This policy contributes to a secure and reliable environment for all users, promoting trust and maintaining the integrity of the platform.
+
  ![](src/assets/readme-images/travel%20post%20edit%20form.png)
 
 --- 
+
 # Popular profiles
+One notable feature on this page is the "Popular Profiles" section. This feature aims to foster a sense of community among globe-trotters by highlighting popular profiles based on their follower count. Users can easily stay connected with their favorite influencers and fellow travel enthusiasts. The "Popular Profiles" list showcases the most followed profiles and provides a follower count. Additionally, a convenient follow button is included, allowing users to effortlessly follow or unfollow a profile with a single click. 
+
 ![](src/assets/readme-images/popular%20profiles.png)
 ![](src/assets/readme-images/popular%20profiles%20mobile%20size.png)
 
 ---
+
 # Search bar
+This feature greatly simplifies the location search process for users, especially considering the vast number of posts being added. To address this challenge, a convenient filtering method has been implemented. When a user starts entering characters into the search bar, the website dynamically filters and retrieves matching locations from the database.
+
+To provide a smoother user experience, a one-second delay has been added before displaying the search results. This delay allows users to input more characters before the search is executed, improving the filtering accuracy and responsiveness. Additionally, a loading spinner may appear if the search results take longer to retrieve, notifying the user that the data is being filtered and loaded.
+
+By incorporating these enhancements, the feature enhances the overall user experience by simplifying the location search process, providing real-time filtering, and offering visual cues for search progress.
+
 ![](src/assets/readme-images/search%20bar%20.png)
 
 ---
+
 # Following
+To foster a vibrant community of globe trotters, I have implemented a modern feature inspired by popular platforms like [Instagram ](https://www.instagram.com/). Users now have the ability to follow profiles, enhancing connectivity and engagement. By simply clicking the "Follow" button, users can effortlessly increase their following count, which is prominently displayed on their profile page. This allows users to stay informed about the number of profiles they follow. Similarly, when a user is being followed by others, their profile will reflect the number of followers they have gained.
+
+There are two convenient methods for users to follow or unfollow profiles. They can either explore the "Popular Profiles" list or directly visit the profile they are interested in. This seamless experience provides users with the flexibility to engage with profiles they find intriguing, fostering connections within the community.
+
 ![](src/assets/readme-images/following%20list.png)
 ![](src/assets/readme-images/following%20count.png)
 ___
 
 # Comments
+To enhance the sharing capabilities within the community, I have introduced a feature that enables users to add both comments and images to the discussion. As the website revolves around image sharing, it is important to extend this functionality to the comments section. Imagine a scenario where a user has posted about a particular location, and another user wants to showcase a different location to enrich the conversation. Now, with the ability to upload images along with comments, users can effectively communicate and make the site even more engaging and valuable. This feature adds a new dimension to user interactions, promoting a fun and interactive environment.
 ![](src/assets/readme-images/comments.png)
-
 ![](src/assets/readme-images/comments%20form.png)
 
+---
+
 ### Comments edit form
+To empower users with control over their comments, I have implemented an editing feature. Users have the ability to modify the text or image content of their comments by accessing a convenient dropdown menu associated with their own comments. Upon submitting the edited comment, users are seamlessly redirected back to the main comments section where they can instantly view the updated version of their comment. This functionality ensures a streamlined editing process, allowing users to refine and improve their contributions effortlessly.
+
+To provide users with up-to-date information across the site, all comments now display the date they were added and the most recent to the very top of the comments list. This feature ensures users have a clear understanding of the timeline and helps them stay informed about the recency of comments throughout the platform. By including the added date alongside each comment, users can easily gauge the latest discussions and engage with the most relevant content. This feature enhances the overall user experience by promoting transparency and timeliness across all areas of the site.
+
 ![](src/assets/readme-images/comment%20edit%20form.png)
+
 --- 
 
---------------------------------
 # Wire frames
 
 ### Home page
