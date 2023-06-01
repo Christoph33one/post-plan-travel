@@ -286,7 +286,7 @@ PASS ERROR
 Passed expanded prop to the navabr component
 
 ### Post Page 
-ISSUE:
+Issue:
 Data base not being updated. Error 400 in the console.
 
 SOLUTION:
@@ -297,6 +297,16 @@ When implementing the search feature to allow users to search for travel plans b
 
 SOLUTION:
 Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
+
+
+### PostCreateFrom
+Issue: 
+When a user creates a post and attempts to add less than six images, a default image should be displayed instead of the missing images. This functionality is controlled through the API using a default image URL. However, there was an issue where the default image failed to render, resulting in an upload error being displayed in the console.
+
+Solution:
+To address this issue, I used the built-in Alert error handling feature provided by React. By importing this function, I was able to integrate it into each image element within the form during the rendering process. Additionally, I included a custom message stating "Please add six images" to inform the user about the minimum image requirement.
+
+By implementing these changes, I successfully resolved the problem by effectively handling errors and providing clear instructions to the user. This resulted in the elimination of all errors encountered during the process.
 
 ### MoreDropDown component
 ISSUE:
