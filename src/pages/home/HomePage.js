@@ -31,8 +31,6 @@ const HomePage = () => {
     ))}
   </div>
 </Container>
-
-        
         <HeroImageComponent />
         <h4><strong className={styles.JumbotronContainer}>Join us!</strong></h4>
         <h5>
@@ -42,7 +40,7 @@ const HomePage = () => {
         </h5>
         <p>
         <Button  variant="dark">
-          <Link to="/signup"><strong>SIGN UP</strong></Link>
+          <Link to="/signup">SIGN UP</Link>
         </Button>
         </p>
         <Container className={styles.donationsContainer}>

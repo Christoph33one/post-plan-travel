@@ -194,11 +194,21 @@ To cater to mobile screen sizes, including a minimum width of 360px, the landing
 
 ---
 # Create post
+
+Users can navigate to the "Add a Post" page to create their own unique posts. This project focuses on showcasing travel experiences through images, allowing users to upload and post up to six images with optimal sizing on all screen sizes. Only authenticated users have the privilege to add a post, which will be visible to other users on the locations page.
+
+The "Add a Post" page provides a user-friendly interface with pre-populated form fields and clear instructions. Users can add a title, description, location, and caption to their posts, ideally sharing their thoughts and experiences related to the images.
+
+Currently, all six images must be added in one instance, but future updates will allow users to upload a minimum of one image. All form fields are required to be filled in a post, as this helps the website gather user feedback and provides more information to other users about the travel post. Error handling has been implemented into the image uplpoading and form to retun reback for the user to complete the requirements before submitting a post.
+
+To enhance user experience, the submit and cancel buttons are equipped with a redirect function that takes users back to the home page when clicked. This ensures a smooth transition between adding a post and returning to the main page.
+
 ![](src/assets/readme-images/create%20a%20post%20page.png)
 ![](src/assets/readme-images/create%20a%20post%20mobile.png)
 ---
 
 # Travel posts
+This page is the main attraction to the webite and gives all users the chance to view travel plans and experiences from other users on thier travels. I wanted this page to give a modern and clean look to how the imagaes and content is added. 
 ![](src/assets/readme-images/posts%20page.png)
 ![](src/assets/readme-images/posts%20page%20mobile.png)
 

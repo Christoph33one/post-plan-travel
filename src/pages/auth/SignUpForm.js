@@ -13,11 +13,9 @@ import {
     Alert,
   } from "react-bootstrap";
 import axios from "axios";
-import { useRedirect } from "../../hooks/useRedirect";
 
 // SignUpForm component for handling user sign up functionality. 
 const SignUpForm = () => {
-    useRedirect("loggedIn") 
     const [signUpData, setSignUpData] = useState ({
         username: "",
         password1: "",
