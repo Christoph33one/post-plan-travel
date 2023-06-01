@@ -19,54 +19,56 @@ const HomePage = () => {
       <Jumbotron className={styles.JumbotronContainer}>
         <h1 className={styles.HomeTitle}>POST, PLAN & TRAVEL</h1>
         <Container>
-  <div className={styles.boxContainer}>
-    {categories.map((category, index) => (
-      <div className={styles.box} key={index}>
-        <CategoryIcon
-          title={category.title}
-          link={category.link}
-          className={styles.icon}
-        />
-      </div>
-    ))}
-  </div>
-</Container>
+          <div className={styles.boxContainer}>
+            {categories.map((category, index) => (
+              <div className={styles.box} key={index}>
+                <CategoryIcon
+                  title={category.title}
+                  link={category.link}
+                  className={styles.icon}
+                />
+              </div>
+            ))}
+          </div>
+        </Container>
         <HeroImageComponent />
-        <h4><strong className={styles.JumbotronContainer}>Join us!</strong></h4>
-        <h5>
-          At Post, Plan & Travel, we encourage you to sign up and become a part of our travel community.
-          By creating a profile, you can showcase your travel experiences and share your captivating stories
-          with fellow adventurers.
-        </h5>
-        <p>
-        <Button  variant="dark">
-          <Link to="/signup">SIGN UP</Link>
-        </Button>
-        </p>
+        <div className={styles.JumbotronContainer}>
+          <h4><strong>Join us!</strong></h4>
+          <h5>
+            At Post, Plan & Travel, we encourage you to sign up and become a part of our travel community.
+            By creating a profile, you can showcase your travel experiences and share your captivating stories
+            with fellow adventurers.
+          </h5>
+          <p>
+            <Button variant="dark">
+              <Link to="/signup"><storng className={styles.ButtonText}>SIGN UP</storng></Link>
+            </Button>
+          </p>
+        </div>
         <Container className={styles.donationsContainer}>
-        <Row>
-    <Col md={6}>
-      <div className={styles.imageWrapper}>
-        <img src="signup-logo.jpg" alt="Image" className={styles.image} />
-      </div>
-    </Col>
-    <Col md={6} className={styles.content}>
-      <h3 className={styles.heading}><i className="fa-light fa-earth-americas"></i>Help us help the planet</h3>
-      <div className={styles.description}>
-        <h4>Together, we’ve raised more than $10 million USD for World Central Kitchen’s
-          emergency food relief efforts around the world. Donate to their Climate Disaster
-          Fund and the Tripadvisor Foundation will match it.</h4>
-      </div>
-      <Button
-        variant="dark"
-        href="https://donate.wck.org/give/480256/#!/donation/checkout"
-        target="_blank"
-      >
-        DONATE
-      </Button>
-    </Col>
-  </Row>
-</Container>
+          <Row>
+            <Col md={6}>
+              <div className={styles.imageWrapper}>
+                <img src="signup-logo.jpg" alt="Image" className={styles.image} />
+              </div>
+            </Col>
+            <Col md={6} className={styles.content}>
+              <h3 className={styles.heading}><i className="fa-light fa-earth-americas"></i>Help us help the planet</h3>
+              <div className={styles.description}>
+                <h4>Together, we’ve raised more than $10 million USD for World Central Kitchen’s
+                  emergency food relief efforts around the world. Donate to their Climate Disaster
+                  Fund and the Tripadvisor Foundation will match it.</h4>
+              </div>
+              <Button
+                variant="dark"
+                href="https://donate.wck.org/give/480256/#!/donation/checkout"
+                target="_blank"
+              >
+                DONATE
+              </Button>
+            </Col>
+          </Row>
+        </Container>
       </Jumbotron>
     </div>
   );
