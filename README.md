@@ -273,6 +273,7 @@ ___
 
 # Comments
 To enhance the sharing capabilities within the community, I have introduced a feature that enables users to add both comments and images to the discussion. As the website revolves around image sharing, it is important to extend this functionality to the comments section. Imagine a scenario where a user has posted about a particular location, and another user wants to showcase a different location to enrich the conversation. Now, with the ability to upload images along with comments, users can effectively communicate and make the site even more engaging and valuable. This feature adds a new dimension to user interactions, promoting a fun and interactive environment.
+
 ![](src/assets/readme-images/comments.png)
 ![](src/assets/readme-images/comments%20form.png)
 
