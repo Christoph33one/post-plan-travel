@@ -35,10 +35,12 @@ const Post = (props) => {
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
 
+  // Handles edit function on users posts & return to users posts page url
   const handleEdit = async () => {
     history.push(`/posts/${id}/edit`);
   };
 
+  // Handle delete function to users posts & returns user post page url
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/posts/${id}/`);

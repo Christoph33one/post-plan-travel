@@ -111,12 +111,12 @@ All of the data structuring was completed when creating my backend API. The repo
 
 # Custom components
 ### HeroImageComponent: 
-The HeroImage component allows you to showcase visually appealing images or banners in your website. It helps in grabbing the user's attention and creating a memorable first impression.
+The HeroImage component allows you to showcase visually appealing images or banners in the website. It helps in grabbing the user's attention and creating a memorable first impression.
 
 ![](src/assets/readme-images/hero-image.png)
 
 ### CategoryIcon: 
-The CategoryIcon component allows you to display icons and links related to different categories on your website. It improves the user experience by providing intuitive visual cues and easy navigation.
+The CategoryIcon component allows you to display icons and links related to different categories on the website. It improves the user experience by providing intuitive visual cues and easy navigation.
 
 ![](src/assets/readme-images/catergory-items.png)
 

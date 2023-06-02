@@ -25,7 +25,7 @@ const Profile = (props) => {
         <strong>{owner}</strong>
       </div>
       
-      {/* Follow/unfollow button controll based on user's relationship with profile. */}
+      {/* Follow/unfollow button control based on user's relationship with profile. */}
       <div className={`text-right ${!mobile && "ml-auto"}`}>
         {!mobile && currentUser && !is_owner && (
           <>

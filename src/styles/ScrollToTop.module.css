@@ -1,7 +1,8 @@
 .scrollToTop {
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 30%;
+  transform: translateX(50%);
   z-index: 999;
 }
 
@@ -22,15 +23,16 @@
 .scrollButton:hover {
   background-color: #A9C0C8;
 }
+
 .scrollButton i {
   color: #011526;
   font-size: 20px;
 }
 
-/* media query max-width 360*/
+/* media query max-width 360 */
 @media (max-width: 360px) {
   .scrollButton {
     display: none;
-    
   }
 }
+

@@ -68,6 +68,7 @@ const ProfileEditForm = () => {
     });
   };
 
+  // Handle form submission, append data to FormData, and update user profile.
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -78,7 +79,6 @@ const ProfileEditForm = () => {
     if (imageFile.current?.files[0]) {
       formData.append("image", imageFile.current.files[0]);
     }
-
     try {
       const { data } = await axiosReq.put(`/profiles/${id}/`, formData);
       setCurrentUser((currentUser) => ({

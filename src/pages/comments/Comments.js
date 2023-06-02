@@ -45,7 +45,6 @@ const Comment = (props) => {
   } catch (err) {
     // Handle the error appropriately
     console.error('Error deleting comment:', err);
-    // You can show an error message to the user or perform any other necessary actions.
   }
 };
   return (
