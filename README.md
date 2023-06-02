@@ -47,16 +47,16 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 
 ---
 
-# Deplyment
+# Deployment setup
 <li><a href="#deployment">Deplyment</a></li>
 
 --- 
 
-# Technology's
+# Technology
 <li><a href="#technologys">Technology's</a></li>
 
 --- 
-# Credits
+# Credit
 <li><a href="#credits">Credits</a></li>
 
 ---
