@@ -48,7 +48,7 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 ---
 
 # Deployment setup
-<li><a href="#deployment">Deplyment</a></li>
+<li><a href="#deployment">Deployment</a></li>
 
 --- 
 
