@@ -17,10 +17,24 @@ function CommentEditForm(props) {
   // Handle image change event, update state with selected file and preview.
   const handleImageChange = (event) => {
     const selectedFile = event.target.files[0];
+    console.log()
     setFormImage(selectedFile);
     setPreviewImage(URL.createObjectURL(event.target.files[0]));
   };
 
+
+
+  // const handleImageChange = (event) => {
+  //   const selectedFile = event.target.files[0];
+  //   if (event.target.files.length) {
+  //     URL.revokeObjectURL(image);
+  //     setFormImage({
+  //       ...formImage,
+  //       image: URL.createObjectURL(event.target.files[0]),
+  //     });
+  //   }
+  // };
+  
   // Handle form submission, create FormData and append content and image.
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -97,6 +111,7 @@ function CommentEditForm(props) {
           className={styles.Button}
           onClick={() => setShowEditForm(false)}
           type="button"
+
         >
           cancel
         </button>

@@ -19,6 +19,7 @@ const ScrollToTop = () => {
     });
   };
 
+  // Event listent to trigger setIsVisable on scroll 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
     return () => {

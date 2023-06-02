@@ -192,6 +192,11 @@ function PostCreateForm() {
     <Container fluid>
     <Form onSubmit={handleSubmit}>
       <HeroImageComponent />
+      <h2>
+        Share your travel experiences with the world. 
+        Craft captivating stories and share stunning visuals. 
+        Inspire others with your adventures. Start sharing today!
+      </h2>
     <Row>
       <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
         <Container

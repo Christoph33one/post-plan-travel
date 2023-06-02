@@ -293,6 +293,10 @@ By incorporating these enhancements, the feature enhances the overall user exper
 
 ![](src/assets/readme-images/search%20bar%20.png)
 
+A no results image will be displayed if no locations are found
+
+![](src/assets/readme-images/search%20not%20found.png)
+
 ---
 
 # Following
