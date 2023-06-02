@@ -109,7 +109,11 @@ All of the data structuring was completed when creating my backend API. The repo
 
 ---
 
-# Custom components
+# Custom features
+
+### Components
+
+
 ### HeroImageComponent: 
 The HeroImage component allows you to showcase visually appealing images or banners in the website. It helps in grabbing the user's attention and creating a memorable first impression.
 
@@ -125,6 +129,16 @@ The MoreDropdown component provides a dropdown menu with additional options or a
 
 ![](src/assets/readme-images/MoreDropDown.png)
 
+### NavBar:
+For a reusable Navigation point I have implemented a Navbar component to be used on all pages thoughout the website. This helps in organizing and presenting additional features.
+
+### Assest
+The Asset component displays assets with a spinner, image, or message. It accepts props for each type and applies CSS styling for consistency.
+
+
+### Avatar
+The Avatar component renders an image with optional text overlay. It supports customizing the image source, height, and text content. The component applies CSS styling defined in the Avatar.module.css file.
+
 ### NotFound: 
 The NotFound component is useful for displaying a custom error page when a user navigates to a non-existent or unavailable page. It improves user experience by providing a clear message and visual representation of the error, helping users understand and navigate back to valid content.
 
@@ -136,6 +150,19 @@ By incorporating the Scroll to Top component, users can effortlessly navigate to
 ![](src/assets/readme-images/scroll%20to%20top%20button.png)
 
 By incorporating these custom components, I can enhance the visual appeal, user experience, and functionality of the website, ultimately improving engagement and user satisfaction.
+
+---
+
+# Hooks
+
+### User Redirect
+The useRedirect hook plays a crucial role in the site's security by preventing unauthorized users from accessing restricted areas of the website. It achieves this by performing a redirect based on the user's authentication status. When an unauthorized user attempts to access a protected endpoint directly through a URL, the hook intercepts the request and checks the user's authentication status. If the user is not logged in, the hook redirects them to the homepage, preventing unauthorized access to the restricted content.
+
+By combining the useRedirect hook with manual endpoint handling and URL-based redirection, the site ensures that only authorized users can access restricted areas, enhancing security and improving the overall user experience.
+
+### Use Click Out Side Toggle
+This hook is responsible for implementing a dropdown toggle effect in the website's navigation bar. It allows the dropdown menu to expand or collapse when clicking outside of the menu area.
+This also enhances the user experience by providing an intuitive dropdown menu behavior.
 
 ---
 
