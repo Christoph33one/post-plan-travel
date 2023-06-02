@@ -153,12 +153,16 @@ By incorporating these custom components, I can enhance the visual appeal, user 
 
 # Custom Hooks
 
-### User Redirect
+### Redirect
+
+Use redirect:
 The useRedirect hook plays a crucial role in the site's security by preventing unauthorized users from accessing restricted areas of the website. It achieves this by performing a redirect based on the user's authentication status. When an unauthorized user attempts to access a protected endpoint directly through a URL, the hook intercepts the request and checks the user's authentication status. If the user is not logged in, the hook redirects them to the homepage, preventing unauthorized access to the restricted content.
 
 By combining the useRedirect hook with manual endpoint handling and URL-based redirection, the site ensures that only authorized users can access restricted areas, enhancing security and improving the overall user experience.
 
-### Use Click Out Side Toggle
+### Toggle control
+
+Click outside toggle: 
 This hook is responsible for implementing a dropdown toggle effect in the website's navigation bar. It allows the dropdown menu to expand or collapse when clicking outside of the menu area.
 This also enhances the user experience by providing an intuitive dropdown menu behavior.
 
