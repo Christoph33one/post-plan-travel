@@ -734,6 +734,7 @@ dynamically manipulate and control the presentation of content.
 ---
 
 # Credits
+
 A thank you to:
 - The Code Institute walkthrough project 'Moments' for providing some structure and direction for my personal project.
 My mentor Lauren Nicole who has accomodated me along the way, supporting with queries 'on the fly' and providing invaluable guidance during project milestone meetings.
