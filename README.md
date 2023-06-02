@@ -153,8 +153,7 @@ By incorporating these custom components, I can enhance the visual appeal, user 
 
 # Custom Hooks
 
-### Redirect
-
+### Redirect
 Use redirect:
 The useRedirect hook plays a crucial role in the site's security by preventing unauthorized users from accessing restricted areas of the website. It achieves this by performing a redirect based on the user's authentication status. When an unauthorized user attempts to access a protected endpoint directly through a URL, the hook intercepts the request and checks the user's authentication status. If the user is not logged in, the hook redirects them to the homepage, preventing unauthorized access to the restricted content.
 
