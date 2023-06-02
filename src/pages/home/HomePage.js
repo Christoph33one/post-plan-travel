@@ -53,7 +53,9 @@ const HomePage = () => {
               </div>
             </Col>
             <Col md={6} className={styles.content}>
-              <h3 className={styles.heading}><i className="fa-light fa-earth-americas"></i>Help us help the planet</h3>
+              
+              <h3 className={styles.heading}>Help us help the planet</h3>
+              <br />
               <div className={styles.description}>
                 <h4>Together, we’ve raised more than $10 million USD for World Central Kitchen’s
                   emergency food relief efforts around the world. Donate to their Climate Disaster

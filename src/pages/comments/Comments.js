@@ -26,24 +26,28 @@ const Comment = (props) => {
   const is_owner = currentUser?.username === owner;
   const [showEditForm, setShowEditForm] = useState(false);
 
-  // Handle comment deletion, update post & comments data.
   const handleDelete = async () => {
-    try {
-      await axiosReq.delete(`/comments/${id}/`)
-      setPost(prevPost => ({
-        results: [{
+  try {
+    await axiosReq.delete(`/comments/${id}/`);
+    setPost((prevPost) => ({
+      results: [
+        {
           ...prevPost.results[0],
-          comments_count: prevPost.results[0].comments_count - 1
-        }]
-      }))
+          comments_count: prevPost.results[0].comments_count - 1,
+        },
+      ],
+    }));
 
-      setComments((prevComments) => ({
-        ...prevComments,
-        results: prevComments.results.filter((comment) => comment.id !== id),
-      }));
-    } catch (err) {}
-  };
-
+    setComments((prevComments) => ({
+      ...prevComments,
+      results: prevComments.results.filter((comment) => comment.id !== id),
+    }));
+  } catch (err) {
+    // Handle the error appropriately
+    console.error('Error deleting comment:', err);
+    // You can show an error message to the user or perform any other necessary actions.
+  }
+};
   return (
     <>
       <hr />

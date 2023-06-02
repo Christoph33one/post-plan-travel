@@ -25,7 +25,8 @@
 			{
 				"allowFunctions": true
 			}
-		]
+		],
+		"no-unused-vars": ["warn", { "argsIgnorePattern": "req|res|next|__" }]
 		
 	}
 }
