@@ -20,6 +20,7 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 <li><a href="#project-planning">Project planning</a></li>
 <li><a href="#data-structure">Data structure</a></li>
 <li><a href="#custom-components">Custom components</a></li>
+<li><a href="#custom-hooks">Custom Hooks</a></li>
 
 --- 
 ### UX & design
@@ -109,10 +110,7 @@ All of the data structuring was completed when creating my backend API. The repo
 
 ---
 
-# Custom features
-
-### Components
-
+# Custom components
 
 ### HeroImageComponent: 
 The HeroImage component allows you to showcase visually appealing images or banners in the website. It helps in grabbing the user's attention and creating a memorable first impression.
@@ -153,7 +151,7 @@ By incorporating these custom components, I can enhance the visual appeal, user 
 
 ---
 
-# Hooks
+# Custom Hooks
 
 ### User Redirect
 The useRedirect hook plays a crucial role in the site's security by preventing unauthorized users from accessing restricted areas of the website. It achieves this by performing a redirect based on the user's authentication status. When an unauthorized user attempts to access a protected endpoint directly through a URL, the hook intercepts the request and checks the user's authentication status. If the user is not logged in, the hook redirects them to the homepage, preventing unauthorized access to the restricted content.
