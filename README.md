@@ -3,21 +3,15 @@
 
 "Capturing the World: Exploring New Places and Moments Through the Lens"
 
-Visit the [Post Planner API ](https://travel-planner-api.herokuapp.com/)
+Visit the deployed [Post Planner API ](https://travel-planner-api.herokuapp.com/)
 
 Visit the [Post Planner repository ](https://github.com/Christoph33one/post-planner-api)
 
+Visit the deplyed [Post, Plan & Travel Website ](https://post-plan-travel.herokuapp.com/)
+
 Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/post-plan-travel)
 
-Visit the [Post, Plan & Travel Website ](https://post-plan-travel.herokuapp.com/)
-
- ---
-
- ADD DEPLOYED FRONT-END ISTE
- ADD DEPLOYED API 
- ADD API REPO
- ADD FRONT-END REPO
-
+---
 
 ### Structure
 <li><a href="#project-purpose">Project purpose</a></li>
