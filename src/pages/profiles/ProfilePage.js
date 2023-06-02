@@ -20,6 +20,7 @@ import PopularProfiles from "./PopularProfiles";
 import styles from "../../styles/ProfilePage.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
+import ScrollToTop from '../../components/ScrollToTop';
 
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -165,6 +166,7 @@ function ProfilePage() {
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
         <PopularProfiles />
       </Col>
+      <ScrollToTop />
     </Row>
   );
 }

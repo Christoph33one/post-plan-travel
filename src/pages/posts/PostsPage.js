@@ -15,6 +15,7 @@ import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 function PostsPage({ message, filter = "" }) {
@@ -92,6 +93,7 @@ function PostsPage({ message, filter = "" }) {
       <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
         <PopularProfiles />
       </Col>
+      <ScrollToTop />
     </Row>
   );
 }

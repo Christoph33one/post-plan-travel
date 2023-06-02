@@ -108,21 +108,30 @@ All of the data structuring was completed when creating my backend API. The repo
 ---
 
 # Custom components
-HeroImageComponent: The HeroImage component allows you to showcase visually appealing images or banners in your website. It helps in grabbing the user's attention and creating a memorable first impression.
+### HeroImageComponent: 
+The HeroImage component allows you to showcase visually appealing images or banners in your website. It helps in grabbing the user's attention and creating a memorable first impression.
 
 ![](src/assets/readme-images/hero-image.png)
 
-CategoryIcon: The CategoryIcon component allows you to display icons and links related to different categories on your website. It improves the user experience by providing intuitive visual cues and easy navigation.
+### CategoryIcon: 
+The CategoryIcon component allows you to display icons and links related to different categories on your website. It improves the user experience by providing intuitive visual cues and easy navigation.
 
 ![](src/assets/readme-images/catergory-items.png)
 
-MoreDropdown: The MoreDropdown component provides a dropdown menu with additional options or actions. It helps in organizing and presenting additional features or settings, allowing users to access more functionality without cluttering the interface.
+### MoreDropdown: 
+The MoreDropdown component provides a dropdown menu with additional options or actions. It helps in organizing and presenting additional features or settings, allowing users to access more functionality without cluttering the interface.
 
 ![](src/assets/readme-images/MoreDropDown.png)
 
-NotFound: The NotFound component is useful for displaying a custom error page when a user navigates to a non-existent or unavailable page. It improves user experience by providing a clear message and visual representation of the error, helping users understand and navigate back to valid content.
+### NotFound: 
+The NotFound component is useful for displaying a custom error page when a user navigates to a non-existent or unavailable page. It improves user experience by providing a clear message and visual representation of the error, helping users understand and navigate back to valid content.
 
 ![](src/assets/readme-images/page%20not%20found.png)
+
+### Scroll to top
+By incorporating the Scroll to Top component, users can effortlessly navigate to the beginning of a web page by simply clicking on the button that emerges as they scroll down. This convenient button grants users the ability to swiftly return to the topmost section of the page. I have made the decision to implement this feature on pages that holds the most content, including the travel post page and profile page. As the number of user-generated posts continues to grow, the Scroll to Top functionality will serve as a user-friendly enhancement, ensuring smooth and efficient navigation.
+
+![](src/assets/readme-images/scroll%20to%20top%20button.png)
 
 By incorporating these custom components, I can enhance the visual appeal, user experience, and functionality of the website, ultimately improving engagement and user satisfaction.
 

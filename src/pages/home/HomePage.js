@@ -4,6 +4,7 @@ import styles from '../../styles/HomePage.module.css';
 import CategoryIcon from '../../components/CategoryIcon';
 import HeroImageComponent from '../../components/HeroImage';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../../components/ScrollToTop';
 
 const HomePage = () => {
   const categories = [
@@ -72,6 +73,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </Jumbotron>
+      <ScrollToTop />
     </div>
   );
 };
