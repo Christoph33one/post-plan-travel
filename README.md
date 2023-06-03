@@ -728,19 +728,24 @@ dynamically manipulate and control the presentation of content.
 
 [ djangoproject.com](https://www.djangoproject.com/start/overview/) - Officially React documentation and functions
 
-
 [ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
+
+
+[ ESLint](https://eslint.org/docs/latest/) - JavaScript code analysis tool for catching errors and enforcing coding style
 
 ---
 
 # Credits
 
-A thank you to:
-- The Code Institute walkthrough project 'Moments' for providing some structure and direction for my personal project.
-My mentor Lauren Nicole who has accomodated me along the way, supporting with queries 'on the fly' and providing invaluable guidance during project milestone meetings.
-- Code Institute tutors for helping to guide me through some difficult debugging (this process was often what caused the most retained learning for me).
-- I also want to thank  [Chris.F ](https://github.com/Chrisfaherty) & [Nick Coles ]( https://github.com/NickdevC/)
+I would like to express my gratitude to the following individuals who have played a significant role in my personal project's success:
+
+The Code Institute walkthrough project 'Moments' for providing me with valuable structure and direction throughout my journey.
+A special thank you to my mentor, Lauren Nicole, for her unwavering support, quick responses to my queries, and invaluable guidance during our project milestone meetings.
+I am also grateful to the Code Institute tutors who have helped me navigate through challenging debugging tasks, as those experiences have been instrumental in enhancing my learning.
+
+I also want to thank [Kelz ](https://github.com/quiltingcode),  [Chris.F ](https://github.com/Chrisfaherty) & [Nick Coles ]( https://github.com/NickdevC/)
  (fellow Code Institute students). By joining together and engaging in remote study sessions your conversation and input kept me on track and motivated to push myself with regards to the project. Constructive venting and questioning, both contributed to much needed progress!
-- The slack community for going through any Q&A.
+
+ The slack community for going through any Q&A.
 
 
