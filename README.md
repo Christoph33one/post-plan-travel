@@ -838,6 +838,8 @@ dynamically manipulate and control the presentation of content.
 
 [Light house](https://developer.chrome.com/docs/lighthouse/overview/ ) - Open-source, automated tool for improving the quality of web pages. 
 
+[responsivedesignchecker. ](https://www.responsivedesignchecker.com/) - Responsive design test application.
+
 [ djangoproject.com](https://www.djangoproject.com/start/overview/) - Officially React documentation and functions
 
 [ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
