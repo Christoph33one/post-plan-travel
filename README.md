@@ -55,6 +55,10 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 <li><a href="#technologys">Technology's</a></li>
 
 --- 
+
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+
+---
 # Credit
 <li><a href="#credits">Credits</a></li>
 
@@ -492,6 +496,7 @@ All colours are taken from an open source - [Adobe Color Wheel ](https://color.a
 ---
 
 # Bugs
+
 ### Navbar
 ERROR
 In the NavBar component, when passing the expanded prop to the Navbar component, you are assigning the setExpanded function instead of the expanded state value. The correct code should be:
@@ -600,6 +605,7 @@ Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logge
 This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully and the iser is redirected to the home page.
 
 ### Comment edit form
+
 Issue: 
 
 When implementing the edit function for user comments, where they can update both the content and the image, I encountered a problem. While the content update was working fine, the image was not updating, and no errors were being displayed in the console or in the network requests. This presented a challenging issue to resolve.
@@ -828,7 +834,13 @@ dynamically manipulate and control the presentation of content.
 
 [HTML](https://www.w3schools.com/howto/howto_make_a_website.asp) - Hypertext Markup Language / Content Markup Language
 
-[Trip Adivsor ](https://www.tripadvisor.com/) - Where all trips are planned and made, for design inspiration.
+[Heroku ](https://en.wikipedia.org/wiki/Heroku) - Heroku cloud platform service 
+
+[Light house](https://developer.chrome.com/docs/lighthouse/overview/ ) - Open-source, automated tool for improving the quality of web pages. 
+
+[ djangoproject.com](https://www.djangoproject.com/start/overview/) - Officially React documentation and functions
+
+[ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
 
 [Logo generator ](https://favicon.io/logo-generator/) - Creating simple logos for free
 
@@ -842,16 +854,17 @@ dynamically manipulate and control the presentation of content.
 
 [ Google fonts](https://fonts.google.com/?preview.text=POST,%20PLAN%20%26%20TRAVEL&preview.text_type=custom) - Pre generated fonts for all text.
 
-[React Bootstrap Docs ](https://react-bootstrap-v4.netlify.app/) - The official docs for React Bootstrap components.
+[ ESLint](https://eslint.org/docs/latest/) - JavaScript code analysis tool for catching errors and enforcing coding style
+
+---
+
+# Acknowledgments
+
+[Trip Adivsor ](https://www.tripadvisor.com/) - Where all trips are planned and made, for design inspiration.
 
 [Stack Overflow](https://stackoverflow.com/) - Supported me in understanding: try/catch blocks, Routes in React, and adding custom fields to models in Django Rest.
 
-[ djangoproject.com](https://www.djangoproject.com/start/overview/) - Officially React documentation and functions
-
-[ cloudinary.com](https://console.cloudinary.com/console/c-bc29bdd73130ab10f676494e4e2a13/getting-started-dam) - Image file source and image storage tool
-
-
-[ ESLint](https://eslint.org/docs/latest/) - JavaScript code analysis tool for catching errors and enforcing coding style
+[React Bootstrap Docs ](https://react-bootstrap-v4.netlify.app/) - The official docs for React Bootstrap components.
 
 ---
 
