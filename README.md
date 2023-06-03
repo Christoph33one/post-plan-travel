@@ -133,7 +133,7 @@ Posts page:
 - By scrolling down on the page, users can explore all the comments added to the post and witness the interactions between other users and the post.
 - The page layout ensures that all content is displayed optimally on various screen sizes, with particular attention given to the positioning of images for a visually pleasing experience.
 
-Comments:
+Add edit & delete comments:
 - When viewing the list of comments, users can expect smooth scrolling with comments rendering quickly and efficiently.
 - Each comment is presented clearly, featuring the written content and an optional image if provided by the commenter.
 - Users can easily identify the profile associated with each comment, along with a timestamp indicating when the comment was made.
@@ -142,15 +142,37 @@ Comments:
 - For those who want to edit their comment, a modern and visually appealing dropdown button is readily available.
 - When editing a comment, users have the ability to modify both the comment text and content, and upon resubmission, they can observe their edited comment being updated accordingly.
 
-
 Popular profiles:
+- The list of popular profiles is readily accessible both on the list of posts and within individual post pages, making it convenient for users to explore.
+- Each profile in the list is presented with a prominent display of their profile name and avatar, ensuring easy recognition for users.
+- The arrangement of the popular profiles is strategically designed to convey the impression that the topmost profile is the most followed, highlighted by the presence of a follow/unfollow button beside each profile.
+- The follow/unfollow button dynamically adjusts its functionality, providing users with a clear indication of the action they can take (follow/unfollow) for each profile.
+- When users choose to follow or unfollow a profile, they can observe the impact on their own followers count, witnessing an increase or decrease accordingly.
 
-The list of popular profiles is readily accessible both on the list of posts and within individual post pages, making it convenient for users to explore.
-Each profile in the list is presented with a prominent display of their profile name and avatar, ensuring easy recognition for users.
-The arrangement of the popular profiles is strategically designed to convey the impression that the topmost profile is the most followed, highlighted by the presence of a follow/unfollow button beside each profile.
-The follow/unfollow button dynamically adjusts its functionality, providing users with a clear indication of the action they can take (follow/unfollow) for each profile.
-When users choose to follow or unfollow a profile, they can observe the impact on their own followers count, witnessing an increase or decrease accordingly.
+Create, edit & delete a post:
+- Users are provided with a clear navigation point to access the "Add Post" feature, ensuring ease of use.
+- The form for adding a post is thoughtfully designed and responsive across all screen sizes, enhancing the user experience.
+- Users can input a title, description, location, and caption for their post, enabling comprehensive content creation.
+- When uploading images, users are presented with the option to add up to six images. If the user attempts to add fewer than six, a warning message prompts them to include all six images.
+- Users have the option to cancel their request to add a post, redirecting them back to the homepage.
+- Upon submitting the post, users can easily locate and utilize the submit button, which directs them to the post page where they can view their newly created post.
+- The post page and profile page display a modern icon, providing users with intuitive access to edit and delete functions for posts they own.
+- Deleting a post owned by the user is as simple as clicking the bin icon, which then redirects them to the posts page, confirming the successful removal of the post, including associated comments.
+- When editing a post, users are redirected to a pre-populated editing page where they can modify images and all content accordingly.
+- Upon submitting a new comment, users can immediately view the updated content and images in the posts page, ensuring a seamless interaction.
+- Users, while viewing posts they don't own, are unable to edit or delete the content, assuring them of site security and privacy measures.
 
+Search filter:
+- Users can easily locate a search filter at the top of the post page, allowing them to conveniently navigate to a specific location they wish to view.
+- The search filter promptly returns relevant locations at a fast speed, accompanied by a data loading interaction to indicate that the site is fetching the post data.
+- When using the location filter, users can begin entering characters of the desired location and instantly receive matching locations if they exist. In the case of no results, users are provided with a clear message indicating the absence of matching locations.
+
+Security:
+- Users, including myself, are restricted from editing or deleting any posts, comments, or profiles, regardless of whether they were created by myself or other users. This ensures the integrity and security of the content.
+- As a registered user, I have access only to the authorized webpages, and any attempt to access an unauthorized URL will result in a "no data" page or a redirection to the home page.
+- Unauthenticated users are limited to viewing only the homepage and are prevented from accessing any other site information. Any manual URL attempts to bypass this restriction will result in an automatic redirection to the home page or a "no data" page.
+- In the case of incorrect sign-in credentials, users are unable to log in and will receive a clear message indicating that the provided credentials are invalid. This prevents unauthorized access to user accounts.
+- For logged-in users, the webpage will automatically sign them out if the site is closed, there is a loss of internet connection, or if the site is refreshed on any device. This proactive security measure helps protect user accounts and sensitive information.
 ---
 
 # Project planning
