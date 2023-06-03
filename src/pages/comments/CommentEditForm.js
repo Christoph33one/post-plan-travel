@@ -17,7 +17,7 @@ function CommentEditForm(props) {
 
   const handleImageChange = (event) => {
     if (event.target.files.length) {
-      console.log("Selected file:", event.target.files[0]);
+      // console.log("Selected file:", event.target.files[0]);
       setPreviewImage(URL.createObjectURL(event.target.files[0]));
       setImage(event.target.files[0]);
     }
@@ -33,21 +33,21 @@ function CommentEditForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Save button pressed");
-    console.log("image:", image);
+    // console.log("Save button pressed");
+    // console.log("image:", image);
     const formData = new FormData();
     formData.append("content", formContent.trim());
     
     if (image) {
-      console.log("Before appending image", formData);
+      // console.log("Before appending image", formData);
       formData.append("comment_image", image, image.name);
-      console.log("After appending image", formData);
+      // console.log("After appending image", formData);
     }
     
     try {
-      console.log("Submitting form data:", formData);
+      // console.log("Submitting form data:", formData);
       await axiosRes.put(`/comments/${id}/`, formData);
-      console.log("Form submission successful!");
+      // console.log("Form submission successful!");
       setComments((prevComments) => ({
         ...prevComments,
         results: prevComments.results.map((comment) =>
@@ -68,9 +68,9 @@ function CommentEditForm(props) {
     }
   };
 
-  console.log("image", image);
-  console.log("previewImage", previewImage);
-  console.log("initialImage", initialImage);
+  // console.log("image", image);
+  // console.log("previewImage", previewImage);
+  // console.log("initialImage", initialImage);
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -84,7 +84,6 @@ function CommentEditForm(props) {
         />
       </Form.Group>
       <Form.Group className="pr-1">
-        <h5>Please click the image to upload</h5>
         <div>
           <input
             id={`edit-image-${id}`}
@@ -95,7 +94,7 @@ function CommentEditForm(props) {
             onChange={handleImageChange}
           />
           <label htmlFor={`image${id}`} className={styles.ImageUploadLabel}>
-            {!previewImage && !initialImage && <span>Upload Image</span>}
+            {!previewImage && !initialImage && <span>Please upload and image</span>}
             {previewImage || initialImage ? (
               <div className={styles.ImageContainer}>
                 <img

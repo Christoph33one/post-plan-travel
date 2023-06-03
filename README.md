@@ -599,6 +599,23 @@ Solution:
 Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the SignInForm function, the useRedirect prop's value were written as a string using double brackets - useRedirect("loggedIn")
 This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully and the iser is redirected to the home page.
 
+### Comment edit form
+Issue: 
+
+When implementing the edit function for user comments, where they can update both the content and the image, I encountered a problem. While the content update was working fine, the image was not updating, and no errors were being displayed in the console or in the network requests. This presented a challenging issue to resolve.
+
+Solution: 
+
+To troubleshoot the problem, I started by testing the API to verify if a comment could be correctly updated with a new image. Surprisingly, the update was visible on the front-end, indicating that the issue was likely related to the rendering on the front-end.
+
+To investigate further, I added some log statements to track the updated image file in the console. This helped confirm that the correct image URL was being returned. Next, I examined the handleSubmit function and logged the image to ensure it was being passed correctly. I also checked the feedback before and after appending the image in the handleSubmit function, and everything seemed to be in order.
+
+In the return statement of the component, there is a previewImage value that was updated with the new image when it is added. This previewImage is then used in the PUT request URL to update the comment.
+
+However, I discovered that the issue lied in the image append update. I needed to use the specific field name for the image in the backend comments model, which was comment_image, instead of the previous name. Once I made this correction and appended the image with the correct value, the image started rendering correctly with the new image.
+
+Overall, by carefully investigating the backend response, the handling of the image in the front-end code, and ensuring the correct field name was used, I was able to resolve the issue and successfully update the image for user comments.
+
 ---
 
 # Manual testing
