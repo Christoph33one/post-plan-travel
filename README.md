@@ -16,7 +16,7 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 ### Structure
 <li><a href="#project-purpose">Project purpose</a></li>
 <li><a href="#user-audience">User audience</a></li>
-<li><a href="#structure">Structure</a></li>
+<li><a href="#user-stories">User stories</a></li>
 <li><a href="#project-planning">Project planning</a></li>
 <li><a href="#data-structure">Data structure</a></li>
 <li><a href="#custom-components">Custom components</a></li>
@@ -82,6 +82,74 @@ However, our platform is not limited to any specific age group. We recognize tha
 One of the core principles of Post, Plan & Travel is accessibility. We believe that travel should be accessible to everyone, regardless of their budget. Our comprehensive travel guides and suggestions cover a wide range of budgets, ensuring that whether you're a budget-conscious backpacker or a luxury traveler, you'll find valuable information and recommendations that suit your needs.
 
 In summary, Post, Plan & Travel is an all-encompassing platform that embraces diversity, caters to people of all ages and genders, and provides a wide range of travel resources and inspiration. We are committed to empowering individuals from all walks of life to explore the world, create unforgettable memories, and embrace the joy of travel.
+
+---
+
+# User stories
+
+### Register
+
+Sign up:
+
+- As a user, I can easily locate the signup feature in the navigation menu.
+- As a user, I am presented with a visually appealing and responsive signup form.
+- As a user, I can securely enter my credentials, including password verification.
+- Once logged in, I am seamlessly redirected to the sign-in page.
+
+Sign in:
+- As a user, I can conveniently sign in using my username and password.
+- Password security measures are in place to ensure the confidentiality of my password.
+- A clear and intuitive submit or cancel button is provided.
+- If I choose to cancel my login, I am redirected back to the landing page.
+- After successful login, I am immediately directed to the landing page where my profile avatar is prominently displayed.
+
+Profile page:
+- I can access my profile page and view my avatar, name, interests, and bio (if provided).
+- A dropdown menu offers convenient options to change my username, password, and edit my profile.
+- When editing my profile, a user-friendly form is presented with pre-populated information that I can easily modify. Additionally, updating my profile image is supported.
+
+Verification:
+- When changing my username, I am redirected to a separate form to enter my new username. If I attempt to select an existing username, a helpful message notifies me of the unavailability.
+- While changing my password, I am required to enter a new password distinct from the previous one. Verification is prompted by re-entering the new password.
+- Upon submitting my new username, I am seamlessly returned to my profile page.
+
+Landing page:
+
+- The landing page is thoughtfully designed with a clear and intuitive layout.
+- The written content on the landing page is easily understandable, and all links are functional.
+- A prominent navigation bar is available on the landing page to facilitate easy navigation to other sections of the website.
+
+Locations page:
+- Upon navigating to the locations page, a title is displayed, confirming the user's current location within the website.
+- The latest post is prominently showcased at the top of the page, with the profile name of the post creator clearly mentioned.
+- Users can effortlessly scroll through the landing page posts, which are loaded quickly for a seamless browsing experience.
+- The responsive layout ensures that all images within the posts are displayed optimally across different screen sizes.
+- Each post provides relevant information such as title, images, description, and captions for a comprehensive view.
+- Users can easily identify the comment count on each post, along with an icon indicating user engagement. Clicking on the message and clickable icon allows users to view the post in more detail and access the comments section.
+
+Posts page:
+- Users can easily navigate from the list of all posts to a single post and access additional content.
+- When viewing a single post, users are provided with more detailed information, including a convenient way to access the profile of the post creator.
+- By scrolling down on the page, users can explore all the comments added to the post and witness the interactions between other users and the post.
+- The page layout ensures that all content is displayed optimally on various screen sizes, with particular attention given to the positioning of images for a visually pleasing experience.
+
+Comments:
+- When viewing the list of comments, users can expect smooth scrolling with comments rendering quickly and efficiently.
+- Each comment is presented clearly, featuring the written content and an optional image if provided by the commenter.
+- Users can easily identify the profile associated with each comment, along with a timestamp indicating when the comment was made.
+- If users wish to add their own comment, they will find an intuitive and user-friendly form where they can input their content and upload an image, if desired.
+- Upon submitting a comment, users can immediately see their comment displayed at the top of the c omments list.
+- For those who want to edit their comment, a modern and visually appealing dropdown button is readily available.
+- When editing a comment, users have the ability to modify both the comment text and content, and upon resubmission, they can observe their edited comment being updated accordingly.
+
+
+Popular profiles:
+
+The list of popular profiles is readily accessible both on the list of posts and within individual post pages, making it convenient for users to explore.
+Each profile in the list is presented with a prominent display of their profile name and avatar, ensuring easy recognition for users.
+The arrangement of the popular profiles is strategically designed to convey the impression that the topmost profile is the most followed, highlighted by the presence of a follow/unfollow button beside each profile.
+The follow/unfollow button dynamically adjusts its functionality, providing users with a clear indication of the action they can take (follow/unfollow) for each profile.
+When users choose to follow or unfollow a profile, they can observe the impact on their own followers count, witnessing an increase or decrease accordingly.
 
 ---
 
