@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Form from "react-bootstrap/Form";
 import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
@@ -9,24 +9,45 @@ function CommentEditForm(props) {
   const [formContent, setFormContent] = useState(content);
   const [image, setImage] = useState(null);
   const [previewImage, setPreviewImage] = useState(null);
-  const imageFile = useRef();
+  const imageFile = useRef(null);
 
   const handleContentChange = (event) => {
     setFormContent(event.target.value);
   };
 
-  // Handle image change event, update state with selected file and preview.
+  const handleImageChange = (event) => {
+    if (event.target.files.length) {
+      console.log("Selected file:", event.target.files[0]);
+      setPreviewImage(URL.createObjectURL(event.target.files[0]));
+      setImage(event.target.files[0]);
+    }
+  };
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+    useEffect(() => {
+      if (isSubmitted) {
+        window.location.reload();
+      }
+    }, [isSubmitted]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    console.log("Save button pressed");
+    console.log("image:", image);
     const formData = new FormData();
     formData.append("content", formContent.trim());
-    formData.append("image", imageFile.current.files[0])
     
-    if (imageFile.current?.files[0]) {
-      formData.append("image", imageFile.current.files[0]);
+    if (image) {
+      console.log("Before appending image", formData);
+      formData.append("comment_image", image, image.name);
+      console.log("After appending image", formData);
     }
+    
     try {
+      console.log("Submitting form data:", formData);
       await axiosRes.put(`/comments/${id}/`, formData);
+      console.log("Form submission successful!");
       setComments((prevComments) => ({
         ...prevComments,
         results: prevComments.results.map((comment) =>
@@ -35,20 +56,21 @@ function CommentEditForm(props) {
                 ...comment,
                 content: formContent.trim(),
                 updated_at: "now",
+                image: previewImage || initialImage,
               }
             : comment
         ),
       }));
+      setIsSubmitted(true);
       setShowEditForm(false);
     } catch (err) {
       console.log(err);
     }
   };
-  
 
-  console.log("Preview Image:", previewImage);
-  console.log("Image:", image);
-  console.log("Initial Image:", initialImage);
+  console.log("image", image);
+  console.log("previewImage", previewImage);
+  console.log("initialImage", initialImage);
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -68,14 +90,9 @@ function CommentEditForm(props) {
             id={`edit-image-${id}`}
             type="file"
             accept="image/*"
-
             className={styles.ImageUploadInput}
-            ref={imageFile}
-            onChange={(e) => {
-              if (e.target.files.length) {
-                setPreviewImage(URL.createObjectURL(e.target.files[0]));
-              }
-            }}
+            ref={imageFile.current}
+            onChange={handleImageChange}
           />
           <label htmlFor={`image${id}`} className={styles.ImageUploadLabel}>
             {!previewImage && !initialImage && <span>Upload Image</span>}
