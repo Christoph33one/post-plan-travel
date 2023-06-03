@@ -1,66 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Form from "react-bootstrap/Form";
+import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
-import UploadIcon from "../../assets/upload.png";
-import { axiosReq } from "../../api/axiosDefaults";
+import btnStyles from "../../styles/Button.module.css";
 
 function CommentEditForm(props) {
-  const { id, content, image, setShowEditForm, setComments } = props;
+  const { id, content, initialImage, setShowEditForm, setComments } = props;
   const [formContent, setFormContent] = useState(content);
-  const [formImage, setFormImage] = useState(null);
-  const [previewImage, setPreviewImage] = useState(image);
+  const [image, setImage] = useState(null);
+  const [previewImage, setPreviewImage] = useState(null);
+  const imageFile = useRef();
 
   const handleContentChange = (event) => {
     setFormContent(event.target.value);
   };
- 
+
   // Handle image change event, update state with selected file and preview.
-  const handleImageChange = (event) => {
-    const selectedFile = event.target.files[0];
-    console.log()
-    setFormImage(selectedFile);
-    setPreviewImage(URL.createObjectURL(event.target.files[0]));
-  };
-
-
-
-  // const handleImageChange = (event) => {
-  //   const selectedFile = event.target.files[0];
-  //   if (event.target.files.length) {
-  //     URL.revokeObjectURL(image);
-  //     setFormImage({
-  //       ...formImage,
-  //       image: URL.createObjectURL(event.target.files[0]),
-  //     });
-  //   }
-  // };
-  
-  // Handle form submission, create FormData and append content and image.
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append("content", formContent);
-    formData.append("image", formImage);
+    formData.append("content", formContent.trim());
+    formData.append("image", imageFile.current.files[0])
     
-    if (formImage) {
-      formData.append("image", formImage);
+    if (imageFile.current?.files[0]) {
+      formData.append("image", imageFile.current.files[0]);
     }
-
     try {
-      await axiosReq.put(`/comments/${id}/`, {
-        content: formContent.trim(),
-      });
+      await axiosRes.put(`/comments/${id}/`, formData);
       setComments((prevComments) => ({
         ...prevComments,
-        results: prevComments.results.map((comment) => {
-          return comment.id === id
+        results: prevComments.results.map((comment) =>
+          comment.id === id
             ? {
                 ...comment,
                 content: formContent.trim(),
                 updated_at: "now",
               }
-            : comment;
-        }),
+            : comment
+        ),
       }));
       setShowEditForm(false);
     } catch (err) {
@@ -68,6 +45,11 @@ function CommentEditForm(props) {
     }
   };
   
+
+  console.log("Preview Image:", previewImage);
+  console.log("Image:", image);
+  console.log("Initial Image:", initialImage);
+
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="pr-1">
@@ -81,28 +63,41 @@ function CommentEditForm(props) {
       </Form.Group>
       <Form.Group className="pr-1">
         <h5>Please click the image to upload</h5>
-        <div className={styles.ImageUploadContainer}>
+        <div>
           <input
             id={`edit-image-${id}`}
             type="file"
             accept="image/*"
+
             className={styles.ImageUploadInput}
-            onChange={handleImageChange}
+            ref={imageFile}
+            onChange={(e) => {
+              if (e.target.files.length) {
+                setPreviewImage(URL.createObjectURL(e.target.files[0]));
+              }
+            }}
           />
-          <label
-            htmlFor={`edit-image-${id}`}
-            className={styles.ImageUploadLabel}
-          >
-            {!previewImage && <img src={UploadIcon} alt="Upload Icon" />}
-            {previewImage && (
+          <label htmlFor={`image${id}`} className={styles.ImageUploadLabel}>
+            {!previewImage && !initialImage && <span>Upload Image</span>}
+            {previewImage || initialImage ? (
               <div className={styles.ImageContainer}>
                 <img
-                  src={previewImage}
+                  src={previewImage || initialImage}
                   alt="Selected Image"
                   className={styles.CommentImage}
                 />
               </div>
+            ) : (
+              <span>Upload Image</span>
             )}
+            <div>
+              <Form.Label
+                className={`${btnStyles.Button} ${btnStyles.Blue} btn my-auto`}
+                htmlFor={`edit-image-${id}`}
+              >
+                Change the image
+              </Form.Label>
+            </div>
           </label>
         </div>
       </Form.Group>
@@ -111,16 +106,15 @@ function CommentEditForm(props) {
           className={styles.Button}
           onClick={() => setShowEditForm(false)}
           type="button"
-
         >
-          cancel
+          Cancel
         </button>
         <button
           className={styles.Button}
-          disabled={!formContent.trim() && !formImage}
+          disabled={!formContent.trim() && !image}
           type="submit"
         >
-          save
+          Save
         </button>
       </div>
     </Form>

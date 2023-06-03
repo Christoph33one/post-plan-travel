@@ -60,6 +60,8 @@ const ProfileEditForm = () => {
 
     handleMount();
   }, [currentUser, history, id]);
+  
+  
 
   const handleChange = (event) => {
     setProfileData({

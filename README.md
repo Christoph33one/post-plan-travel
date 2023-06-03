@@ -35,7 +35,6 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 <li><a href="#following">Follow / unfollow</a></li>
 <li><a href="#comments">Comments</a></li>
 <li><a href="#wire-frames">Wire frames</a></li>
-<li><a href="#colours">Colour</a></li>
 <li><a href="#colour-scheme">Colour scheme</a></li>
 
 ---
@@ -638,6 +637,20 @@ No errors or warnings were found when the deployed Happening URL was passed thro
 ![](src/assets/readme-images/html%20validation%20tests.png)
 
 The deployed URL was successfully validated using the W3C CSS validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
+
+
+ ### JSLint tests
+I used JSLint and Prettier to ensure the quality and consistency of my JSX code. JSLint helped me detect potential errors and enforce coding best practices, ensuring that my code follows strict standards. Prettier, on the other hand, helped me maintain a consistent code style by automatically formatting my code according to predefined rules. Together, these tools helped me improve the readability, maintainability, and overall quality of my JavaScript code.
+
+During my final testing, I encountered 17 warnings indicating that React was imported but never used. These warnings specifically related to the imports of React in the useEffect and useRedirect hooks. As a newcomer to React and still exploring its full capabilities, I decided to keep these warnings intact to ensure I don't overlook any potential project functionalities. By doing so, I aim to protect myself from potential project failures and continue learning and leveraging React's full potential in future endeavors.
+
+![](src/assets/readme-images/JSLint%20tests%20warnings.png)
+
+During the JSLint test report, I came across 13 errors related to unused values in the tests. I want to clarify that as a newcomer to React, I am still in the process of familiarizing myself with testing procedures. I reached out to the tutoring team at Code Institute on multiple occasions for guidance on my tests. Their feedback emphasized that testing is an advanced topic beyond the scope of the course, but they encouraged me to do my best in running tests and documenting the process.
+
+![](src/assets/readme-images/JSLint%20errors.pngs)
+
+---
 
 ### Automated tests
 
