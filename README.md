@@ -46,6 +46,11 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 
 ---
 
+### Future features and updates
+<li><a href="#features">Features & updates</a></li>
+
+---
+
 # Deployment setup
 <li><a href="#deployment">Deployment</a></li>
 
@@ -67,9 +72,9 @@ Visit the [Post, Plan & Travel repository ](https://github.com/Christoph33one/po
 # Project purpose
 
 ### Post, Plan & travel
-Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel experiences from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & travel offers inspiration to explore and experience new activities. With Post Plan & travel, planning a trip has never been easier or more exciting.
+Designed to help users plan trips abroad by providing them with a unique perspective on various destinations. By browsing through photos and travel experiences from other travelers, users can gain insights into popular and off-the-beaten-path locations. For adventure enthusiasts, Post Plan & Travel offers inspiration to explore and experience new activities. With Post Plan & Travel, planning a trip has never been easier or more exciting.
 
-To fully immerse yourself in the website's offerings and access its complete range of features, signing up for a free account is required. Once registered, a world of possibilities opens up before you. You can delve into a wealth of captivating posts created by fellow users, engage in meaningful discussions by adding your own comments, and even showcase your personal travel experiences.
+To fully immerse yourself in the website's offerings and access its complete range of features, signing up for a free account is required. Once registered, a world of possibilities opens up before you. You can enjoy a wealth of captivating posts created by fellow users, engage in meaningful discussions by adding your own comments, and even showcase your personal travel experiences.
 
 This platform is a haven for those with a keen eye for photography. It provides an ideal space to upload your mesmerizing images and narrate the stories behind them. By sharing your photos, you can capture the essence of your travel adventures and captivate the community with your visual storytelling.
 
@@ -78,8 +83,7 @@ Don't miss out on the chance to join this vibrant community of explorers, storyt
 ---
 
 # User audience
-Post, Plan & Travel is designed to cater to people of all ages, genders, and backgrounds, embracing diversity and inclusivity. We firmly believe that everyone, regardless of their gender, should have equal opportunities to explore and enjoy the world. Whether you identify as male, female, non-binary, or any other gender, our platform welcomes and supports you in your travel endeavors.
-For younger individuals, Post, Plan & Travel serves as an invaluable resource to plan their first solo trips or embark on adventurous holidays with friends. We understand the unique needs and interests of the younger generation and provide tailored content that appeals to their sense of exploration, adventure, and discovery.
+Post, Plan & Travel is designed to cater for all. For younger individuals, Post, Plan & Travel serves as an invaluable resource to plan their first solo trips or embark on adventurous holidays with friends. We understand the unique needs and interests of the younger generation and provide tailored content that appeals to their sense of exploration, adventure, and discovery.
 
 However, our platform is not limited to any specific age group. We recognize that people in their middle ages may seek a well-deserved break from their busy lives and yearn to explore new destinations. Post, Plan & Travel offers a wealth of travel guides, itineraries, and suggestions that cater to the interests and preferences of individuals in different stages of life. Whether you're seeking relaxation, cultural immersion, or thrilling experiences, our platform has something to inspire and guide you.
 
@@ -118,7 +122,6 @@ Verification:
 - Upon submitting my new username, I am seamlessly returned to my profile page.
 
 Landing page:
-
 - The landing page is thoughtfully designed with a clear and intuitive layout.
 - The written content on the landing page is easily understandable, and all links are functional.
 - A prominent navigation bar is available on the landing page to facilitate easy navigation to other sections of the website.
@@ -137,12 +140,12 @@ Posts page:
 - By scrolling down on the page, users can explore all the comments added to the post and witness the interactions between other users and the post.
 - The page layout ensures that all content is displayed optimally on various screen sizes, with particular attention given to the positioning of images for a visually pleasing experience.
 
-Add edit & delete comments:
+Add, edit & delete comments:
 - When viewing the list of comments, users can expect smooth scrolling with comments rendering quickly and efficiently.
 - Each comment is presented clearly, featuring the written content and an optional image if provided by the commenter.
 - Users can easily identify the profile associated with each comment, along with a timestamp indicating when the comment was made.
 - If users wish to add their own comment, they will find an intuitive and user-friendly form where they can input their content and upload an image, if desired.
-- Upon submitting a comment, users can immediately see their comment displayed at the top of the c omments list.
+- Upon submitting a comment, users can immediately see their comment displayed at the top of the comments list.
 - For those who want to edit their comment, a modern and visually appealing dropdown button is readily available.
 - When editing a comment, users have the ability to modify both the comment text and content, and upon resubmission, they can observe their edited comment being updated accordingly.
 
@@ -163,7 +166,7 @@ Create, edit & delete a post:
 - The post page and profile page display a modern icon, providing users with intuitive access to edit and delete functions for posts they own.
 - Deleting a post owned by the user is as simple as clicking the bin icon, which then redirects them to the posts page, confirming the successful removal of the post, including associated comments.
 - When editing a post, users are redirected to a pre-populated editing page where they can modify images and all content accordingly.
-- Upon submitting a new comment, users can immediately view the updated content and images in the posts page, ensuring a seamless interaction.
+- Upon submitting a new comment, users can immediately view updated content and images in the posts page, ensuring a seamless interaction.
 - Users, while viewing posts they don't own, are unable to edit or delete the content, assuring them of site security and privacy measures.
 
 Search filter:
@@ -172,7 +175,7 @@ Search filter:
 - When using the location filter, users can begin entering characters of the desired location and instantly receive matching locations if they exist. In the case of no results, users are provided with a clear message indicating the absence of matching locations.
 
 Security:
-- Users, including myself, are restricted from editing or deleting any posts, comments, or profiles, regardless of whether they were created by myself or other users. This ensures the integrity and security of the content.
+- Users are restricted from editing or deleting any posts, comments, or profiles, not created by themselves. This ensures the integrity and security of the content.
 - As a registered user, I have access only to the authorized webpages, and any attempt to access an unauthorized URL will result in a "no data" page or a redirection to the home page.
 - Unauthenticated users are limited to viewing only the homepage and are prevented from accessing any other site information. Any manual URL attempts to bypass this restriction will result in an automatic redirection to the home page or a "no data" page.
 - In the case of incorrect sign-in credentials, users are unable to log in and will receive a clear message indicating that the provided credentials are invalid. This prevents unauthorized access to user accounts.
@@ -180,25 +183,24 @@ Security:
 ---
 
 # Project planning
-For project requirements and project planning I followed the agile methodologies and best practices. I used a scrum board which is a built in feature in the projects repository with GitHub. 
+For project requirements and project planning I followed agile methodologies and best practices. I used a scrum board which is a built in feature in the project's repository with GitHub. 
 
-Please click the [link](https://github.com/users/Christoph33one/projects/30/views/1) to view the project Kanban board
+Please click the [link](https://github.com/users/Christoph33one/projects/30/views/1) to view the project's Kanban board.
 
 
-I created a list of project goals using agile user stories method. A user Story is a small, self-contained unit of development work designed to accomplish a specific goal within a product and articulate the value proposition for the work and drive the development work. 
+I created a list of project goals using agile user stories method. A user story is a small, self-contained unit of development work designed to accomplish a specific goal within a product and articulate the value proposition for the work and drive the development work. 
 
 With agile it is advised to use a team velocity approach. Team velocity represents how many story points the development team can manage to finish in one iteration of a particular length.
 
 As I am the only one planning this project and not using a team, I will not be using the team velocity approach and point score system.
 
-Using agile's MOSCOW method, each user story has been highlighted with the importance of the projects acceptance criteria. I used labels to indicate the importance of each user story and it's involvment with the project.
+Using agile's MOSCOW method, each user story has been highlighted with the importance of the project's acceptance criteria. I used labels to indicate the importance of each user story and it's involvment with the project.
 
 Please visit the [build log](https://github.com/Christoph33one/post-plan-travel/issues) 
 
 ---
 
 # Data structure
-Data Structure (models)
 All of the data structuring was completed when creating my backend API. The repository and accompanying README can be found here: Click [here](https://github.com/Christoph33one/post-planner-api/blob/main/assets/data%20structure%20.png) to view.
 
 ---
@@ -206,12 +208,12 @@ All of the data structuring was completed when creating my backend API. The repo
 # Custom components
 
 ### HeroImageComponent: 
-The HeroImage component allows you to showcase visually appealing images or banners in the website. It helps in grabbing the user's attention and creating a memorable first impression.
+The HeroImage component allows you to showcase visually appealing images or banners in the website. It helps in grabbing user's attention and creating a memorable first impression.
 
 ![](src/assets/readme-images/hero-image.png)
 
 ### CategoryIcon: 
-The CategoryIcon component allows you to display icons and links related to different categories on the website. It improves the user experience by providing intuitive visual cues and easy navigation.
+The CategoryIcon component allows you to display icons and links related to different categories on the website. It improves the user experience and provides easy navigation.
 
 ![](src/assets/readme-images/catergory-items.png)
 
@@ -221,7 +223,7 @@ The MoreDropdown component provides a dropdown menu with additional options or a
 ![](src/assets/readme-images/MoreDropDown.png)
 
 ### NavBar:
-For a reusable Navigation point I have implemented a Navbar component to be used on all pages thoughout the website. This helps in organizing and presenting additional features.
+For a reusable navigation point I have implemented a Navbar component to be used on all pages thoughout the website. This helps in organizing and presenting additional features.
 
 ### Assest
 The Asset component displays assets with a spinner, image, or message. It accepts props for each type and applies CSS styling for consistency.
@@ -236,7 +238,7 @@ The NotFound component is useful for displaying a custom error page when a user 
 ![](src/assets/readme-images/page%20not%20found.png)
 
 ### Scroll to top
-By incorporating the Scroll to Top component, users can effortlessly navigate to the beginning of a web page by simply clicking on the button that emerges as they scroll down. This convenient button grants users the ability to swiftly return to the topmost section of the page. I have made the decision to implement this feature on pages that holds the most content, including the travel post page and profile page. As the number of user-generated posts continues to grow, the Scroll to Top functionality will serve as a user-friendly enhancement, ensuring smooth and efficient navigation.
+By incorporating the Scroll to Top component, users can effortlessly navigate to the beginning of a web page by simply clicking on the button that emerges as they scroll down. This convenient button grants users the ability to swiftly return to the topmost section of the page. I have made the decision to implement this feature on pages that hold the most content, including the travel post page and profile page. As the number of user-generated posts continues to grow, the Scroll to Top functionality will serve as a user-friendly enhancement, ensuring smooth and efficient navigation.
 
 ![](src/assets/readme-images/scroll%20to%20top%20button.png)
 
@@ -253,7 +255,6 @@ The useRedirect hook plays a crucial role in the site's security by preventing u
 By combining the useRedirect hook with manual endpoint handling and URL-based redirection, the site ensures that only authorized users can access restricted areas, enhancing security and improving the overall user experience.
 
 ### Toggle control
-
 Click outside toggle: 
 This hook is responsible for implementing a dropdown toggle effect in the website's navigation bar. It allows the dropdown menu to expand or collapse when clicking outside of the menu area.
 This also enhances the user experience by providing an intuitive dropdown menu behavior.
@@ -267,7 +268,7 @@ This also enhances the user experience by providing an intuitive dropdown menu b
 ### Sign up
 To fully utilize the features of this site, users are required to register. The Navbar provides easy access to the registration form, where users can create a username, set a password, and confirm it by re-entering the pasword for varifction.
 
-Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information and a pasword with a minimum of 8 characters.
+Please note that all registration fields must be filled out before the registration process can be completed. The registration form incorporates built-in error handling to ensure that users cannot register without providing all the required information and a password with a minimum of 8 characters.
 
 ![](src/assets/readme-images/signnup%20formpage.png)
 ![](src/assets/readme-images/sign%20up%20form%20apge%20mobile%20size.png)
@@ -290,41 +291,41 @@ To provide a convenient reminder for registered users and facilitate easier navi
 ### Change user name & password
 The purpose of this function is to enable users to change their passwords and usernames without the need to request assistance from a site administrator. By offering this functionality directly to the users, we aim to enhance the sign-in experience by providing a more efficient and streamlined process for resolving password-related issues.
 
-Empowering users with the ability to change their passwords not only simplifies the response to sign-in problems but also instills a greater sense of security. By allowing users to take control of their own accounts and update their valuable information, we prioritize their privacy and provide them with a more secure environment.
+Giving users the ability to change their password not only simplifies the response to sign-in problems but also gives a greater sense of security. By allowing users to take control of their own accounts and update their valuable information, the site prioritizes their privacy and provide them with a more secure environment.
 
 ![](src/assets/readme-images/new%20username%20form.png)
 ![](src/assets/readme-images/new%20password%20form.png)
 
 
 ### Sign out
-To ensure a streamlined user experience, all signed-out users are automatically redirected to the home page upon accessing any other page of the website. In order to maintain data integrity and avoid potential errors, if a user manually attempts to access the URL endpoint "/signout/", they will be redirected to a custom-designed "No Data Found" page. This page serves as a placeholder, indicating that the requested page does not exist and does not have any specific functionality. This approach not only prevents unauthorized access but also provides a clear and consistent browsing experience for users, eliminating any confusion or disruptions caused by invalid URLs.
+To ensure a streamlined user experience, all signed-out users are automatically redirected to the home page upon accessing any other page of the website. In order to maintain data integrity and avoid potential errors, if a user manually attempts to access the URL endpoint "/signout/", they will be redirected to a custom designed "No Data Found" page. This page serves as a placeholder, indicating that the requested page does not exist and does not have any specific functionality. This approach not only prevents unauthorized access but also provides a clear and consistent browsing experience for users, eliminating any confusion or disruptions caused by invalid URLs.
 
 ![](src/assets/readme-images/page%20not%20found.png)
 
 ---
 
 # Profile page
-When exploring the profile page, I aimed to create a delightful and engaging experience for users. The profile serves as a hub for users to curate their favorite activities from a diverse selection of popular travel options. To add a touch of personalization and align with contemporary design trends, I included the option for users to upload a vibrant avatar, giving their profile a unique flair that reflects their personality.
+When exploring the profile page, I aimed to create a modern and easy to read experience for users. The profile page serves as a hub for users to add their favorite activities from a selection of popular travel options. To add a touch of personalization and used contemporary design trends, I included the option for users to upload an avatar, giving their profile a modern feature that reflects their personality.
 
-Additionally, I incorporated a bio section where users can freely express themselves and share compelling information about their interests and experiences. Recognizing the importance of individual identity, a preset title or name is provided to ensure a meaningful profile representation.
+Additionally, I incorporated a bio section where users can freely express themselves and share information about their interests and experiences. Recognizing the importance of individual identity, a preset title or name is provided to ensure the profile has detailed information.
 
-On the profile page, users can conveniently access and manage all their posts on the site. By providing a comprehensive view of their latest posts and all other contributions, users can stay updated with their own content as well as the wider community. To enhance the user experience, we have made a subtle improvement by displaying the post count just below the user's name. This feature allows users to effortlessly track the number of posts they have created, offering a simple and intuitive way to gauge their contribution.
+On the profile page, users can conveniently access and manage all their posts on the site. By providing a comprehensive view of their latest posts and all other contributions, users can stay updated with their own content as well as the community. To enhance the user experience, I have added a post count just below the user's name. This feature allows users to track the number of posts they have created, offering a simple and intuitive way to keep the user updated.
 
-By blending simplicity, creativity, and user-centric design, the profile page becomes a captivating canvas where users can showcase their favorite activities and tell their travel story with enthusiasm.
+By adding simplicity, creativity, and user-centric design, the profile page is a main hub to where users can showcase their favorite activities tell their travel story's to the community.
 
 ![](src/assets/readme-images/profile%20page.png)
 ![](src/assets/readme-images/profile%20mobile.png)
 
 ### Profile edit form
-This form is designed to prioritize the security of the profile and is only visible to the owner. At the top of the profile page, there is a dropdown menu represented by a three-dot icon, adhering to modern design principles and functionality. When the user clicks on the dropdown menu, three options are presented: username change, password change, and edit profile.
+This form is designed to prioritize the security of the profile and is only visible to the owner. At the top of the profile page, there is a dropdown menu represented by a three-dot icon, keeping to modern design principles and functionality. When the user clicks on the dropdown menu, three options are presented: username change, password change, and edit profile.
 
 For the username and password change options, the user is redirected to separate forms where they can update their username and password securely.
 
 The edit profile function provides the user with a pre-populated form that allows them to update their avatar, title, bio, and activities. Once the user has made the desired changes and submits the form, they are redirected to their newly updated profile.
 
-By implementing these measures, we ensure that the owner has full control over their profile while maintaining a user-friendly and secure experience.
+By implementing these measures, the site ensures that the owner has full control over their profile while maintaining a user-friendly and secure experience.
 
-The profile page is designed to have a responsive layout, adapting seamlessly to various browser screen sizes, including a minimum width of 360px. This ensures that users can access and navigate the profile page comfortably regardless of the device or screen size they are using. By optimizing the layout for responsiveness, we prioritize a consistent and user-friendly experience across different platforms and screen resolutions.
+The profile edit page is designed to have a responsive layout, adapting to various screen sizes, including a minimum width of 360px. This ensures that users can access and navigate the profile edit page comfortably regardless of the device or screen size they are using. By optimizing the layout for responsiveness, I want to create and prioritize a consistent user-friendly experience across different platforms and screen resolutions.
 
 To maintain content safety and uphold security standards, it is important to restrict users from editing or deleting profiles that they do not own. This measure ensures that followers and the wider community can trust the authenticity and integrity of the content shared on the platform. By implementing strict criteria and access controls, the site mitigates security risks associated with unauthorized user modifications. Users can rest assured that their profiles are safeguarded and that only the original owners have the ability to edit or delete their own content. This policy contributes to a secure and reliable environment for all users, promoting trust and maintaining the integrity of the platform.
 
@@ -333,9 +334,9 @@ To maintain content safety and uphold security standards, it is important to res
 
 ---
 ### Navigation 
-To provide users with a seamless and modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access essential pages such as the Home page, Locations page, Sign Up, Sign In, and Sign Out, without having to search for them.
+To provide users with a modern browsing experience, I have incorporated a simple yet effective navigation menu at the top of the website, which is displayed consistently across all pages. This feature allows users to easily access pages such as the Home page, Locations page, Sign Up and Sign In without having to search for them.
 
-Moreover, to enhance the user's sense of personalization, I have implemented a unique feature in the Navigation bar. When users are signed in, they can view their login name prominently displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This small yet significant touch adds a personal touch and makes the user feel valued, thereby improving their overall browsing experience.
+To enhance the user's sense of personalization, I have implemented a feature in the Navigation bar. When users are signed in, they can view their login name displayed on the Navigation bar, providing a sense of ownership and recognition to the user. This adds a personal touch and gives feed back to the user that they are logged in, thereby improving their overall browsing experience.
 
 ![](src/assets/readme-images/nav%20nav%20broswer%20design.png)
 ![](src/assets/readme-images/nav%20bar%20mobile%20design%2021.19.45.png)
@@ -346,13 +347,13 @@ Icon provider - [logo generator](https://favicon.io/logo-generator/)
 ---
 
 # Landing page
-Drawing inspiration from the homepage of [trip Advisor](https://www.tripadvisor.com/), I have incorporated essential features to enhance the user experience and facilitate access to relevant external links related to travel. Additionally, I have included a donations link to remind users about the importance of responsible travel and encourage them to contribute to the provided cause.
+Drawing inspiration of the homepage from [trip Advisor](https://www.tripadvisor.com/), I have incorporated essential features to enhance the user experience and have access to relevant external links related to travel. Additionally, I have included a donations link to remind users about the importance of responsible travel and encourage them to contribute to the provided cause.
 
-To create a captivating visual impact, I have strategically incorporated a hero image in two key areas of the site, evoking a sense of wanderlust and adventure for the users.
+To create a visual impact, I have incorporated a hero image in two key areas of the site, giving a sense of adventure for the users.
 
-For visually pleasing design, I have utilized various shades of blue throughout the site. This color scheme ensures a soothing and harmonious aesthetic that complements the images without creating any clashing color combinations.
+For visually pleasing design, I have utilized various shades of blue throughout the site. This color scheme complements the images without creating any clashing color combinations.
 
-To cater to mobile screen sizes, including a minimum width of 360px, the landing page has been meticulously designed to respond to different breakpoints. This approach ensures that the layout remains user-friendly and adapts seamlessly to varying screen sizes, providing an optimal viewing experience for mobile users.
+To cater to mobile screen sizes, including a minimum width of 360px, the landing page has been designed to respond to different breakpoints. This approach ensures that the layout remains user-friendly and adapts seamlessly to varying screen sizes, providing an optimal viewing experience for mobile users.
 
 ![](src/assets/readme-images/home%20page.png)
 ![](src/assets/readme-images/home%20page%20donationns%20page.png)
@@ -364,7 +365,7 @@ Users can navigate to the "Add a Post" page to create their own unique posts. Th
 
 The "Add a Post" page provides a user-friendly interface with pre-populated form fields and clear instructions. Users can add a title, description, location, and caption to their posts, ideally sharing their thoughts and experiences related to the images.
 
-Currently, all six images must be added in one instance, but future updates will allow users to upload a minimum of one image. All form fields are required to be filled in a post, as this helps the website gather user feedback and provides more information to other users about the travel post. Error handling has been implemented into the image uplpoading and form to retun reback for the user to complete the requirements before submitting a post.
+Currently, all six images must be added in one instance, but future updates will allow users to upload a minimum of one image. All form fields are required to be filled in a post, as this helps the website gather user feedback and provides more information to other users about the travel post. Error handling has been implemented into the image uplpoading and form to return feedback for the user to complete the requirements before submitting a post.
 
 To enhance user experience, the submit and cancel buttons are equipped with a redirect function that takes users back to the home page when clicked. This ensures a smooth transition between adding a post and returning to the main page.
 
@@ -374,11 +375,12 @@ To enhance user experience, the submit and cancel buttons are equipped with a re
 ---
 
 # Travel posts
-This page serves as the centerpiece of the website, offering all users an opportunity to explore travel plans and experiences shared by fellow travelers. My aim was to create a modern and sleek design for displaying both images and content. Users can discover more than just the posts themselves; they can also access profiles of the individuals who created the posts, along with the date of their addition.
+This page serves as the centerpiece of the website, offering all users an opportunity to explore travel plans and experiences shared by fellow travelers. My aim was to create a modern and sleek design for displaying both images and content. Users can discover more than just the posts themselves; they can also access profiles of the individuals who created the posts, along with the date of their 
+post was added.
 
-Users can further engage with posts by clicking on the icons below the post content, granting them access to a dedicated page where they can view the post in detail and explore the associated comment list.
+Users can engage with posts by clicking on the icons below the post content, granting them access to a dedicated page where they can view the post in detail and explore the associated comment list.
 
-This page is designed to be fully responsive, ensuring optimal viewing across all screen sizes by adhering to responsive guidelines and breakpoints.
+This page is designed to be fully responsive, ensuring optimal viewing across all screen sizes by keeping to responsive guidelines and breakpoints.
 
 ![](src/assets/readme-images/posts%20page.png)
 ![](src/assets/readme-images/posts%20page%20mobile.png)
@@ -387,11 +389,11 @@ This page is designed to be fully responsive, ensuring optimal viewing across al
 ---
 
 ### Travel posts edit form
-To enhance the user-friendliness of the site, I have implemented a convenient post editing feature. Users can easily access this functionality from the main post menu. By clicking on the dropdown button, they have the option to edit or delete a post. To delete a post, users can simply click on the delete post icon. Once deleted, users are seamlessly redirected to the posts page, where the deleted post is no longer visible.
+To enhance the user-friendliness of the site, I have implemented a post editing feature. Users can easily access this functionality from the main post menu. By clicking on the dropdown button, they have the option to edit or delete a post. To delete a post, users can simply click on the delete post icon. Once deleted, users are redirected to the posts page, where the deleted post is no longer visible.
 
 For editing a post, users are redirected to the familiar "Create a Post" form, which automatically populates with the original images and pre-filled content. This enables users to review and adjust their post easily. This functionality proves invaluable for users who may have posted the wrong image or made a spelling mistake, providing a convenient way to make corrections.
 
-By incorporating this user-friendly post editing feature, the site empowers users to have greater control over their content, ensuring a more seamless and enjoyable user experience.
+By incorporating this user-friendly post editing feature, the site empowers users to have greater control over their content, ensuring a more enjoyable user experience.
 
 To maintain content safety and uphold security standards, it is important to restrict users from editing or deleting posts that they do not own. This measure ensures that followers and the wider community can trust the authenticity and integrity of the content shared on the platform. By implementing strict criteria and access controls, the site mitigates security risks associated with unauthorized post modifications. Users can rest assured that their posts are safeguarded and that only the original owners have the ability to edit or delete their own content. This policy contributes to a secure and reliable environment for all users, promoting trust and maintaining the integrity of the platform.
 
@@ -400,7 +402,7 @@ To maintain content safety and uphold security standards, it is important to res
 --- 
 
 # Popular profiles
-One notable feature on this page is the "Popular Profiles" section. This feature aims to foster a sense of community among globe-trotters by highlighting popular profiles based on their follower count. Users can easily stay connected with their favorite influencers and fellow travel enthusiasts. The "Popular Profiles" list showcases the most followed profiles and provides a follower count. Additionally, a convenient follow button is included, allowing users to effortlessly follow or unfollow a profile with a single click. 
+One notable feature on this page is the "Popular Profiles" section. This feature aims to give a sense of community among globe trotters by highlighting popular profiles based on their follower count. Users can easily stay connected with their favorite influencers and fellow travel enthusiasts. The "Popular Profiles" list showcases the most followed profiles and provides a follower count. Additionally, a convenient follow button is included, allowing users to effortlessly follow or unfollow a profile with a single click. 
 
 ![](src/assets/readme-images/popular%20profiles.png)
 ![](src/assets/readme-images/popular%20profiles%20mobile%20size.png)
@@ -433,7 +435,7 @@ There are two convenient methods for users to follow or unfollow profiles. They 
 ---
 
 # Comments
-To enhance the sharing capabilities within the community, I have introduced a feature that enables users to add both comments and images to the discussion. As the website revolves around image sharing, it is important to extend this functionality to the comments section. Imagine a scenario where a user has posted about a particular location, and another user wants to showcase a different location to enrich the conversation. Now, with the ability to upload images along with comments, users can effectively communicate and make the site even more engaging and valuable. This feature adds a new dimension to user interactions, promoting a fun and interactive environment.
+To enhance the sharing capabilities within the community, I have introduced a feature that enables users to add both comments and images to the discussion. As the website revolves around image sharing, it is important to extend this functionality to the comments section. Imagine a scenario where a user has posted about a particular location, and another user wants to showcase a different location in the conversation. Now, with the ability to upload images along with comments, users can effectively make the site even more engaging and valuable. This feature adds better communication methods to user interactions, promoting a fun and interactive environment.
 
 ![](src/assets/readme-images/comments.png)
 ![](src/assets/readme-images/comments%20form.png)
@@ -441,9 +443,9 @@ To enhance the sharing capabilities within the community, I have introduced a fe
 ---
 
 ### Comments edit form
-To empower users with control over their comments, I have implemented an editing feature. Users have the ability to modify the text or image content of their comments by accessing a convenient dropdown menu associated with their own comments. Upon submitting the edited comment, users are seamlessly redirected back to the main comments section where they can instantly view the updated version of their comment. This functionality ensures a streamlined editing process, allowing users to refine and improve their contributions effortlessly.
+This form gives users the control over their comments, I have implemented an editing feature. Users have the ability to modify the text or image content of their comments by accessing a convenient dropdown menu associated with their own comments. Upon submitting the edited comment, users are seamlessly redirected back to the main comments section where they can instantly view the updated version of their comment. This functionality ensures a streamlined editing process, allowing users to refine and improve their contributions more effectively.
 
-To provide users with up-to-date information across the site, all comments now display the date they were added and the most recent to the very top of the comments list. This feature ensures users have a clear understanding of the timeline and helps them stay informed about the recency of comments throughout the platform. By including the added date alongside each comment, users can easily gauge the latest discussions and engage with the most relevant content. This feature enhances the overall user experience by promoting transparency and timeliness across all areas of the site.
+To provide users with up-to-date information across the site, all comments now display the date they were added and the most recent to the very top of the comments list. This feature ensures users have a clear understanding of the timeline and helps them stay informed about comments throughout the platform. By including the added date alongside each comment, users can easily view the latest discussions with the most relevant content. This feature enhances the overall user experience by promoting transparency and timeliness across all areas of the site.
 
 ![](src/assets/readme-images/comment%20edit%20form.png)
 
@@ -485,7 +487,7 @@ All icons are taken from an open source - [Font awesome ](https://fontawesome.co
 
 # Colour scheme 
 
-All colours where picked with design industry colours which are trusted within communities of website design. I used an Wilderness colour plate in Adobe Color Wheel. using shades of blue  are used. For when using the shade of black I used #0D0D0D. This shade gives a deeper colour and more detail to text.
+All colours are picked with design industry colours which are trusted within communities of website design. I used an Wilderness colour plate in Adobe Color Wheel, using shades of blue. For when using the shade of black I used #0D0D0D. This shade gives a deeper colour and more detail to text.
 
 The reason I have not used many colours, is for the images to produce the colour to the site. As the images are full of colour, I wanted them to stand out and make an impression to the user.
 
@@ -499,95 +501,116 @@ All colours are taken from an open source - [Adobe Color Wheel ](https://color.a
 
 ### Navbar
 ERROR
-In the NavBar component, when passing the expanded prop to the Navbar component, you are assigning the setExpanded function instead of the expanded state value. The correct code should be:
+In the NavBar component, when passing the expanded prop to the Navbar component, I had assigned the setExpanded function instead of the expanded state value.
 
 PASS ERROR
-Passed expanded prop to the navabr component
+After viewing the mistake, I passed the expanded prop to the navabr component.
 
 ### Post Page 
 Issue:
+
+When implementing the search feature to allow users to search for travel plans by location, I encountered an error in the PostsPage function. Despite using the filter method and a try-catch block with axiosReq (request) to fetch data from the travelplanposts/ URL, the posts data was not being displayed on the /locations page.
+
+Solution:
+
+Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
+
+Issue:
+
 Data base not being updated. Error 400 in the console.
 
 SOLUTION:
-After reviewing the Network in the console, I could read that the Error was that I did not add the locations field from the api model as an object and call it the in useState Hook. Once adding this, all data was being saved in the database.
 
-ISSUE:
-When implementing the search feature to allow users to search for travel plans by location, I encountered an error in the PostsPage function. Despite using the filter method and a try-catch block with axiosReq (request) to fetch data from the travelplanposts/ URL, the posts data was not being displayed on the /locations page.
-
-SOLUTION:
-Upon reviewing the API for fetching the posts data, I discovered a typing error in the URL within the catch block. This mistake prevented the data from being fetched, causing the spinner component to continue running without rendering any results. After correcting the typing error, the posts data was successfully rendered on the page.
+After reviewing the Network in the console, I could read that the Error was that I did not added the locations field from the api model as an object and call it the in useState Hook. Once adding this, all data was being saved in the database.
 
 
 ### PostCreateFrom
 Issue: 
-When a user creates a post and attempts to add less than six images, a default image should be displayed instead of the missing images. This functionality is controlled through the API using a default image URL. However, there was an issue where the default image failed to render, resulting in an upload error being displayed in the console.
+
+When a user creates a post and attempts to add less than six images, a default image should be displayed instead of the missing images. This functionality is controlled through the API using a default image URL. However, there was an issue where the default image failed to render, resulting in an upload 404 error being displayed in the console.
 
 Solution:
+
 To address this issue, I used the built-in Alert error handling feature provided by React. By importing this function, I was able to integrate it into each image element within the form during the rendering process. Additionally, I included a custom message stating "Please add six images" to inform the user about the minimum image requirement.
 
 By implementing these changes, I successfully resolved the problem by effectively handling errors and providing clear instructions to the user. This resulted in the elimination of all errors encountered during the process.
 
 ### MoreDropDown component
-ISSUE:
+Issue:
+
 While implementing the handleDelete prop into the onClick function within the return statement of the MoreDropdown component, I encountered difficulty in getting the delete function to successfully delete a post associated with the current user.
 
-SOLUTION:
+Solution:
+
 Upon careful examination, I identified a typing error within the handleDelete prop when it was used inside the onClick function. After correcting the value, I performed a test and confirmed that the delete function is now functioning properly.
 
 ### PostEditFrom page
-ISSUE: While implementing the edit function for users to update their travel plans, I encountered a problem where a single image would not update correctly. Instead, I was redirected to the page with the original image.
+Issue:
 
-SOLUTION:
-Upon testing, I found that I could only update all the images at once and not a single image. This issue was down to having the if statement that checks the condition was wraped around all the image files to be appended. To address this, I restructured the if statement to apply to each image individually. After conducting further tests, I am now able to successfully update a single image.
+While implementing the edit function for users to update their travel plans, I encountered a problem where a single image would not update correctly. Instead, I was redirected to the page with the original image.
+
+Solution:
+
+Upon testing, I found that I could only update all the images at once and not a single image. This issue was down to having an if statement that checks the condition was wraped around all the image files to be appended. To address this, I restructured the if statement to apply to each image individually. After conducting further tests, I am now able to successfully update a single image.
 
 ### Travel post page
-ISSUE: When implementing comments, I used the map method to iterate over the comments results. However, when running the project in the browser, a blank page was displayed.
+Issue:
+When implementing comments to posts, I used the map method to iterate over the comments results. However, when running the project in the browser, a blank page was displayed.
 
-SOLUTION: Upon reviewing the error in the console, I realized that I was mistakenly mapping over the incorrect value of results. After correcting the value, the page rendered correctly.
+Solution:
+Upon reviewing the error in the console, I realized that I was mistakenly mapping over the incorrect value of results. After correcting the value, the page rendered correctly.
 
 ### ProfilePage
 Issue:
 
-While attempting to render all posts by a user from their profile page, I encountered a problem where the page would appear blank and an error would be logged in the console for fetchMoreData.
+While attempting to render all posts by a user from their profile page, I encountered a problem were the page would appear blank and an error would be logged in the console for fetchMoreData.
 
 Solution:
-Upon reviewing the console error, I identified a type error in the hasMore={!!profilePosts.next} code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
+
+Upon reviewing the console error, I identified a type error in the hasMore component code. It was discovered that I had removed the second exclamation mark (!), which resulted in the incorrect rendering of images within fetchMoreData. By rectifying this issue, the images were displayed correctly.
 
 Issue:
-When a user is not logged in, they can manually added the url endpoint /profiles/3, then the user can access the profile of the user using the profile id
+
+When a user is not logged in, they can manually added the url endpoint /profiles/3, then the user can access the profile of the user using the profile id.
 
 Solution:
+
 After reviewing the useRedirect Hook and implementing it into the ProfilePage function, the loggout user could not acceess any of the profiles.
 
 ### ProfileEditForm
 Issue:
+
 When a user is not logged in, they can manually added the url endpoint /profiles{id}/edit, then the user can access the profile edit page of another user.
 
 Solution:
+
 After reviewing the useRedirect Hook and implementing it into the ProfileEditForm function, the loggout user could not acceess to edit a profile they do not own.
 
 ### PostCreateFrom
+
 Issue:
 
 When a logged out user attempts to access the "create a post" form, they can manually add the URL endpoint "/posts/create." This leads them to the form, even though it should only be accessible to authenticated users. This poses a security risk and needs to be addressed.
 
 Solution:
 
-Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the PostCreateForm function, the useRedirect prop's value were written as a string using double brackets "".
+Upon reviewing the userRedirect Hook, I observed that the 'logged in' and 'logged out' values inside the Hook are enclosed in single closing tags. However, in the PostCreateForm function, the useRedirect prop's value is written as a string using double brackets "".
 This inconsistency led to a malfunction in the redirect hook. However, after review the code by ensuring consistent double closing tags in the useRedirect hook, the test passed successfully. Consequently, the create post page is now inaccessible to logged out users, effectively bolstering the overall security measures.
 
 ### PostsPage 
 
 Issue:
-When a usewr is not logged in, manually added the url endpoint /locations/ the user can access the locations page and view all posts.
+
+When a user is not logged in, they could manually added the url endpoint /locations/ the user can then access the locations page and view all posts.
 
 Solution:
+
 After reviewing the useRedirect Hook and implementing it into the PostsPage function, the loggout user could not acceess the posts page and view no posts.
 
 ### SignIn
 Issue:
 
-When a logged in user attempts to access the sign in form, they can manually add the URL endpoint "/signin." This leads them to the form, even tho it should not be accessible and the user should be redirected back to the home page "/"
+When a logged in user attempts to access the sign in form, they can manually add the URL endpoint "/signin." This leads them to the form, this should not be accessible and the user should be redirected back to the home page "/"
 
 Solution:
 
@@ -608,7 +631,7 @@ This inconsistency led to a malfunction in the redirect hook. However, after rev
 
 Issue: 
 
-When implementing the edit function for user comments, where they can update both the content and the image, I encountered a problem. While the content update was working fine, the image was not updating, and no errors were being displayed in the console or in the network requests. This presented a challenging issue to resolve.
+When implementing the edit function for user comments, were they can update both the content and the image, I encountered a problem. While the content update was working fine, the image was not updating, and no errors were being displayed in the console or in the network request. This presented a challenging issue to resolve.
 
 Solution: 
 
@@ -616,9 +639,9 @@ To troubleshoot the problem, I started by testing the API to verify if a comment
 
 To investigate further, I added some log statements to track the updated image file in the console. This helped confirm that the correct image URL was being returned. Next, I examined the handleSubmit function and logged the image to ensure it was being passed correctly. I also checked the feedback before and after appending the image in the handleSubmit function, and everything seemed to be in order.
 
-In the return statement of the component, there is a previewImage value that was updated with the new image when it is added. This previewImage is then used in the PUT request URL to update the comment.
+In the return statement form, there is a previewImage value that was updated with the new image when it is added. This previewImage is then used in the PUT request URL to update the comment image.
 
-However, I discovered that the issue lied in the image append update. I needed to use the specific field name for the image in the backend comments model, which was comment_image, instead of the previous name. Once I made this correction and appended the image with the correct value, the image started rendering correctly with the new image.
+However, I discovered that the issue lied in the image append update. I needed to use the specific field name for the image in the backend comments model, which was "comment_image", instead of the previous name "image". Once I made this correction and appended the image with the correct value, the image started rendering correctly with the new image.
 
 Overall, by carefully investigating the backend response, the handling of the image in the front-end code, and ensuring the correct field name was used, I was able to resolve the issue and successfully update the image for user comments.
 
@@ -650,6 +673,8 @@ SIGN OUT
 - As a user can view the sign out navigation point 
 - When signing out I am redirected to the home page as expected 
 - When signed out I can sign back in when intended
+- If trying to gain access to the sign out url endpoint /signout/, I am redirected to a not found page as the page does not exit.
+
 ---
 
 PROFILE PAGE
@@ -672,6 +697,7 @@ PROFILE PAGE
 -  As a user I can view all the content on all screen sizes and to its responsive functions 
 
 ---
+
 ### Create a travel post
 - As a user I can easily view a Navigation point to the page for adding a travel post.
 - I can see an early to follow form with well written text to follow when writing a post.
@@ -681,9 +707,11 @@ PROFILE PAGE
 - I can view a submit button and a cancel button.
 - Once my post is submitted, I am redirected to the posts page to view my post.
 - If I decide to cancel my post, and click the cable button, I am returned to the landing page.
+
 ---
 
 ### Travel plan page
+
 TRAVEL PLAN PAGE
 - As a registered user I can navigate to the travel plan page to view all the post
 - When viewing the posts, I can see the newest created first
@@ -694,9 +722,15 @@ TRAVEL PLAN PAGE
 - A link to view the post as a single post, which redirects the user to a new page for just that post.
 - When logged out I can not view any posts.
 
-### Travel plan edit
+### Travel plan edit 
+- A sa logged in user I ca view a navigation point to edit or delete my travel plan post.
+- As a user wantind to delete my post I can click the bin icon and visible view the post deleled once redirected back to the mian travel plan post page.
+- As user wanting to edit a post, I can click on the edit icon and be redirected to a pro=populated form with original post content ready to be edited. I can also view a button to upload new images to my post.
+- As a user submitting the edited post, I can view a submit or cancellation button. The cancellation button will canel any changes done and redirect me back to the travel post page.
+- A as user submitting my edited post, I get redirected to the travel plan posts page, where I can view my edited post.
 
 ---
+
 ### Popular profiles
 - As a user I can also see a clear and well designed most followed profiles list with the user name and avatar.
 - I can easily view and click on a user to view their profile.
@@ -740,17 +774,16 @@ TRAVEL PLAN PAGE
 # Frontend testing
 
 ### CSS validation tests
-No errors or warnings were found when the deployed Happening URL was passed through the W3C CSS Validation checker.
+No errors or warnings were found when the deployed URL was passed into the CSS Validation checker.
 
 ![](src/assets/readme-images/css%20validation%20test.png)
 
 ---
 
 ### HTML Validation tests
+The deployed URL was successfully validated using the HTML validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
+
 ![](src/assets/readme-images/html%20validation%20tests.png)
-
-The deployed URL was successfully validated using the W3C CSS validation checker without any errors. However, during the validation process, some informational messages were generated regarding the standard Meta code present in the index.html file.
-
 
  ### JSLint tests
 I used JSLint and Prettier to ensure the quality and consistency of my JSX code. JSLint helped me detect potential errors and enforce coding best practices, ensuring that my code follows strict standards. Prettier, on the other hand, helped me maintain a consistent code style by automatically formatting my code according to predefined rules. Together, these tools helped me improve the readability, maintainability, and overall quality of my JavaScript code.
@@ -780,6 +813,19 @@ Home page renders
 
 Profile render if logged in
 ![](src/assets/readme-images/automated%20test%20profile.png)
+
+---
+
+# Features
+
+### Comments form
+- When trying to add contect to a commetn with out adding an image, the form will not submit just the content. This is also the case if a user tries to submit the form woth just an image. 
+For a future update I will implement that the user can add separate content or an image for a comment. For now the user will have to add both. To get around this issue a user can edit their comment content or image at any point. 
+
+### Creating a post
+- When a user chooses to add less than six images to a post, an error is displayed to notify the user to add all six images. For a future update, I will be implementing that the user can add a minimum of one image and as many as 8 images or have a default image displayed.
+
+- when adding a post, I want to implement a Google Maps feature that allows users to pin the location of their travels. This will give more complexity and a modern feature to the site.
 
 ---
 
